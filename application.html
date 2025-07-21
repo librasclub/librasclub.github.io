@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Libra's Club</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5da193dec.js" crossorigin="anonymous"></script>
+</head>
+<body class="page-body">
+
+    <header class="main-header">
+        <a href="index.html"><img src="ogo.png" alt="Libra's Club Logo" class="header-logo"></a>
+        <nav>
+            <a href="index.html" class="nav-link" data-translate-key="nav_home">Home</a>
+            <a href="menu.html" class="nav-link" data-translate-key="nav_menu">Menu</a>
+            <a href="events.html" class="nav-link" data-translate-key="nav_events">Events</a>
+            <a href="gallery.html" class="nav-link" data-translate-key="nav_gallery">Gallery</a>
+            <a href="team.html" class="nav-link" data-translate-key="nav_team">Team</a>
+            <a href="partners.html" class="nav-link" data-translate-key="nav_partners">Partners</a>
+            <a href="blog.html" class="nav-link" data-translate-key="nav_blog">Blog</a>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('es')">ES</button>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h1 class="page-title" data-translate-key="apply_title">Join the Crew</h1>
+        
+        <form class="application-form" action="https://formsubmit.co/seu-email-aqui@example.com" method="POST">
+            
+            <label for="vrc_name" data-translate-key="form_label_vrc_name">VRChat Username</label>
+            <input type="text" id="vrc_name" name="VRChat Username" required>
+
+            <label for="discord_name" data-translate-key="form_label_discord_name">Discord Username</label>
+            <input type="text" id="discord_name" name="Discord Username" required>
+
+            <label data-translate-key="form_label_age_confirm">Are you 18 years of age or older?</label>
+            <div class="radio-group">
+                <input type="radio" id="age_yes" name="Over 18" value="Yes" required>
+                <label for="age_yes" data-translate-key="form_option_yes">Yes</label>
+                <input type="radio" id="age_no" name="Over 18" value="No">
+                <label for="age_no" data-translate-key="form_option_no">No</label>
+            </div>
+            
+            <label data-translate-key="form_label_mute">Are you a mute user?</label>
+            <div class="radio-group">
+                <input type="radio" id="mute_yes" name="Mute" value="Yes" required>
+                <label for="mute_yes" data-translate-key="form_option_yes">Yes</label>
+                <input type="radio" id="mute_no" name="Mute" value="No">
+                <label for="mute_no" data-translate-key="form_option_no">No</label>
+            </div>
+
+            <label data-translate-key="form_label_platform">What platform do you use?</label>
+            <div class="radio-group">
+                <input type="radio" id="platform_pc" name="Platform" value="PC" required>
+                <label for="platform_pc" data-translate-key="form_option_pc">PC</label>
+                <input type="radio" id="platform_vr" name="Platform" value="VR">
+                <label for="platform_vr" data-translate-key="form_option_vr">VR</label>
+                <input type="radio" id="platform_pcvr" name="Platform" value="PCVR">
+                <label for="platform_pcvr" data-translate-key="form_option_pcvr">PCVR</label>
+            </div>
+
+            <label for="role_select" data-translate-key="form_label_role_select">What role are you applying for?</label>
+            <select id="role_select" name="Selected Role" required>
+                <option value="" disabled selected data-translate-key="form_option_select_position">Select a position...</option>
+                <option value="Bartender" data-translate-key="form_role_bartender">Bartender</option>
+                <option value="Waiter" data-translate-key="form_role_waiter">Waiter</option>
+                <option value="Companion" data-translate-key="form_role_companion">Companion</option>
+                <option value="Security" data-translate-key="form_role_security">Security</option>
+                <option value="Lawyer" data-translate-key="form_role_lawyer">Lawyer</option>
+                <option value="Nurse" data-translate-key="form_role_nurse">Nurse</option>
+                <option value="Photographer" data-translate-key="form_role_photographer">Photographer</option>
+                <option value="Dancer" data-translate-key="form_role_dancer">Dancer</option>
+                <option value="DJ" data-translate-key="form_role_dj">DJ</option>
+                <option value="Gambler" data-translate-key="form_role_gambler">Gambler</option>
+                <option value="New Role" data-translate-key="form_role_new">New Role (Specify below)</option>
+            </select>
+
+            <div id="new_role_description" class="hidden-field">
+                <label for="new_role_text" data-translate-key="form_label_new_role_desc">If you selected 'New Role', please describe it and its function here:</label>
+                <textarea id="new_role_text" name="New Role Description" rows="4"></textarea>
+            </div>
+
+            <label for="role_choice" data-translate-key="form_label_role_choice">1. Why did you choose this role?</label>
+            <textarea id="role_choice" name="Role Choice" rows="4" required></textarea>
+            
+            <label for="interest" data-translate-key="form_label_interest">2. What interested you about the club?</label>
+            <textarea id="interest" name="Interest in Club" rows="4" required></textarea>
+
+            <label data-translate-key="form_label_days">3. Which days are you available? (We are open Tuesday, Thursday, Saturday)</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="tuesday" name="Available Days" value="Tuesday">
+                <label for="tuesday" data-translate-key="form_option_tuesday">Tuesday</label>
+                <input type="checkbox" id="thursday" name="Available Days" value="Thursday">
+                <label for="thursday" data-translate-key="form_option_thursday">Thursday</label>
+                <input type="checkbox" id="saturday" name="Available Days" value="Saturday">
+                <label for="saturday" data-translate-key="form_option_saturday">Saturday</label>
+            </div>
+
+            <label for="experience" data-translate-key="form_label_experience">4. Do you have experience with moderation or role-playing?</label>
+            <textarea id="experience" name="Experience" rows="4" required></textarea>
+            
+            <label for="improvement" data-translate-key="form_label_improvement">5. What would you improve about the club? (Optional)</label>
+            <textarea id="improvement" name="Improvement Suggestion" rows="4"></textarea>
+            
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit" data-translate-key="form_button_submit">Send Application</button>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/librasclub.vr/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.com/invite/EJymrAHWR8" aria-label="Discord" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://vrchat.com/home/group/grp_ccb53a94-c249-4efb-b1b6-2f1219a3c451" aria-label="VRChat Group" title="VRChat Group"><i class="fas fa-vr-cardboard"></i></a>
+            <a href="https://www.tiktok.com/@librasclub?is_from_webapp=1&sender_device=pc" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2025 Libra's Club. All rights reserved.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

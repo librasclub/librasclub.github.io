@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Libra's Club</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/b5da193dec.js" crossorigin="anonymous"></script>
+</head>
+<body class="page-body">
+
+    <header class="main-header">
+        <a href="index.html"><img src="logo.png" alt="Libra's Club Logo" class="header-logo"></a>
+        <nav>
+            <a href="index.html" class="nav-link" data-translate-key="nav_home">Home</a>
+            <a href="menu.html" class="nav-link" data-translate-key="nav_menu">Menu</a>
+            <a href="events.html" class="nav-link active" data-translate-key="nav_events">Events</a>
+            <a href="gallery.html" class="nav-link" data-translate-key="nav_gallery">Gallery</a>
+            <a href="team.html" class="nav-link" data-translate-key="nav_team">Team</a>
+            <a href="partners.html" class="nav-link" data-translate-key="nav_partners">Partners</a>
+            <a href="blog.html" class="nav-link" data-translate-key="nav_blog">Blog</a>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('es')">ES</button>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h1 class="page-title" data-translate-key="events_upcoming_title">Upcoming Events</h1>
+        <div class="event-list">
+            </div>
+
+        <h1 class="page-title" style="margin-top: 80px;" data-translate-key="events_past_title">Past Events</h1>
+        <div class="event-list">
+            <article class="event-card event-card-past">
+                <div class="event-date">
+                    <span class="month">FEB</span>
+                    <span class="day">15</span>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title" data-translate-key="event_valentine_title">Valentine's Day Event</h3>
+                    <p class="event-time" data-translate-key="event_valentine_time"><i class="far fa-clock"></i> Saturday</p>
+                    <p class="event-description" data-translate-key="event_valentine_desc">A themed event for lovebirds, singles, and the lonely-hearted.</p>
+                </div>
+            </article>
+            <article class="event-card event-card-past">
+                <div class="event-date">
+                    <span class="month">JUL</span>
+                    <span class="day">12</span>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title" data-translate-key="event_gothic_title">Gothic Event</h3>
+                    <p class="event-time" data-translate-key="event_gothic_time"><i class="far fa-clock"></i> Saturday, 11:00 PM Chicago</p>
+                    <p class="event-description" data-translate-key="event_gothic_desc">Dress code and drinks centered around dark and gothic elements. Also featuring activities, dancing, and contests.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/librasclub.vr/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.com/invite/EJymrAHWR8" aria-label="Discord" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://vrchat.com/home/group/grp_ccb53a94-c249-4efb-b1b6-2f1219a3c451" aria-label="VRChat Group" title="VRChat Group"><i class="fas fa-vr-cardboard"></i></a>
+            <a href="https://www.tiktok.com/@librasclub?is_from_webapp=1&sender_device=pc" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2025 Libra's Club. All rights reserved.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
