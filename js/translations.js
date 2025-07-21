@@ -106,6 +106,8 @@ const translations = {
 
         // --- Página de Blog / Notícias (blog.html) ---
         blog_title: "Club News & Updates",
+
+        
     },
 
     // =====================
@@ -218,6 +220,8 @@ const translations = {
 
         // --- Página de Blog (blog.html) ---
         blog_title: "Noticias y Actualizaciones del Club",
+
+        
 
     }
 };
