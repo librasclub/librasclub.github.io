@@ -415,6 +415,112 @@ footer {
 }
 
 
+/* --- ESTILOS DO MODO FOCO --- */
+.focus-mode-toggle-container {
+    text-align: right;
+    margin-top: -50px; /* Alinha com o título */
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 20; /* Garante que o botão fica acima da galeria */
+}
+
+#focus-mode-button {
+    background: transparent;
+    border: 2px solid var(--label-color);
+    color: var(--label-color);
+    font-size: 1.2em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#focus-mode-button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* A magia acontece aqui */
+body.focus-mode .main-header,
+body.focus-mode footer {
+    display: none; /* Esconde o cabeçalho e o rodapé */
+}
+
+
+/* --- ESTILOS DO BLOG / NOTÍCIAS --- */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.post-card {
+    background-color: var(--container-bg);
+    border: 1px solid #333;
+    border-left: 5px solid var(--secondary-color); /* Usamos a cor secundária para diferenciar */
+    border-radius: 5px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.post-card:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+.post-date, .post-full-meta {
+    color: var(--label-color);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.post-title {
+    font-size: 2em;
+    color: var(--text-color);
+    text-shadow: none;
+    margin-bottom: 15px;
+}
+
+.post-excerpt {
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.post-read-more {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1.1em;
+}
+
+/* Estilos para a página do artigo completo */
+.post-full-title {
+    font-size: 3.5em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.post-full-meta {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.post-full-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.post-full-content p {
+    margin-bottom: 20px;
+}
+
+.post-full-content .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
 
 /* --- ESTILOS DOS HORÁRIOS --- */
 .schedule-container { text-align: center; padding: 20px 40px; margin: -40px auto 40px auto; border: 1px solid var(--primary-color); border-radius: 5px; box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); max-width: 500px; background-color: var(--container-bg); position: relative; z-index: 5; }

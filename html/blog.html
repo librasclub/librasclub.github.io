@@ -3,64 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libra's Club - VRChat Bar</title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/b5da193dec.js" crossorigin="anonymous"></script>
+    <title>News - Libra's Club</title>
+    <link rel="icon" href="../logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/b5da193dec.js" crossorigin="anonymous"></script>
 </head>
 <body class="page-body">
 
     <header class="main-header">
-        <a href="index.html"><img src="logo.png" alt="Libra's Club Logo" class="header-logo"></a>
+        <a href="index.html"><img src="../logo.png" alt="Libra's Club Logo" class="header-logo"></a>
         <nav>
-            <a href="index.html" class="nav-link active" data-translate-key="nav_home">Home</a>
+            <a href="index.html" class="nav-link" data-translate-key="nav_home">Home</a>
             <a href="menu.html" class="nav-link" data-translate-key="nav_menu">Menu</a>
             <a href="events.html" class="nav-link" data-translate-key="nav_events">Events</a>
             <a href="gallery.html" class="nav-link" data-translate-key="nav_gallery">Gallery</a>
             <a href="team.html" class="nav-link" data-translate-key="nav_team">Team</a>
             <a href="partners.html" class="nav-link" data-translate-key="nav_partners">Partners</a>
+            <a href="blog.html" class="nav-link active" data-translate-key="nav_blog">Blog</a>
         </nav>
-        
         <div class="language-switcher">
             <button onclick="setLanguage('en')">EN</button>
             <button onclick="setLanguage('es')">ES</button>
         </div>
     </header>
 
-    <div class="hero-section">
-        <div id="particles-js"></div>
-        <div class="hero-overlay"></div>
-        <main class="hero-content">
-            <h1 class="main-title" data-translate-key="hero_title">Libra's Club</h1>
-            <p class="tagline" data-translate-key="hero_tagline">Where every night brings a new story.</p>
-        </main>
-    </div>
-
-    <div class="schedule-container">
-        <h3 class="schedule-title" data-translate-key="schedule_title">Our Hours</h3>
-        <div class="schedule-days">
-            <p data-translate-key="schedule_days">Tuesday, Thursday & Saturday</p>
+    <main class="content-container">
+        <h1 class="page-title" data-translate-key="blog_title">Club News & Updates</h1>
+        
+        <div class="post-list">
+            <article class="post-card">
+                <div class="post-details">
+                    <p class="post-date">July 21, 2025</p>
+                    <h3 class="post-title">A Look Back: The Cyber-Funk DJ Night</h3>
+                    <p class="post-excerpt">The energy was electric, the beats were heavy, and the neon lights never shone brighter. Our Cyber-Funk DJ Night was a massive success, thanks to our resident DJ, VoidRunner, and everyone who came to dance the night away...</p>
+                    
+                    <a href="articles/post1.html" class="cta-button post-read-more">Read More</a>
+                </div>
+            </article>
         </div>
-        <div class="schedule-times">
-            <ul>
-                <li>1:00 AM - Argentina</li>
-                <li>11:00 PM - Peru</li>
-                <li>5:00 AM - Spain</li>
-                <li>10:00 PM - Mexico</li>
-            </ul>
-        </div>
-    </div>
-
-    <section class="content-section">
-        <h2 data-translate-key="welcome_title">Welcome to our space</h2>
-        <p data-translate-key="welcome_text">
-            This is your space to write about Libra's Club. Talk about your events, the community,
-            opening hours, or any other information you wish. Just edit this text.
-        </p>
-    </section>
+    </main>
 
     <footer>
         <div class="social-links">
@@ -72,7 +58,7 @@
         <p>&copy; 2025 Libra's Club. All rights reserved.</p>
     </footer>
 
-    <script src="js/translations.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/translations.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

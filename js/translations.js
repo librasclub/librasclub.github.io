@@ -103,6 +103,9 @@ const translations = {
         form_label_experience: "4. Do you have experience with moderation or role-playing?",
         form_label_improvement: "5. What would you improve about the club? (Optional)",
         form_button_submit: "Send Application",
+
+        // --- Página de Blog / Notícias (blog.html) ---
+        blog_title: "Club News & Updates",
     },
 
     // =====================
@@ -174,6 +177,8 @@ const translations = {
         // --- Página de Socios (partners.html) ---
         partners_title: "Amigos del Club",
 
+
+        // --- Página de Aplicación (application.html) ---
         apply_title: "Únete al Equipo",
         form_label_vrc_name: "Usuario de VRChat",
         form_label_vrc_name: "Link de Perfil de VRChat", 
@@ -208,5 +213,11 @@ const translations = {
         form_label_experience: "4. ¿Tienes experiencia con moderación o rol?",
         form_label_improvement: "5. ¿Qué mejorarías del bar? (Opcional)",
         form_button_submit: "Enviar Candidatura",
+
+
+
+        // --- Página de Blog (blog.html) ---
+        blog_title: "Noticias y Actualizaciones del Club",
+
     }
 };

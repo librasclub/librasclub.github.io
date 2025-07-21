@@ -64,6 +64,29 @@ function translatePage() {
     });
 }
 
+// --- LÓGICA DO MODO FOCO PARA A GALERIA ---
+document.addEventListener('DOMContentLoaded', () => {
+    const focusButton = document.getElementById('focus-mode-button');
+
+    // Apenas executa se o botão existir na página
+    if (focusButton) {
+        focusButton.addEventListener('click', () => {
+            // Adiciona ou remove a classe 'focus-mode' do body
+            document.body.classList.toggle('focus-mode');
+
+            // Troca o ícone entre expandir e compactar
+            const icon = focusButton.querySelector('i');
+            if (icon.classList.contains('fa-expand')) {
+                icon.classList.remove('fa-expand');
+                icon.classList.add('fa-compress');
+            } else {
+                icon.classList.remove('fa-compress');
+                icon.classList.add('fa-expand');
+            }
+        });
+    }
+});
+
 // Quando a página termina de carregar, ela traduz tudo automaticamente
 document.addEventListener('DOMContentLoaded', translatePage);
 
