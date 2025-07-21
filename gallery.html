@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Libra's Club</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/b5da193dec.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="page-body">
+
+    <header class="main-header">
+        <a href="index.html"><img src="logo.png" alt="Libra's Club Logo" class="header-logo"></a>
+        <nav>
+            <a href="index.html" class="nav-link" data-translate-key="nav_home">Home</a>
+            <a href="menu.html" class="nav-link" data-translate-key="nav_menu">Menu</a>
+            <a href="events.html" class="nav-link" data-translate-key="nav_events">Events</a>
+            <a href="gallery.html" class="nav-link active" data-translate-key="nav_gallery">Gallery</a>
+            <a href="team.html" class="nav-link" data-translate-key="nav_team">Team</a>
+            <a href="partners.html" class="nav-link" data-translate-key="nav_partners">Partners</a>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('es')">ES</button>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h1 class="page-title" data-translate-key="gallery_title">Moments in the Club</h1>
+        
+        <div class="gallery-grid">
+            <a href="#img1" class="gallery-item"><img src="assets/images/gallery1.jpg" alt="Amemaquiagem"></a>
+            <a href="#img2" class="gallery-item"><img src="assets/images/gallery2.jpg" alt="Gallery image 2"></a>
+            <a href="#img3" class="gallery-item"><img src="assets/images/gallery3.jpg" alt="Gallery image 3"></a>
+            <a href="#img4" class="gallery-item"><img src="assets/images/gallery4.jpg" alt="Gallery image 4"></a>
+            <a href="#img5" class="gallery-item"><img src="assets/images/gallery5.jpg" alt="Gallery image 5"></a>
+            <a href="#img6" class="gallery-item"><img src="assets/images/gallery6.jpg" alt="Gallery image 6"></a>
+        </div>
+    </main>
+
+    <a href="#" class="lightbox" id="img1"><span style="background-image: url('assets/images/gallery1.jpg')"></span></a>
+    <a href="#" class="lightbox" id="img2"><span style="background-image: url('assets/images/gallery2.jpg')"></span></a>
+    <a href="#" class="lightbox" id="img3"><span style="background-image: url('assets/images/gallery3.jpg')"></span></a>
+    <a href="#" class="lightbox" id="img4"><span style="background-image: url('assets/images/gallery4.jpg')"></span></a>
+    <a href="#" class="lightbox" id="img5"><span style="background-image: url('assets/images/gallery5.jpg')"></span></a>
+    <a href="#" class="lightbox" id="img6"><span style="background-image: url('assets/images/gallery6.jpg')"></span></a>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/librasclub.vr/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.com/invite/EJymrAHWR8" aria-label="Discord" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://vrchat.com/home/group/grp_ccb53a94-c249-4efb-b1b6-2f1219a3c451" aria-label="VRChat Group" title="VRChat Group"><i class="fas fa-vr-cardboard"></i></a>
+            <a href="https://www.tiktok.com/@librasclub?is_from_webapp=1&sender_device=pc" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2025 Libra's Club. All rights reserved.</p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

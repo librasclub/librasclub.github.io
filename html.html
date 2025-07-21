@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libra's Club - Cardápio</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+        /* FONTES E ESTILOS GLOBAIS */
+        @import url('https://fonts.googleapis.com/css2?family=Nosifier&family=IM+Fell+English+SC&display=swap');
+
+        :root {
+            --primary-color: #8b0000; /* Vermelho escuro */
+            --text-color: #dcdcdc;
+            --background-color: #0d0d0d;
+            --container-bg: #1a1a1a;
+            --border-color: #5a0000;
+            --label-color: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ANIMAÇÕES */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            background-color: var(--background-color);
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+CjxyZWN0IHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgZmlsbD0iIzBkMGQwZCI+PC9yZWN0Pgo8cmVjdCB4PSIxNSIgd2lkdGg9IjEiIGhlaWdodD0iMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkgcm90YXRlKDE1IDE1IDE1KSIgZmlsbD0iIzE1MTUxNSI+PC9yZWN0Pgo8cmVjdCB4PSIxNSIgd2lkdGg9IjEiIGhlaWdodD0iMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkgcm90YXRlKC0xNSAxNSAxNSkiIGZpbGw9IiMxNTE1MTUiPjwvcmVjdD4KPC9zdmc+');
+            font-family: 'IM Fell English SC', serif;
+            color: var(--text-color);
+            padding: 20px 10px;
+        }
+
+        /* CABEÇALHO E TÍTULO */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .main-title {
+            font-family: 'Nosifier', cursive;
+            font-size: 3.5em;
+            color: var(--primary-color);
+            text-shadow: 3px 3px 8px #000;
+        }
+        
+        /* BOTÕES DE NAVEGAÇÃO */
+        .button-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-button {
+            font-family: 'IM Fell English SC', serif;
+            background-color: transparent;
+            border: 2px solid var(--label-color);
+            color: var(--label-color);
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 5px 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .menu-button:hover {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 15px var(--primary-color);
+        }
+
+        .menu-button.active {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 10px var(--primary-color);
+        }
+
+        /* ESTRUTURA DOS CARDÁPIOS */
+        .menu { display: none; }
+        .menu.active { display: block; animation: fadeIn 0.6s ease-in-out; }
+
+        .menu-container {
+            max-width: 800px;
+            margin: auto;
+            background: var(--container-bg);
+            border: 4px double var(--border-color);
+            padding: 30px 50px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+        }
+
+        .logo-area {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-area img { max-width: 100%; max-height: 100%; }
+        
+        .category-title {
+            font-size: 2.2em;
+            text-align: center;
+            padding-bottom: 15px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            position: relative;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        .category-title::after {
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--border-color), transparent);
+        }
+
+        .drink-item {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 25px;
+            page-break-inside: avoid;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .drink-item:hover { transform: scale(1.02); }
+        .drink-item:last-child { border-bottom: none; }
+        .drink-name { font-family: 'Nosifier', cursive; font-size: 1.8em; color: var(--text-color); margin: 0 0 15px 0; }
+        .drink-details { padding-left: 10px; line-height: 1.9; }
+        .detail-label { font-weight: bold; color: var(--label-color); font-size: 1.2em; display: inline-block; width: 90px; }
+        .detail-content { color: var(--text-color); font-size: 1.1em; }
+        .alcohol-type { font-weight: bold; color: var(--label-color); font-size: 1.2em; width: 90px; }
+        
+        .drink-option-title { font-style: italic; color: var(--label-color); margin-top: 10px; }
+
+        @media (max-width: 768px) {
+            .main-title { font-size: 2.5em; }
+            .menu-container { padding: 20px; border-width: 2px; }
+            .menu-button { font-size: 1em; padding: 8px 15px; }
+            .drink-item:hover { transform: none; }
+        }
+        
+        @media print {
+            body { background: #ffffff !important; color: #000000; }
+            header, .button-container { display: none; }
+            .menu-container { border: none; box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .main-title, .category-title, .drink-name, .detail-label, .detail-content { color: #000000 !important; text-shadow: none; }
+            .drink-item, .category-title { page-break-inside: avoid; page-break-after: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="main-title">Libra's Club</h1>
+    </header>
+
+    <div class="button-container">
+         <button class="menu-button" onclick="showMenu('season1-menu', this)">Temporada 1</button>
+         <button class="menu-button" onclick="showMenu('season2-menu', this)">Temporada 2</button>
+         <button class="menu-button" onclick="showMenu('gothic-menu', this)">Cardápio Gótico</button>
+    </div>
+    <div id="season1-menu" class="menu">
+        <div class="menu-container">
+            <div class="logo-area"><img src="logo.png" alt="Logo Libra's Club"></div>
+            <h2 class="category-title">Tragos Fuertes</h2>
+            <div class="drink-item"><p class="drink-name">Infernal</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">180</span><br><span class="detail-label">Base:</span><span class="detail-content">Cola</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 80, Sour 20, Sweet 20, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Hot Chocolate, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Lowball</span></div></div>
+            <div class="drink-item">
+                <p class="drink-name">Timebomb (Doble)</p>
+                <div class="drink-details">
+                    <p class="drink-option-title">option 1 (Light):</p>
+                    <p><span class="alcohol-type">Light liquor</span></p>
+                    <span class="detail-label">Alcohol:</span><span class="detail-content">190</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Sweet 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Cocktail</span>
+                    <p class="drink-option-title">option 2 (Red):</p>
+                    <p><span class="alcohol-type">Red liquor</span></p>
+                    <span class="detail-label">Alcohol:</span><span class="detail-content">190</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 40, Sour 100, Energy 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Sugar, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Stein</span>
+                </div>
+            </div>
+            <div class="drink-item"><p class="drink-name">Deathnote</p><div class="drink-details"><p><span class="alcohol-type">Dark liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">180</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 20, Sour 20, Sweet 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Cocktail</span></div></div>
+            <div class="drink-item"><p class="drink-name">Ectoplasma</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">160</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 40, Sour 80, Sweet 20, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">-</span><br><span class="detail-label">Glass:</span><span class="detail-content">Hurricane</span></div></div>
+            <h2 class="category-title">Tragos Medianos</h2>
+            <div class="drink-item"><p class="drink-name">Jugo de Pixie</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">140</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 80, Sweet 60, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Margarita</span></div></div>
+            <div class="drink-item"><p class="drink-name">Amanecer</p><div class="drink-details"><p><span class="alcohol-type">Dark liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">120</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 40, Sweet 20, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">-</span><br><span class="detail-label">Glass:</span><span class="detail-content">Snifter</span></div></div>
+            <div class="drink-item"><p class="drink-name">Alastor</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">120</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 40, Sweet 40, Energy 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Martini</span></div></div>
+            <div class="drink-item"><p class="drink-name">Ballena Azul</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">100</span><br><span class="detail-label">Base:</span><span class="detail-content">Cola</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 40, Sour 40, Sweet 100, Energy 60</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Hurricane</span></div></div>
+            <h2 class="category-title">Tragos Suaves</h2>
+            <div class="drink-item"><p class="drink-name">Semen de Pitufo</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">80</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 40, Sour 60, Sweet 60, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Hot Chocolate, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Cocktail</span></div></div>
+            <div class="drink-item"><p class="drink-name">Cupcake</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">80</span><br><span class="detail-label">Base:</span><span class="detail-content">Cola</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 60, Sweet 80, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Coffee, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Snifter</span></div></div>
+            <div class="drink-item"><p class="drink-name">Licuado de Ingeniero</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">80</span><br><span class="detail-label">Base:</span><span class="detail-content">Cola</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 40, Sweet 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Coffee, Sugar, Froth, Cream</span><br><span class="detail-label">Glass:</span><span class="detail-content">Mug</span></div></div>
+            <div class="drink-item"><p class="drink-name">Reflejo</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">60</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Sour 20, Sweet 20, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">-</span><br><span class="detail-label">Glass:</span><span class="detail-content">Flute</span></div></div>
+            <h2 class="category-title">Tragos Sin Alcohol</h2>
+            <div class="drink-item"><p class="drink-name">Limones de Jinx</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 100, Energy 60</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Milk, Cream, Sugar, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Shot</span></div></div>
+            <div class="drink-item"><p class="drink-name">Limón 4k</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 100, Sweet 60, Energy 40</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Coffee, Sugar, Cream, Hot Chocolate</span><br><span class="detail-label">Glass:</span><span class="detail-content">Pint</span></div></div>
+            <div class="drink-item"><p class="drink-name">Virus Azul</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 20, Sour 80, Sweet 100, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Cream, Sugar</span><br><span class="detail-label">Glass:</span><span class="detail-content">Highball</span></div></div>
+            <div class="drink-item"><p class="drink-name">Lágrima</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Água</span><br><span class="detail-label">Flavors:</span><span class="detail-content">-</span><br><span class="detail-label">Extras:</span><span class="detail-content">-</span><br><span class="detail-label">Glass:</span><span class="detail-content">Shot</span></div></div>
+        </div>
+    </div>
+    <div id="season2-menu" class="menu">
+        <div class="menu-container">
+            <div class="logo-area"><img src="logo.png" alt="Logo Libra's Club"></div>
+            <h2 class="category-title">Tragos Fuertes</h2>
+            <div class="drink-item"><p class="drink-name">Alastor</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">190</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 40, Sweet 40, Energy 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Martini</span></div></div>
+            <div class="drink-item"><p class="drink-name">Death Note</p><div class="drink-details"><p><span class="alcohol-type">Dark liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">180</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 20, Sour 20, Sweet 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Cocktail</span></div></div>
+            <div class="drink-item"><p class="drink-name">Torsión Testicular</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">190</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 20, Sweet 20, Energy 60</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Coffee, Milk, Hot Chocolate, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Cocktail</span></div></div>
+            <div class="drink-item"><p class="drink-name">Infernal</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">180</span><br><span class="detail-label">Base:</span><span class="detail-content">Cola</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 80, Sour 20, Sweet 20, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Hot Chocolate, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Lowball</span></div></div>
+            <div class="drink-item"><p class="drink-name">El Pierde Nalgas</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">190</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Energy 40, Sweet 60, Sour 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">-</span><br><span class="detail-label">Glass:</span><span class="detail-content">Stein</span></div></div>
+            <h2 class="category-title">Tragos Medios</h2>
+            <div class="drink-item"><p class="drink-name">Tu Falta de Querer</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">120</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 80, Sour 40, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Sugar, Hot Chocolate, Cream, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Martini</span></div></div>
+            <div class="drink-item"><p class="drink-name">El Andrés</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">140</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Cream, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Pint</span></div></div>
+            <div class="drink-item"><p class="drink-name">Leche de Coneja</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">140</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 100, Energy 60</span><br><span class="detail-label">Extras:</span><span class="detail-content">Milk, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Stein</span></div></div>
+            <div class="drink-item"><p class="drink-name">Semen de Pitufo</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">120</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 40, Sour 60, Sweet 60, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Hot Chocolate, Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Cocktail</span></div></div>
+            <h2 class="category-title">Tragos Suaves</h2>
+            <div class="drink-item"><p class="drink-name">El Santo Prepucio</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">80</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sweet 60, Energy 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Cream, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Shot</span></div></div>
+            <div class="drink-item"><p class="drink-name">Noche Estrellada</p><div class="drink-details"><p><span class="alcohol-type">Dark liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">80</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 40, Sweet 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Sugar, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Flute</span></div></div>
+            <div class="drink-item"><p class="drink-name">Un Millón de Primaveras</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">80</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 40, Sweet 20, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Cream, Sugar, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Snifter</span></div></div>
+            <div class="drink-item"><p class="drink-name">La Máscara</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">100</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 100, Sweet 60, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Coffee, Cream, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Margarita</span></div></div>
+            <h2 class="category-title">Tragos Sin Alcohol</h2>
+            <div class="drink-item"><p class="drink-name">Limones de Jinx</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 100, Energy 60</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Milk, Cream, Sugar, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Shot</span></div></div>
+            <div class="drink-item"><p class="drink-name">Cumeada de Miku</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Sour 20, Sweet 20, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Sugar, Cream, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Flute</span></div></div>
+            <div class="drink-item"><p class="drink-name">Me la Suda</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Cola</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sweet 40, Energy 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Cream, Sugar</span><br><span class="detail-label">Glass:</span><span class="detail-content">Pint</span></div></div>
+            <div class="drink-item"><p class="drink-name">Guepardex</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Sour 100, Sweet 40, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Coffee, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">-</span></div></div>
+        </div>
+    </div>
+
+
+    
+    <div id="gothic-menu" class="menu">
+        <div class="menu-container">
+            <div class="logo-area"><img src="logo.png" alt="Logo Libra's Club"></div>
+            <h2 class="category-title">Tragos Fuertes</h2>
+            <div class="drink-item"><p class="drink-name">Ultratumba</p><div class="drink-details"><p><span class="alcohol-type">Dark liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">190</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">-</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Hot Chocolate</span><br><span class="detail-label">Glass:</span><span class="detail-content">Cocktail</span></div></div>
+            <div class="drink-item"><p class="drink-name">El Pecado de Lilith</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">190</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 60, Sweet 60, Energy 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Cream, Sugar, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Hurricane</span></div></div>
+            <div class="drink-item"><p class="drink-name">Glucoso Amanecer</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">180</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 80, Sour 20, Sweet 40</span><br><span class="detail-label">Extras:</span><span class="detail-content">Sugar</span><br><span class="detail-label">Glass:</span><span class="detail-content">Flute</span></div></div>
+            <h2 class="category-title">Tragos Medios</h2>
+            <div class="drink-item"><p class="drink-name">El Traumado</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">140</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Sour 80, Sweet 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Hurricane</span></div></div>
+            <div class="drink-item"><p class="drink-name">Velo de Nicte</p><div class="drink-details"><p><span class="alcohol-type">Dark liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">140</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 60, Sweet 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Coffee, Hot Chocolate, Cream, Sugar</span><br><span class="detail-label">Glass:</span><span class="detail-content">Highball</span></div></div>
+            <div class="drink-item"><p class="drink-name">Néctar del Olvido</p><div class="drink-details"><p><span class="alcohol-type">Light liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">140</span><br><span class="detail-label">Base:</span><span class="detail-content">-</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 80, Sour 100, Sweet 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Cream, Sugar, Froth</span><br><span class="detail-label">Glass:</span><span class="detail-content">Lowball</span></div></div>
+            <h2 class="category-title">Tragos Suaves</h2>
+            <div class="drink-item"><p class="drink-name">Corazón Delator</p><div class="drink-details"><p><span class="alcohol-type">Beer</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">120</span><br><span class="detail-label">Base:</span><span class="detail-content">Cola</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Sour 40, Sweet 100, Energy 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Sugar, Cream</span><br><span class="detail-label">Glass:</span><span class="detail-content">Margarita</span></div></div>
+            <div class="drink-item"><p class="drink-name">Lado Oscuro</p><div class="drink-details"><p><span class="alcohol-type">Dark liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">120</span><br><span class="detail-label">Base:</span><span class="detail-content">-</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 20, Sour 20, Sweet 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Coffee, Hot Chocolate, Ice</span><br><span class="detail-label">Glass:</span><span class="detail-content">Mug</span></div></div>
+            <div class="drink-item"><p class="drink-name">Silencio Carmesí</p><div class="drink-details"><p><span class="alcohol-type">Red liquor</span></p><span class="detail-label">Alcohol:</span><span class="detail-content">100</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 100, Energy 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Ice, Sugar</span><br><span class="detail-label">Glass:</span><span class="detail-content">Shot</span></div></div>
+            <h2 class="category-title">Tragos Sin Alcohol</h2>
+            <div class="drink-item"><p class="drink-name">La Nalgona</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 60, Sour 20, Sweet 100</span><br><span class="detail-label">Extras:</span><span class="detail-content">Sugar, Cream, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Martini</span></div></div>
+            <div class="drink-item"><p class="drink-name">Cruzificado</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Seltzer</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Fruity 20, Sour 20, Sweet 20, Energy 20</span><br><span class="detail-label">Extras:</span><span class="detail-content">Cream, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Hurricane</span></div></div>
+            <div class="drink-item"><p class="drink-name">Luna Melancólica</p><div class="drink-details"><span class="detail-label">Alcohol:</span><span class="detail-content">-</span><br><span class="detail-label">Base:</span><span class="detail-content">Soda</span><br><span class="detail-label">Flavors:</span><span class="detail-content">Sweet 80</span><br><span class="detail-label">Extras:</span><span class="detail-content">Milk, Sugar, Foam</span><br><span class="detail-label">Glass:</span><span class="detail-content">Flute</span></div></div>
+        </div>
+    </div>
+    
+    <script>
+        function showMenu(menuId, clickedButton) {
+            const menus = document.querySelectorAll('.menu');
+            menus.forEach(menu => menu.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.menu-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            document.getElementById(menuId).classList.add('active');
+            clickedButton.classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const initialButton = document.querySelector('.menu-button');
+            if (initialButton) {
+                showMenu('season1-menu', initialButton);
+                initialButton.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

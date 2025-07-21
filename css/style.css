@@ -1,0 +1,648 @@
+/* FONTES E VARIÁVEIS GLOBAIS - TEMA NEON */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+    /* Nova paleta de cores NEON */
+    --primary-color: #00ffff; /* Ciano Neon */
+    --secondary-color: #ff00ff; /* Magenta Neon */
+    --text-color: #f0f0f0;
+    --background-color: #0d0d0d;
+    --container-bg: #1a1a1a;
+    --border-color: #00ffff;
+    --label-color: #a0a0a0;
+
+    /* Novas fontes NEON */
+    --font-title: 'Orbitron', sans-serif;
+    --font-body: 'Share Tech Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    cursor: crosshair;
+
+    background-color: var(--background-color);
+    background-image:
+        linear-gradient(rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.9)),
+        url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzBkMGQwZCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiMxNzE3MTciPjwvcmVjdD4KPC9zdmc+');
+    font-family: var(--font-body);
+    color: var(--text-color);
+    animation: fadeIn 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a, button, .cta-button {
+    cursor: pointer;
+}
+/* --- ESTILOS GLOBAIS --- */
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 10;
+}
+
+.header-logo {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.header-logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px 20px;
+    margin-top: auto; /* Pushes footer to the bottom */
+    border-top: 1px solid #222;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: var(--label-color);
+    font-size: 1.8em;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* --- ESTILOS DA PÁGINA INICIAL (index.html) --- */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -117px; /* Adjust based on header height */
+}
+/* Adicione esta animação */
+@keyframes glitch {
+  0% { text-shadow: 0.05em 0 0 #00ffff, -0.05em 0 0 #ff00ff; }
+  14% { text-shadow: 0.05em 0 0 #00ffff, -0.05em 0 0 #ff00ff; }
+  15% { text-shadow: -0.05em -0.025em 0 #00ffff, 0.025em 0.025em 0 #ff00ff; }
+  49% { text-shadow: -0.05em -0.025em 0 #00ffff, 0.025em 0.025em 0 #ff00ff; }
+  50% { text-shadow: 0.025em 0.05em 0 #00ffff, 0.05em 0 0 #ff00ff; }
+  99% { text-shadow: 0.025em 0.05em 0 #00ffff, 0.05em 0 0 #ff00ff; }
+  100% { text-shadow: -0.025em 0 0 #00ffff, -0.025em -0.05em 0 #ff00ff; }
+}
+/* Estilo para o container das partículas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Fica atrás do overlay e do conteúdo */
+}
+
+/* Garanta que o conteúdo fique na frente */
+.hero-overlay { z-index: 1; }
+.main-header { z-index: 3; }
+.hero-content { z-index: 2; }
+
+/* Aplique no hover do título */
+.main-title:hover {
+    animation: glitch 0.25s infinite;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(13, 13, 13, 0.4) 0%, #0d0d0d 70%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.main-title {
+    font-family: var(--font-title);
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color), 0 0 15px var(--primary-color), 0 0 30px var(--primary-color), 0 0 50px var(--secondary-color);
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    color: var(--text-color);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 15px 35px;
+    margin-top: 40px;
+    font-family: var(--font-body);
+    font-size: 1.3em;
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px var(--primary-color), inset 0 0 8px var(--primary-color);
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 15px var(--primary-color), inset 0 0 15px var(--primary-color);
+    text-shadow: none;
+}
+
+.content-section {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: var(--container-bg);
+}
+
+.content-section h2 {
+    font-family: var(--font-title);
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+
+/* --- ESTILOS DE PÁGINAS GENÉRICAS (Eventos, Galeria, etc) --- */
+.page-body .main-header {
+    background-color: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    animation: fadeIn 1s ease-out;
+}
+
+.page-title {
+    font-family: var(--font-title);
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    text-shadow: 0 0 8px var(--primary-color);
+}
+
+/* --- ESTILOS DE EVENTOS --- */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.event-card {
+    display: flex;
+    background-color: var(--container-bg);
+    border: 1px solid #222;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.event-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.event-date {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    border-radius: 5px 0 0 5px;
+}
+.event-date .month {
+    display: block;
+    font-size: 1em;
+}
+.event-date .day {
+    display: block;
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.event-details {
+    padding: 20px;
+}
+.event-title {
+    font-family: var(--font-title);
+    font-size: 1.8em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.event-time {
+    color: var(--label-color);
+    margin-bottom: 15px;
+}
+.event-description {
+    line-height: 1.6;
+}
+
+/* --- ESTILOS DA GALERIA --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.gallery-item {
+    display: block;
+    border: 2px solid #333;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* --- ESTILOS LIGHTBOX --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+.lightbox:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lightbox span {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* --- ESTILOS DA EQUIPE --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.team-card {
+    background-color: var(--container-bg);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.team-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.2);
+}
+.team-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 20px;
+}
+.team-name {
+    font-family: var(--font-title);
+    font-size: 1.8em;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+.team-role {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.team-bio {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: var(--label-color);
+}
+
+/* --- ESTILOS DO CARDÁPIO --- */
+.menu-page-body .main-header {
+    position: static;
+}
+.button-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.menu-button {
+    font-family: var(--font-body);
+    background-color: transparent;
+    border: 2px solid var(--label-color);
+    color: var(--label-color);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover, .menu-button.active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color);
+}
+.menu-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--container-bg);
+    border: 2px solid var(--border-color);
+    padding: 30px 50px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    border-radius: 5px;
+}
+.category-title {
+    font-family: var(--font-title);
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 50px 0 30px;
+    position: relative;
+    color: var(--primary-color);
+    text-shadow: 0 0 8px var(--primary-color);
+}
+.category-title:first-child {
+    margin-top: 0;
+}
+
+.category-title::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+}
+.drink-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+.drink-item:last-child {
+    border-bottom: none;
+}
+.drink-item:hover {
+    background-color: rgba(0, 255, 255, 0.05);
+}
+.drink-name {
+    font-family: var(--font-title);
+    font-size: 1.8em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.drink-details {
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+.alcohol-type {
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px var(--secondary-color);
+    display: block;
+    margin-bottom: 10px;
+}
+.drink-details dl {
+    line-height: 1.9;
+}
+.drink-details dt {
+    display: inline;
+    font-weight: bold;
+    color: var(--label-color);
+}
+.drink-details dd {
+    display: inline;
+    margin-left: 8px;
+    color: var(--text-color);
+}
+.drink-details dd::after {
+    content: "";
+    display: block;
+}
+
+/* --- ESTILOS DOS HORÁRIOS --- */
+.schedule-container {
+    text-align: center;
+    padding: 20px 40px;
+    margin: -40px auto 40px auto; /* Margin to overlap hero slightly */
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    max-width: 500px;
+    background-color: var(--container-bg);
+    position: relative;
+    z-index: 5;
+}
+
+.schedule-title {
+    font-family: var(--font-title);
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+.schedule-days {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.schedule-times ul {
+    list-style: none; /* Remove os pontinhos da lista */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.schedule-times li {
+    margin-bottom: 8px; /* Espaçamento entre os horários */
+    font-size: 1.1em;
+}
+
+/* --- ESTILOS DOS PARCEIROS --- */
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.partner-card {
+    background-color: var(--container-bg);
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado do link */
+    overflow: hidden; /* Garante que a imagem não passe da borda */
+    transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.2);
+}
+
+.partner-logo {
+    width: 100%;
+    height: 150px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    display: block;
+}
+
+.partner-name {
+    font-family: var(--font-title);
+    font-size: 1.5em;
+    color: var(--text-color);
+    padding: 20px 15px;
+}
+
+/* --- ESTILOS PARA EVENTOS PASSADOS --- */
+.event-card-past {
+    opacity: 0.6; /* Deixa o card um pouco transparente */
+    border-left-color: var(--label-color); /* Muda a cor da borda para cinza */
+    transition: opacity 0.3s ease;
+}
+
+.event-card-past:hover {
+    opacity: 1; /* O card volta ao normal ao passar o mouse, para poder ler bem */
+}
+
+.event-card-past .event-date {
+    color: var(--label-color); /* Deixa a data cinza também */
+}
+
+
+/* --- ESTILO DO SELETOR DE IDIOMA --- */
+.language-switcher button {
+    background-color: transparent;
+    border: 1px solid var(--label-color);
+    color: var(--label-color);
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .nav-link {
+        margin: 0;
+    }
+    .main-title {
+        font-size: 3em;
+    }
+    .content-container {
+        padding: 20px;
+    }
+    .event-card {
+        flex-direction: column;
+    }
+    .event-date {
+        border-radius: 5px 5px 0 0;
+        border-right: none;
+        border-bottom: 5px solid var(--primary-color);
+    }
+}
