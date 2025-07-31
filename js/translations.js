@@ -118,7 +118,9 @@ const translations = {
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Avatar Editor",
         naruhishi_bio: "DESCRIPTION WILL GO HERE",
-
+        siniz_name: "SíniZ",
+        siniz_role: "Bartender",
+        siniz_bio: "DESCRIPTION WILL GO HERE",
 
         // --- Página de Parceiros (partners.html) ---
         partners_title: "Friends of the Club",
@@ -286,7 +288,10 @@ const translations = {
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Editor de avatares",
         naruhishi_bio: "AQUÍ VA LA DESCRIPCIÓN",
-        
+        siniz_name: "SíniZ",
+        siniz_role: "Bartender",
+        siniz_bio: "AQUÍ VA LA DESCRIPCIÓN",
+
         // --- Página de Socios (partners.html) ---
         partners_title: "Amigos del Club",
 
