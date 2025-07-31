@@ -45,6 +45,9 @@ const translations = {
 
         // --- Página da Equipa (team.html) ---
         team_title: "Meet the Crew",
+        team_owners_subtitle: "Owners", // TÍTULO NOVO
+        team_managers_subtitle: "Staff Managers", // TÍTULO NOVO
+        team_crew_subtitle: "Crew",           // TÍTULO AJUSTADO
         icoraz_name: "Icoraz",
         icoraz_role: "Bartender · Head of Bar",
         icoraz_bio: "Chivalrous to the core, Icoraz mixes drinks with the same elegance he uses to steal a smile. A furry at heart and soul, he is the perfect balance of tenderness and professionalism. If you need something, he's already preparing it.",
@@ -157,6 +160,9 @@ const translations = {
 
         // --- Página de Equipo (team.html) ---
         team_title: "Conoce al Equipo",
+        team_owners_subtitle: "Dueños", // TÍTULO NUEVO
+        team_managers_subtitle: "Staff Managers", // TÍTULO NUEVO
+        team_crew_subtitle: "Equipo",           // TÍTULO AJUSTADO
         icoraz_name: "Icoraz",
         icoraz_role: "Bartender · Jefe de Barra",
         icoraz_bio: "Caballeroso hasta la médula, Icoraz mezcla tragos con la misma elegancia con la que te roba una sonrisa. Furro de alma y corazón, es el equilibrio perfecto entre ternura y profesionalismo. Si algo necesitás, él ya lo está preparando.",
@@ -220,8 +226,6 @@ const translations = {
 
         // --- Página de Blog (blog.html) ---
         blog_title: "Noticias y Actualizaciones del Club",
-
-        
 
     }
 };
