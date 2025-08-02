@@ -328,6 +328,105 @@ footer {
     color: var(--label-color);
 }
 
+/* --- ESTILOS DO MODAL DA EQUIPA --- */
+
+/* Torna os cartões clicáveis */
+.team-card {
+    cursor: pointer;
+}
+
+/* Fundo escuro semi-transparente */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Classe para mostrar o modal */
+.modal-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.open .modal-content {
+    transform: scale(1);
+}
+
+/* Botão de fechar */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2.5em;
+    color: var(--label-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.modal-close:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos para o conteúdo do perfil dentro do modal */
+.profile-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.profile-name {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    text-shadow: none;
+}
+
+.profile-role {
+    font-family: var(--font-body);
+    font-size: 1.2em;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.profile-bio {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: var(--label-color);
+    text-align: left;
+}
+
 /* Adicione ao final do seu style.css */
 /* --- ESTILOS DOS BOTÕES DE RÁDIO (VERSÃO MELHORADA) --- */
 .radio-group {

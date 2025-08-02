@@ -88,6 +88,56 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// --- LÓGICA DO MODAL DA EQUIPA ---
+document.addEventListener('DOMContentLoaded', () => {
+    const teamCards = document.querySelectorAll('.team-card');
+    const modal = document.getElementById('team-member-modal');
+    
+    // Apenas executa se existirem cartões da equipa na página
+    if (teamCards.length > 0 && modal) {
+        const modalAvatar = document.getElementById('modal-avatar');
+        const modalName = document.getElementById('modal-name');
+        const modalRole = document.getElementById('modal-role');
+        const modalBio = document.getElementById('modal-bio');
+        const closeModalButton = document.getElementById('modal-close-button');
+
+        teamCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Pega os dados do cartão clicado
+                const avatarSrc = card.querySelector('.team-avatar').src;
+                const nameKey = card.querySelector('.team-name').getAttribute('data-translate-key');
+                const roleKey = card.querySelector('.team-role').getAttribute('data-translate-key');
+                const bioKey = card.querySelector('.team-bio').getAttribute('data-translate-key');
+
+                // Pega o idioma atual para obter o texto traduzido
+                const lang = localStorage.getItem('language') || 'en';
+
+                // Preenche o modal com os dados
+                modalAvatar.src = avatarSrc;
+                modalName.textContent = translations[lang][nameKey];
+                modalRole.textContent = translations[lang][roleKey];
+                modalBio.textContent = translations[lang][bioKey];
+
+                // Abre o modal
+                modal.classList.add('open');
+            });
+        });
+
+        // Função para fechar o modal
+        function closeModal() {
+            modal.classList.remove('open');
+        }
+
+        closeModalButton.addEventListener('click', closeModal);
+        // Fecha também ao clicar no fundo escuro
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    }
+});
+
 
 
 // Quando a página termina de carregar, ela traduz tudo automaticamente
