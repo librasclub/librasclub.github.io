@@ -412,14 +412,15 @@ footer {
 }
 
 .profile-role {
-    font-family: var(--font-body);
+    font-family: var(--font-body); /* ALTERADO DE VOLTA para a fonte 'Share Tech Mono' */
     font-size: 1.2em;
-    color: var(--primary-color);
-    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-transform: none;
     letter-spacing: 1px;
     margin-bottom: 25px;
+    text-shadow: 0 0 8px var(--secondary-color);
 }
-
 .profile-bio {
     font-size: 1.1em;
     line-height: 1.8;
