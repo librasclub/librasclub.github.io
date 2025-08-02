@@ -140,6 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
 // Quando a página termina de carregar, ela traduz tudo automaticamente
 document.addEventListener('DOMContentLoaded', translatePage);
 
