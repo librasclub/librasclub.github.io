@@ -33,7 +33,7 @@ const libraMenus = {
         name: "Temporada 2",
         categories: {
             "Tragos Fuertes": [
-                { name: "Frenesi"/*, type: "Red liquor", alcohol: 190, base: "Seltzer", flavors: "Fruity 60, Sour 40, Sweet 40, Energy 20", extras: "Cream, Sugar, Froth", glass: "Martini"*/ },
+                { name: "Fresita"/*, type: "Red liquor", alcohol: 190, base: "Seltzer", flavors: "Fruity 60, Sour 40, Sweet 40, Energy 20", extras: "Cream, Sugar, Froth", glass: "Martini"*/ },
                 { name: "Alastor"/*, type: "Red liquor", alcohol: 190, base: "Seltzer", flavors: "Fruity 60, Sour 40, Sweet 40, Energy 20", extras: "Cream, Sugar, Froth", glass: "Martini"*/ },
                 { name: "Death Note"/*, type: "Dark liquor", alcohol: 180, base: "Soda", flavors: "Fruity 20, Sour 20, Sweet 20", extras: "Coffee, Cream, Sugar, Froth", glass: "Cocktail"*/ },
                 { name: "Torsión Testicular"/*, type: "Light liquor", alcohol: 190, base: "Soda", flavors: "Fruity 100, Sour 20, Sweet 20, Energy 60", extras: "Ice, Coffee, Milk, Hot Chocolate, Foam", glass: "Cocktail"*/ },
