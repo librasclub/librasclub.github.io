@@ -1,4 +1,3 @@
-// js/translations.js (VERSÃO CORRIGIDA)
 const translations = {
     // ====================
     // Textos em Inglês (EN)
