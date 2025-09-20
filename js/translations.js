@@ -207,6 +207,7 @@ const translations = {
         nav_partners: "Socios",
         menu_title: "Nuestro Menú",
         menu_select_label: "Elige un Menú:",
+        nav_rules: "Reglas",
 
         // --- Página de Inicio (index.html) ---
         hero_title: "Libra's Club",
