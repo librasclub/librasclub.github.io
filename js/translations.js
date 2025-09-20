@@ -10,6 +10,9 @@ const translations = {
         nav_gallery: "Gallery",
         nav_team: "Team",
         nav_partners: "Partners",
+        nav_rules: "Rules",
+        menu_title: "Our Menu",
+        menu_select_label: "Choose a Menu:",
 
         // --- Página Inicial (index.html) ---
         hero_title: "Libra's Club",
@@ -49,9 +52,6 @@ const translations = {
         amneulix_name: "Amneulix",
         amneulix_role: "Multi-role · Official Streamer",
         amneulix_bio: "Overflowing charisma, contagious laughter, and an energy that never fades. Amneulix is everywhere at once: behind the counter, on stage, or streaming an unforgettable night. Always friendly, always approachable.",
-        //veyra_name: "Veyra",
-        //veyra_role: "Owner · Dancer · Discord Admin",
-        //veyra_bio: "The structural soul of Libra's Club. Reserved, mysterious, but with a presence that says it all. Behind every well-crafted detail is Veyra, an impeccable partner who dances with precision... and organizes with even more.",
         hector_name: "Héctor",
         hector_role: "Head of Security",
         hector_bio: "Calm, observant, and a man of few words. Héctor doesn't need to say much to be noticed: his gaze says it all. He ensures the club is a safe, harmonious place full of good vibes. A protector like few others.",
@@ -61,7 +61,7 @@ const translations = {
         team_join_title: "Interested in Joining?",
         team_join_text: "We are always looking for talented individuals to join our crew. If you think you have what it takes, apply now.",
         team_join_button: "Apply Here",
-
+        
         alairen_name: "Alairen",
         alairen_role: "Designer",
         alairen_bio: "DESCRIPTION WILL GO HERE",
@@ -92,9 +92,6 @@ const translations = {
         papu_name: "Papu",
         papu_role: "Bartender",
         papu_bio: "DESCRIPTION WILL GO HERE",
-        ryouga_name: "Ryouga",
-        ryouga_role: "Waiter/Companion",
-        ryouga_bio: "DESCRIPTION WILL GO HERE",
         rosy_name: "Rosy",
         rosy_role: "Companion",
         rosy_bio: "DESCRIPTION WILL GO HERE",
@@ -125,6 +122,18 @@ const translations = {
         razielsempai_name: "RazielSempai787",
         razielsempai_role: "Companion",
         razielsempai_bio: "DESCRIPTION WILL GO HERE",
+        beiker_name: "Beiker",
+        beiker_role: "Dancer",
+        beiker_bio: "DESCRIPTION WILL GO HERE",
+        riku_name: "Riku Kawamura",
+        riku_role: "Dancer",
+        riku_bio: "Messy, helpful, and friendly. You may not see me often because I'm a man with many jobs and many secrets, so if you do see me, take advantage because who knows when the next time will be.",
+        eli_name: "Eli",
+        eli_role: "Companion",
+        eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar.Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa",
+        moony_name: "Moony",
+        moony_role: "Companion",
+        moony_bio: "DESCRIPTION WILL GO HERE",
 
         // --- Página de Parceiros (partners.html) ---
         partners_title: "Friends of the Club",
@@ -166,8 +175,20 @@ const translations = {
         form_label_improvement: "5. What would you improve about the club? (Optional)",
         form_button_submit: "Send Application",
 
-        // --- Página de Blog / Notícias (blog.html) ---
-        blog_title: "Club News & Updates",
+        // --- TRADUCCIONES DE LA PÁGINA DE REGLAS ---
+        rules_title: "Instance Rules",
+        rule_impersonation_title: "Identity Impersonation",
+        rule_impersonation_content: "It is strictly forbidden to impersonate members of the Libra's staff or users with special roles (such as VIPs or collaborators). Within the 'Libra's Club' bar instances, this will be considered a serious offense and may be sanctioned with immediate expulsion from the instance and possible additional measures.",
+        rule_avatar_title: "Avatar Optimization",
+        rule_avatar_content: "To ensure a better experience for everyone, the use of optimized avatars is mandatory. The reference limit is <strong>200,000 triangles</strong> and <strong>150 MB</strong> in textures. If an avatar slightly exceeds the limit, the decision to allow entry will be at the discretion of the security staff. Failure to comply with warnings regarding avatar optimization will result in denial of entry to the bar.",
+        rule_behavior_title: "Behavior and Respect",
+        rule_behavior_content: "Any form of aggressive behavior (harassment, bullying, disrespect, xenophobia, racism, etc.), actions that may affect the community's integrity, or behaviors not explicitly covered in the rules may lead to immediate expulsion. Any type of violence will not be tolerated.",
+        rule_companion_title: "Companion Services",
+        rule_companion_p1: "Limits for standard services: You cannot request two people at once. The limit is 2 services per person per night, with a maximum time of 5 minutes per service.",
+        rule_companion_p2: "Nudity or NSFW actions are strictly prohibited within the bar instances. Violation of this rule will lead to immediate expulsion.",
+        rule_music_title: "Music and Ambiance",
+        rule_music_content: "Do not alter the music or the ambiance unless instructed by the administration."
+
 
         
     },
@@ -184,6 +205,8 @@ const translations = {
         nav_gallery: "Galería",
         nav_team: "Equipo",
         nav_partners: "Socios",
+        menu_title: "Nuestro Menú",
+        menu_select_label: "Elige un Menú:",
 
         // --- Página de Inicio (index.html) ---
         hero_title: "Libra's Club",
@@ -224,9 +247,6 @@ const translations = {
         amneulix_name: "Amneulix",
         amneulix_role: "Multi rol · Streamer Oficial",
         amneulix_bio: "Carisma desbordante, risas contagiosas y una energía que no se apaga nunca. Amneulix está en todos lados a la vez: tras el mostrador, en escena o streameando una noche inolvidable. Siempre simpática, siempre cercana.",
-        //veyra_name: "Veyra",
-        //veyra_role: "Owner · Dancer · Admin de Discord",
-        //veyra_bio: "El alma estructural de Libras Club. Reservado, misterioso, pero con una presencia que lo dice todo. Detrás de cada detalle bien armado está Veyra, un compañero impecable que baila con precisión... y organiza con más.",
         hector_name: "Héctor",
         hector_role: "Jefe de Seguridad",
         hector_bio: "Sereno, observador y de palabra justa. Héctor no necesita hablar mucho para hacerse notar: su mirada lo dice todo. Se asegura de que el club sea un lugar seguro, armónico y lleno de buenas vibras. Protector como pocos.",
@@ -262,14 +282,11 @@ const translations = {
         lulu_role: "Fotógrafa",
         lulu_bio: "Una chica gato con cuatro orejas y con su fieles lentes, es la fotógrafa que anda saltando y corriendo por todo el bar junto a su cámara lista para capturar el momento especial de la noche en Libra's Club. Si la encuentras, tendrás buenas vibras, buenos deseos y mucha suerte.",
         nebula_name: "Nebula",
-        nebula_role: "Dancer/Acompañante",
+        nebula_role: "Bailarín/Acompañante",
         nebula_bio: "Enigmático, seductor y elegante, se mueve con calma entre las sombras del bar, como si cada gesto estuviera marcado por un destino profundo. Su creación, el Abyssal Blue, refleja su esencia: fuerte, misteriosa y capaz de envolver a cualquiera en su hechizo. Puede atraparte con una mirada y, si la ocasión lo permite, seducirte con un baile que convierte la noche en un recuerdo imborrable.",
         papu_name: "Papu",
         papu_role: "Bartender",
         papu_bio: "AQUÍ VA LA DESCRIPCIÓN",
-        ryouga_name: "Ryouga",
-        ryouga_role: "Mesero/Acompañante",
-        ryouga_bio: "AQUÍ VA LA DESCRIPCIÓN",
         rosy_name: "Rosy",
         rosy_role: "Acompañante",
         rosy_bio: "AQUÍ VA LA DESCRIPCIÓN",
@@ -277,7 +294,7 @@ const translations = {
         ruto_role: "Cantante",
         ruto_bio: "NieR Automata mi religión. Mi bebida especial \"Lágrima Lunar\". Vivan los geis y los vatos tetones. Si no puedes hablar de lo importante, no entenderás lo raro.",
         vamp_name: "Vamp",
-        vamp_role: "Dancer/Acompañante",
+        vamp_role: "Bailarín/Acompañante",
         vamp_bio: "AQUÍ VA LA DESCRIPCIÓN",
         veiga_name: "Veiga",
         veiga_role: "DJ",
@@ -300,6 +317,18 @@ const translations = {
         razielsempai_name: "RazielSempai787",
         razielsempai_role: "Acompañante",
         razielsempai_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        beiker_name: "Beiker",
+        beiker_role: "Bailarín",
+        beiker_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        riku_name: "Riku Kawamura",
+        riku_role: "Bailarín",
+        riku_bio: "Desmadroso, colaborador y amigable. Puede que no me vean de seguido por que soy un hombre de muchos trabajos y también con muchos secretos, así que si me vez aprovecha por que quien sabe cuándo sea la próxima.",
+        eli_name: "Eli",
+        eli_role: "Acompañante",
+        eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar. Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa.",
+        moony_name: "Moony",
+        moony_role: "Acompañante",
+        moony_bio: "AQUÍ VA LA DESCRIPCIÓN",
 
         // --- Página de Socios (partners.html) ---
         partners_title: "Amigos del Club",
@@ -341,10 +370,20 @@ const translations = {
         form_label_improvement: "5. ¿Qué mejorarías del bar? (Opcional)",
         form_button_submit: "Enviar Candidatura",
 
+    // --- TRADUCCIONES DE LA PÁGINA DE REGLAS ---
+    rules_title: "Reglas de la Instancia",
+    rule_impersonation_title: "Suplantación de Identidad",
+    rule_impersonation_content: "Queda estrictamente prohibido hacerse pasar por miembros del staff de Libras o usuarios con roles especiales (como VIPs o colaboradores). Dentro de las instancias del bar “Libra´s Club”, será considerado una infracción grave y podrá ser sancionado con la expulsión inmediata de la instancia y posibles medidas adicionales.",
+    rule_avatar_title: "Optimización de Avatares",
+    rule_avatar_content: "Para asegurar una mejor experiencia, es obligatorio el uso de avatares optimizados. El límite de referencia es de <strong>200,000 triángulos</strong> y <strong>150 MB</strong> en texturas. Si el avatar excede por poco el límite, la decisión quedará a criterio del staff de seguridad. No atender al llamado de atención respecto a la optimización resultará en la negación del ingreso al bar.",
+    rule_behavior_title: "Comportamiento y Respeto",
+    rule_behavior_content: "Cualquier forma de comportamiento agresivo (acoso, bullying, hostigamiento, irrespeto, xenofobia, racismo, etc.), acciones que puedan ver afectada la integridad de la comunidad o comportamientos no cubiertos explícitamente en las reglas, puede llevar a la expulsión inmediata. Cualquier tipo de violencia no será aceptada.",
+    rule_companion_title: "Servicios de Acompañantes",
+    rule_companion_p1: "Límites para servicios estándar: No se puede pedir dos personas a la vez. El límite es de 2 servicios por persona en la noche, con un tiempo máximo de 5 minutos por servicio.",
+    rule_companion_p2: "Se prohíbe estrictamente la desnudez o acciones NSFW dentro de las instancias del bar. La violación de esta regla conducirá a la expulsión inmediata.",
+    rule_music_title: "Música y Ambiente",
+    rule_music_content: "No alteren la música ni el ambiente a menos que la administración lo indique."
 
-
-        // --- Página de Blog (blog.html) ---
-        blog_title: "Noticias y Actualizaciones del Club",
 
     }
 };

@@ -338,6 +338,29 @@ footer {
 /* ========================================= */
 /* ========== MENU SECTION ================= */
 /* ========================================= */
+.menu-selector-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.menu-selector-wrapper label {
+    font-size: 1.2em;
+    color: var(--label-color);
+    margin-right: 15px;
+}
+#menu-selector {
+    background-color: var(--container-bg);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: var(--font-body);
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    cursor: pointer;
+}
+#menu-selector:focus {
+    outline: none;
+}
 .menu-page-body .main-header { position: static; }
 .button-container { text-align: center; margin-bottom: 40px; }
 .menu-button { background-color: transparent; border: 2px solid var(--label-color); color: var(--label-color); padding: 10px 20px; font-size: 1.2em; margin: 5px 10px; transition: all 0.3s ease; }
@@ -519,71 +542,47 @@ body.focus-mode footer {
     display: none;
 }
 
-/* ========================================= */
-/* ========== BLOG / NEWS ================== */
-/* ========================================= */
-.post-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+
+/* --- ESTILOS DA PÁGINA DE REGRAS --- */
+
+.rules-container {
+    max-width: 900px;
+    margin: 0 auto;
 }
-.post-card {
+
+.rule-card {
     background-color: var(--container-bg);
     border: 1px solid #333;
-    border-left: 5px solid var(--secondary-color);
+    border-left: 5px solid var(--secondary-color); /* Cor magenta para destaque */
     border-radius: 5px;
     padding: 30px;
+    margin-bottom: 30px;
     transition: all 0.3s ease;
 }
-.post-card:hover {
+
+.rule-card:hover {
     border-color: var(--secondary-color);
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
 }
-.post-date, .post-full-meta {
-    color: var(--label-color);
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
-.post-title {
-    font-size: 2em;
+
+.rule-title {
+    font-size: 1.8em;
     color: var(--text-color);
     text-shadow: none;
     margin-bottom: 15px;
 }
-.post-excerpt {
-    line-height: 1.7;
-    color: var(--text-color);
-}
-.post-read-more {
-    margin-top: 20px;
-    padding: 10px 25px;
-    font-size: 1.1em;
-}
 
-/* ========== FULL ARTICLE PAGE ========== */
-.post-full-title {
-    font-size: 3.5em;
-    text-align: left;
+.rule-card p {
+    color: var(--label-color);
+    line-height: 1.8;
     margin-bottom: 10px;
 }
-.post-full-meta {
-    text-align: left;
-    margin-bottom: 40px;
+
+.rule-card p:last-child {
+    margin-bottom: 0;
 }
-.post-full-content {
-    font-size: 1.2em;
-    line-height: 1.8;
-    text-align: left;
-}
-.post-full-content p {
-    margin-bottom: 20px;
-}
-.post-full-content .post-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin: 20px 0;
-}
+
+
 
 /* ========================================= */
 /* ========== SCHEDULE SECTION ============= */

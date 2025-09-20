@@ -1,50 +1,7 @@
-// ====== INÍCIO DO CÓDIGO DO MENU ======
-document.addEventListener('DOMContentLoaded', () => {
-    const buttonContainer = document.querySelector('.button-container');
-    const menuDisplay = document.getElementById('menu-display');
+// =========================================================================
+// FUNÇÕES GLOBAIS DE TRADUÇÃO
+// =========================================================================
 
-    if (buttonContainer && menuDisplay) {
-        Object.keys(libraMenus).forEach(key => {
-            const menu = libraMenus[key];
-            const button = document.createElement('button');
-            button.className = 'menu-button';
-            button.textContent = menu.name;
-            button.onclick = () => showMenu(key, button);
-            buttonContainer.appendChild(button);
-        });
-
-        const createDrinkHTML = (drink) => {
-            return `<div class="drink-item"><p class="drink-name">${drink.name}</p></div>`;
-        };
-
-        const showMenu = (menuKey, clickedButton) => {
-            menuDisplay.innerHTML = '';
-            document.querySelectorAll('.menu-button').forEach(btn => btn.classList.remove('active'));
-            clickedButton.classList.add('active');
-            const menuData = libraMenus[menuKey];
-            Object.keys(menuData.categories).forEach(categoryName => {
-                const categoryTitle = document.createElement('h2');
-                categoryTitle.className = 'category-title';
-                categoryTitle.textContent = categoryName;
-                menuDisplay.appendChild(categoryTitle);
-                const drinks = menuData.categories[categoryName];
-                drinks.forEach(drink => {
-                    menuDisplay.innerHTML += createDrinkHTML(drink);
-                });
-            });
-        };
-
-        const firstButton = document.querySelector('.menu-button');
-        if (firstButton) {
-            const firstMenuKey = Object.keys(libraMenus)[0];
-            showMenu(firstMenuKey, firstButton);
-        }
-    }
-});
-// ====== FIM DO CÓDIGO DO MENU ======
-
-
-// ====== INÍCIO DO CÓDIGO DE TRADUÇÃO ======
 // Função para definir o idioma
 function setLanguage(lang) {
     localStorage.setItem('language', lang); // Salva a escolha do idioma
@@ -64,36 +21,89 @@ function translatePage() {
     });
 }
 
-// --- LÓGICA DO MODO FOCO PARA A GALERIA ---
-document.addEventListener('DOMContentLoaded', () => {
-    const focusButton = document.getElementById('focus-mode-button');
 
-    // Apenas executa se o botão existir na página
+// =========================================================================
+// INICIALIZAÇÃO PRINCIPAL APÓS O CARREGAMENTO DA PÁGINA
+// =========================================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- LÓGICA DA PÁGINA DE CARDÁPIO (COM MENU SUSPENSO) ---
+    const menuSelector = document.getElementById('menu-selector');
+    const menuDisplay = document.getElementById('menu-display');
+
+    if (menuSelector && menuDisplay && typeof libraMenus !== 'undefined') {
+
+        // Função para mostrar um cardápio específico
+        function displayMenu(menuKey) {
+            const menu = libraMenus[menuKey];
+            if (!menu) return;
+
+            // Limpa o conteúdo anterior
+            menuDisplay.innerHTML = '';
+
+            // Cria o HTML para cada categoria e bebida
+            for (const categoryName in menu.categories) {
+                const categoryTitle = document.createElement('h2');
+                categoryTitle.className = 'category-title';
+                categoryTitle.textContent = categoryName;
+                menuDisplay.appendChild(categoryTitle);
+
+                const drinks = menu.categories[categoryName];
+                drinks.forEach(drink => {
+                    const drinkItem = document.createElement('div');
+                    drinkItem.className = 'drink-item';
+                    
+                    const drinkName = document.createElement('h3');
+                    drinkName.className = 'drink-name';
+                    drinkName.textContent = drink.name;
+                    drinkItem.appendChild(drinkName);
+                    
+                    menuDisplay.appendChild(drinkItem);
+                });
+            }
+        }
+
+        // Função para popular o menu suspenso
+        function populateMenuSelector() {
+            const menuKeys = Object.keys(libraMenus);
+
+            menuKeys.forEach(key => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = libraMenus[key].name;
+                menuSelector.appendChild(option);
+            });
+
+            menuSelector.addEventListener('change', (event) => {
+                displayMenu(event.target.value);
+            });
+
+            // Mostra o primeiro cardápio da lista por padrão
+            if (menuKeys.length > 0) {
+                displayMenu(menuKeys[0]);
+            }
+        }
+
+        populateMenuSelector();
+    }
+
+
+    // --- LÓGICA DO MODO FOCO PARA A GALERIA ---
+    const focusButton = document.getElementById('focus-mode-button');
     if (focusButton) {
         focusButton.addEventListener('click', () => {
-            // Adiciona ou remove a classe 'focus-mode' do body
             document.body.classList.toggle('focus-mode');
-
-            // Troca o ícone entre expandir e compactar
             const icon = focusButton.querySelector('i');
-            if (icon.classList.contains('fa-expand')) {
-                icon.classList.remove('fa-expand');
-                icon.classList.add('fa-compress');
-            } else {
-                icon.classList.remove('fa-compress');
-                icon.classList.add('fa-expand');
-            }
+            icon.classList.toggle('fa-expand');
+            icon.classList.toggle('fa-compress');
         });
     }
-});
 
 
-// --- LÓGICA DO MODAL DA EQUIPA ---
-document.addEventListener('DOMContentLoaded', () => {
+    // --- LÓGICA DO MODAL DA EQUIPA ---
     const teamCards = document.querySelectorAll('.team-card');
     const modal = document.getElementById('team-member-modal');
-    
-    // Apenas executa se existirem cartões da equipa na página
     if (teamCards.length > 0 && modal) {
         const modalAvatar = document.getElementById('modal-avatar');
         const modalName = document.getElementById('modal-name');
@@ -103,55 +113,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
         teamCards.forEach(card => {
             card.addEventListener('click', () => {
-                // Pega os dados do cartão clicado
                 const avatarSrc = card.querySelector('.team-avatar').src;
                 const nameKey = card.querySelector('.team-name').getAttribute('data-translate-key');
                 const roleKey = card.querySelector('.team-role').getAttribute('data-translate-key');
                 const bioKey = card.querySelector('.team-bio').getAttribute('data-translate-key');
-
-                // Pega o idioma atual para obter o texto traduzido
                 const lang = localStorage.getItem('language') || 'en';
 
-                // Preenche o modal com os dados
                 modalAvatar.src = avatarSrc;
-                modalName.textContent = translations[lang][nameKey];
-                modalRole.textContent = translations[lang][roleKey];
-                modalBio.textContent = translations[lang][bioKey];
+                modalName.textContent = translations[lang][nameKey] || card.querySelector('.team-name').textContent;
+                modalRole.textContent = translations[lang][roleKey] || card.querySelector('.team-role').textContent;
+                modalBio.textContent = translations[lang][bioKey] || card.querySelector('.team-bio').textContent;
 
-                // Abre o modal
                 modal.classList.add('open');
             });
         });
 
-        // Função para fechar o modal
         function closeModal() {
             modal.classList.remove('open');
         }
 
         closeModalButton.addEventListener('click', closeModal);
-        // Fecha também ao clicar no fundo escuro
         modal.addEventListener('click', (event) => {
             if (event.target === modal) {
                 closeModal();
             }
         });
     }
+
+    // --- EXECUTA A TRADUÇÃO INICIAL ---
+    translatePage();
 });
-
-
-
-
-
-// Quando a página termina de carregar, ela traduz tudo automaticamente
-document.addEventListener('DOMContentLoaded', translatePage);
-
-    /*<div class="drink-details">
-                    ${drink.type ? `<p class="alcohol-type">${drink.type}</p>` : ''}
-                    <dl>
-                        <dt>Alcohol:</dt><dd>${drink.alcohol || '-'}</dd>
-                        <dt>Base:</dt><dd>${drink.base || '-'}</dd>
-                        <dt>Flavors:</dt><dd>${drink.flavors || '-'}</dd>
-                        <dt>Extras:</dt><dd>${drink.extras || '-'}</dd>
-                        <dt>Glass:</dt><dd>${drink.glass || '-'}</dd>
-                    </dl>
-    */
