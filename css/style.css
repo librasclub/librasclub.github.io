@@ -6,6 +6,7 @@
 :root {
     --primary-color: #00ffff;
     --secondary-color: #ff00ff;
+    --thirdary-color: #ff2d2d;  
     --text-color: #f0f0f0;
     --background-color: #0d0d0d;
     --container-bg: #1a1a1a;
@@ -553,7 +554,8 @@ body.focus-mode footer {
 .rule-card {
     background-color: var(--container-bg);
     border: 1px solid #333;
-    border-left: 5px solid var(--secondary-color); /* Cor magenta para destaque */
+    /* MUDANÇA AQUI: Usando a nova cor vermelha */
+    border-left: 5px solid var(--thirdary-color);
     border-radius: 5px;
     padding: 30px;
     margin-bottom: 30px;
@@ -561,8 +563,9 @@ body.focus-mode footer {
 }
 
 .rule-card:hover {
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+    /* MUDANÇA AQUI: Usando a nova cor vermelha no hover */
+    border-color: var(--thirdary-color);
+    box-shadow: 0 0 15px rgba(255, 45, 45, 0.3); /* Sombra de brilho vermelha */
 }
 
 .rule-title {
@@ -581,7 +584,6 @@ body.focus-mode footer {
 .rule-card p:last-child {
     margin-bottom: 0;
 }
-
 
 
 /* ========================================= */
