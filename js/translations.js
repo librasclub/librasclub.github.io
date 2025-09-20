@@ -22,14 +22,6 @@ const translations = {
         // --- Página de Eventos (events.html) ---
         events_upcoming_title: "Upcoming Events",
         events_past_title: "Past Events",
-        // Evento Karaoke
-        event_karaoke_title: "Retro Arcade Karaoke",
-        event_karaoke_time: "Friday, 9:00 PM (BRT / GMT-3)",
-        event_karaoke_desc: "Grab the mic and sing your heart out to classic video game themes and 80s hits. High scores win a free drink!",
-        // Evento Holo-Noir
-        event_noir_title: "Holo-Noir Meetup",
-        event_noir_time: "Friday, 11:00 PM (BRT / GMT-3)",
-        event_noir_desc: "A chill, atmospheric night for lovers of noir and sci-fi. Dress in your best trench coat and enjoy our dark liquor specials.",
         // Evento Valentine's Day
         event_valentine_title: "Valentine's Day Event",
         event_valentine_time: "Saturday, 11:00 PM Chicago",
@@ -38,6 +30,10 @@ const translations = {
         event_gothic_title: "Gothic Event",
         event_gothic_time: "Saturday, 11:00 PM Chicago",
         event_gothic_desc: "Dress code and drinks centered around dark and gothic elements. Also featuring activities, dancing, and contests.",
+        // Evento Heroes vs Villains
+        event_heroes_title: "Heroes vs Villains",
+        event_heroes_time: "Saturday, 11:00 PM Chicago",
+        event_heroes_desc: "A unique celebration where universes collide and the lines between good and evil blur. It's time to choose sides: will you be a brave defender of justice or a master of chaos and destruction?",
 
         // --- Página da Galeria (gallery.html) ---
         gallery_title: "Moments in the Club",
@@ -200,22 +196,18 @@ const translations = {
         // --- Página de Eventos (events.html) ---
         events_upcoming_title: "Próximos Eventos",
         events_past_title: "Eventos Pasados",
-        // Evento Karaoke
-        event_karaoke_title: "Karaoke Retro Arcade",
-        event_karaoke_time: "Viernes, 9:00 PM (BRT / GMT-3)",
-        event_karaoke_desc: "Toma el micrófono y canta tus temas de videojuegos clásicos y éxitos de los 80. ¡Las puntuaciones altas ganan una bebida gratis!",
-        // Evento Holo-Noir (TRADUÇÃO ADICIONADA)
-        event_noir_title: "Encuentro Holo-Noir",
-        event_noir_time: "Viernes, 11:00 PM (BRT / GMT-3)",
-        event_noir_desc: "Una noche tranquila y atmosférica para los amantes del noir y la ciencia ficción. Vístete con tu mejor gabardina y disfruta de nuestros especiales de licores oscuros.",
-        // Evento de San Valentín (VÍRGULA CORRIGIDA)
+        // Evento de San Valentín 
         event_valentine_title: "Evento de San Valentín",
         event_valentine_time: "Sábado, 11:00 PM Chicago",
         event_valentine_desc: "Evento temático para tortolitos, solteros, y para solitarios.",
-        // Evento Gótico (VÍRGULA CORRIGIDA)
+        // Evento Gótico 
         event_gothic_title: "Evento gótico",
         event_gothic_time: "Sábado, 11:00 PM Chicago",
         event_gothic_desc: "Código de vestimenta y bebidas que giren en torno a lo oscuro y gótico. También con actividades, bailes, y concursos.",
+        // Evento Heroes vs Villains
+        event_heroes_title: "Héroes vs Villanos",
+        event_heroes_time: "Sábado, 11:00 PM Chicago",
+        event_heroes_desc: "Una celebración única donde los universos chocan y las líneas entre el bien y el mal se difuminan. Es hora de elegir bando: ¿serás un valiente defensor de la justicia o un maestro del caos y la destrucción?",
 
         // --- Página de Galería (gallery.html) ---
         gallery_title: "Momentos en el Club",
