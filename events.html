@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - Libra's Club</title>
+    
     <link rel="icon" href="logo.png" type="image/x-icon">
     
     <link rel="stylesheet" href="css/style.css">
@@ -14,6 +15,7 @@
     
     <script src="https://kit.fontawesome.com/b5da193dec.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="page-body">
 
     <header class="main-header">
@@ -34,46 +36,54 @@
     </header>
 
     <main class="content-container">
-        <h1 class="page-title" data-translate-key="events_upcoming_title">Upcoming Events</h1>
-        <div class="event-list">
-            </div>
 
-        <h1 class="page-title" style="margin-top: 80px;" data-translate-key="events_past_title">Past Events</h1>
-        <div class="event-list">
-            <article class="event-card event-card-past">
-                <div class="event-date">
-                    <span class="month">FEB</span>
-                    <span class="day">15</span>
+        <section class="events-section">
+            <h1 class="page-title" data-translate-key="events_upcoming_title">Upcoming Events</h1>
+            <div class="event-list">
                 </div>
-                <div class="event-details">
-                    <h3 class="event-title" data-translate-key="event_valentine_title">Valentine's Day Event</h3>
-                    <p class="event-time" data-translate-key="event_valentine_time"><i class="far fa-clock"></i> Saturday</p>
-                    <p class="event-description" data-translate-key="event_valentine_desc">A themed event for lovebirds, singles, and the lonely-hearted.</p>
-                </div>
-            </article>
-            <article class="event-card event-card-past">
-                <div class="event-date">
-                    <span class="month">JUL</span>
-                    <span class="day">12</span>
-                </div>
-                <div class="event-details">
-                    <h3 class="event-title" data-translate-key="event_gothic_title">Gothic Event</h3>
-                    <p class="event-time" data-translate-key="event_gothic_time"><i class="far fa-clock"></i> Saturday, 11:00 PM Chicago</p>
-                    <p class="event-description" data-translate-key="event_gothic_desc">Dress code and drinks centered around dark and gothic elements. Also featuring activities, dancing, and contests.</p>
-                </div>
-            </article>
-            <article class="event-card event-card-past">
-                <div class="event-date">
-                    <span class="month">SEP</span>
-                    <span class="day">13</span>
-                </div>
-                <div class="event-details">
-                    <h3 class="event-title" data-translate-key="event_heroes_title">Heroes vs Villains</h3>
-                    <p class="event-time" data-translate-key="event_heroes_time"><i class="far fa-clock"></i> Saturday, 11:00 PM Chicago</p>
-                    <p class="event-description" data-translate-key="event_heroes_desc">A unique celebration where universes collide and the lines between good and evil blur. It's time to choose sides: will you be a brave defender of justice or a master of chaos and destruction?</p>
-                </div>
-            </article>
-        </div>
+        </section>
+
+        <section class="events-section">
+            <h1 class="page-title" data-translate-key="events_past_title">Past Events</h1>
+            <div class="event-list">
+                <article class="event-card event-card-past">
+                    <div class="event-date">
+                        <span class="month">FEB</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title" data-translate-key="event_valentine_title">Valentine's Day Event</h3>
+                        <p class="event-time" data-translate-key="event_valentine_time"><i class="far fa-clock"></i> Saturday</p>
+                        <p class="event-description" data-translate-key="event_valentine_desc">A themed event for lovebirds, singles, and the lonely-hearted.</p>
+                    </div>
+                </article>
+
+                <article class="event-card event-card-past">
+                    <div class="event-date">
+                        <span class="month">JUL</span>
+                        <span class="day">12</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title" data-translate-key="event_gothic_title">Gothic Event</h3>
+                        <p class="event-time" data-translate-key="event_gothic_time"><i class="far fa-clock"></i> Saturday, 11:00 PM Chicago</p>
+                        <p class="event-description" data-translate-key="event_gothic_desc">Dress code and drinks centered around dark and gothic elements. Also featuring activities, dancing, and contests.</p>
+                    </div>
+                </article>
+
+                <article class="event-card event-card-past">
+                    <div class="event-date">
+                        <span class="month">SEP</span>
+                        <span class="day">13</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-title" data-translate-key="event_heroes_title">Heroes vs Villains</h3>
+                        <p class="event-time" data-translate-key="event_heroes_time"><i class="far fa-clock"></i> Saturday, 11:00 PM Chicago</p>
+                        <p class="event-description" data-translate-key="event_heroes_desc">A unique celebration where universes collide and the lines between good and evil blur. It's time to choose sides: will you be a brave defender of justice or a master of chaos and destruction?</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -88,5 +98,6 @@
 
     <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>

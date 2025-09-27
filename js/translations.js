@@ -138,6 +138,44 @@ const translations = {
         crybaby_role: "Companion",
         crybaby_bio: "Cry is a girl who, by her appearance, seems depressed, but when you talk to her, you can hear her seductive voice and you know she'll make you have a great time. Cry is sweet, fun, kind, helpful, and overly flirtatious, which will make your night very special :3",
 
+        // --- Novas traduções para a página da Equipa ---
+        member_special_drink_label: "Special Drink:",
+        member_spotify_label: "View Playlist on Spotify",
+
+        // --- Bebidas Especiais (Exemplos) ---
+        laira_drink_name: "Laira's Cosmic Nectar",
+        hector_drink_name: "Hector's Silent Strength",
+        icoraz_drink_name: "Icoraz's Fiery Spirit",
+        amneulix_drink_name: "Amneulix's Electric Current",
+        alairen_drink_name: "Alairen's Creative Spark",
+        dekiru_drink_name: "Dekiru's Guardian Brew",
+        dragon_drink_name: "Dragon's Mystical Mist",
+        galleta_drink_name: "Galleta's Sweet Escape",
+        koto_drink_name: "Koto's Flexible Fizz",
+        dezzu_drink_name: "Dezzu's Healing Potion",
+        loxy_drink_name: "Loxy's Enchanting Elixir",
+        lulu_drink_name: "Lulu's Focus Shot",
+        nebula_drink_name: "Nebula's Starry Swirl",
+        papu_drink_name: "Papu's Potent Punch",
+        mcandres_drink_name: "McAndres' Charming Concoction",
+        chepescm_drink_name: "ChepesCM's Energetic Surge",
+        razielsempai_drink_name: "RazielSempai's Angelic Aura",
+        ruto_drink_name: "Ruto's Harmonic Blend",
+        rosy_drink_name: "Rosy's Sparkling Rose",
+        siniz_drink_name: "SiniZ's Dark Delight",
+        vamp_drink_name: "Vamp's Crimson Kiss",
+        veiga_drink_name: "Veiga's Rhythmic Rhapsody",
+        youkai_drink_name: "Youkai's Legal Lemonade",
+        naruhishi_drink_name: "Naruhishi's Avatar Ale",
+        beiker_drink_name: "Beiker's Dance Fuel",
+        riku_drink_name: "Riku's Zen Zest",
+        eli_drink_name: "Eli's Elixir of Joy",
+        moony_drink_name: "Moony's Midnight Martini",
+        crybaby_drink_name: "CryBaby's Sweet Tears Cocktail",
+
+
+
+
         // --- Página de Parceiros (partners.html) ---
         partners_title: "Friends of the Club",
 
@@ -261,7 +299,9 @@ const translations = {
         team_join_text: "Siempre estamos buscando individuos talentosos para unirse a nuestro equipo. Si crees que tienes lo necesario, postúlate ahora.",
         team_join_button: "Postúlate Aquí",
 
-                alairen_name: "Alairen",
+        
+        
+        alairen_name: "Alairen",
         alairen_role: "Diseñadora",
         alairen_bio: "AQUÍ VA LA DESCRIPCIÓN",
         dekiru_name: "Dekiru",
@@ -336,7 +376,43 @@ const translations = {
         crybaby_name: "CryBaby",
         crybaby_role: "Acompañante",
         crybaby_bio: "Cry es una chica que por su apariencia parece estar deprimida pero cuando hablas con ella puedes notar su seductora voz y sabes que te hará pasar un muy buen rato. Cry es tierna, divertida, amable, servicial y demasiado coqueta que hará tu noche muy especial :3",
-        
+
+        // --- Novas traduções para a página da Equipa ---
+        member_special_drink_label: "Bebidas especiales:",
+        member_spotify_label: "View Playlist on Spotify",
+
+        // --- Bebidas Especiais (Exemplos) ---
+        laira_drink_name: "Néctar Cósmico da Laira",
+        hector_drink_name: "Força Silenciosa do Hector",
+        icoraz_drink_name: "Espírito Ardente de Icoraz",
+        amneulix_drink_name: "Corrente Elétrica do Amneulix",
+        alairen_drink_name: "Faísca Criativa da Alairen",
+        dekiru_drink_name: "Bebida Guardiã do Dekiru",
+        dragon_drink_name: "Névoa Mística do Dragão",
+        galleta_drink_name: "Doce Fuga da Galleta",
+        koto_drink_name: "Fizz Flexível do Koto",
+        dezzu_drink_name: "Poção de Cura do Dezzu",
+        loxy_drink_name: "Elixir Encantador da Loxy",
+        lulu_drink_name: "Dose de Foco da Lulu",
+        nebula_drink_name: "Redemoinho Estrelado da Nebula",
+        papu_drink_name: "Ponche Potente do Papu",
+        mcandres_drink_name: "Concoção Charmosa do McAndres",
+        chepescm_drink_name: "Onda Energética do ChepesCM",
+        razielsempai_drink_name: "Aura Angélica de RazielSempai",
+        ruto_drink_name: "Mistura Harmônica do Ruto",
+        rosy_drink_name: "Rosé Espumante da Rosy",
+        siniz_drink_name: "Delícia Sombria do SiniZ",
+        vamp_drink_name: "Beijo Carmesim de Vamp",
+        veiga_drink_name: "Rapsódia Rítmica do Veiga",
+        youkai_drink_name: "Limonada Legal do Youkai",
+        naruhishi_drink_name: "Ale do Avatar de Naruhishi",
+        beiker_drink_name: "Combustível de Dança do Beiker",
+        riku_drink_name: "Vigor Zen do Riku",
+        eli_drink_name: "Elixir da Alegria de Eli",
+        moony_drink_name: "Martini da Meia-Noite da Moony",
+        crybaby_drink_name: "Coquetel de Lágrimas Doces da CryBaby",
+
+
 
         // --- Página de Socios (partners.html) ---
         partners_title: "Amigos del Club",
