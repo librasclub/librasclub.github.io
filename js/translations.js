@@ -30,6 +30,10 @@ const translations = {
         // -------------------------------------------------------------
         menu_title: "Our Menu",
         menu_select_label: "Choose a Menu:",
+        menu_name_temporada1: "Season 1",
+        menu_name_temporada2: "Season 2",
+        menu_name_temporada3: "Season 3",
+        menu_name_gothic: "Gothic Menu",
 
         // -------------------------------------------------------------
         // 4.0  EVENTS PAGE (events.html)
@@ -53,6 +57,11 @@ const translations = {
         // 5.0  GALLERY PAGE (gallery.html)
         // -------------------------------------------------------------
         gallery_title: "Moments in the Club",
+        gallery_select_label: "Choose a gallery:",
+        gallery_filter_all: "All",
+        gallery_filter_generic: "General",
+        gallery_filter_gothic: "Gothic",
+        gallery_filter_heroes: "Heroes vs Villains",
 
         // -------------------------------------------------------------
         // 6.0  TEAM PAGE (team.html)
@@ -345,7 +354,11 @@ const translations = {
         // -------------------------------------------------------------
         menu_title: "Nuestro Menú",
         menu_select_label: "Elige un Menú:",
-
+        menu_name_temporada1: "Temporada 1",
+        menu_name_temporada2: "Temporada 2",
+        menu_name_temporada3: "Temporada 3",
+        menu_name_gothic: "Menú Gótico",
+        
         // -------------------------------------------------------------
         // 4.0  PÁGINA DE EVENTOS (events.html)
         // -------------------------------------------------------------
@@ -368,6 +381,11 @@ const translations = {
         // 5.0  PÁGINA DE GALERÍA (gallery.html)
         // -------------------------------------------------------------
         gallery_title: "Momentos en el Club",
+        gallery_select_label: "Elige una galería:", 
+        gallery_filter_all: "Todos",
+        gallery_filter_generic: "General",
+        gallery_filter_gothic: "Gótico",
+        gallery_filter_heroes: "Héroes vs Villanos",
 
         // -------------------------------------------------------------
         // 6.0  PÁGINA DE EQUIPO (team.html)

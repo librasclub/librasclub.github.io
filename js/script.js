@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function initMenuPage() {
         const menuSelector = document.getElementById('menu-selector');
-        const tabsContainer = document.getElementById('menu-tabs');
         const menuDisplay = document.getElementById('menu-display');
 
-        if (!menuDisplay || typeof libraMenus === 'undefined') {
-            return; // Sai se não for a página do menu
+        if (!menuSelector || !menuDisplay || typeof libraMenus === 'undefined') {
+            return; // Sai se não for a página do menu com dropdown
         }
 
+        // Função que mostra o conteúdo de um menu (sem alterações)
         const displayMenu = (menuKey) => {
             const menu = libraMenus[menuKey];
             if (!menu) return;
@@ -58,43 +58,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Lógica para o SELETOR (DROPDOWN) - RESTAURADA
-        if (menuSelector) {
-            const menuKeys = Object.keys(libraMenus);
-            menuKeys.forEach(key => {
-                const option = document.createElement('option');
-                option.value = key;
-                option.textContent = libraMenus[key].name;
-                menuSelector.appendChild(option);
-            });
-            menuSelector.addEventListener('change', (event) => {
-                displayMenu(event.target.value);
-            });
-            if (menuKeys.length > 0) {
-                displayMenu(menuKeys[0]);
-            }
-        }
-        // Lógica para as ABAS (TABS)
-        else if (tabsContainer) {
-            const menuKeys = Object.keys(libraMenus);
-            menuKeys.forEach(key => {
-                const button = document.createElement('button');
-                button.className = 'tab-button';
-                button.textContent = libraMenus[key].name;
-                button.dataset.menuKey = key;
+        // --- MUDANÇA PRINCIPAL AQUI ---
+        // Cria as OPÇÕES para o menu suspenso usando TRADUÇÕES
+        const menuKeys = Object.keys(libraMenus);
+        menuKeys.forEach(key => {
+            const option = document.createElement('option');
+            option.value = key; // ex: 'temporada1'
 
-                button.addEventListener('click', () => {
-                    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    displayMenu(key);
-                });
-                tabsContainer.appendChild(button);
-            });
-            const firstTab = tabsContainer.querySelector('.tab-button');
-            if (firstTab) {
-                firstTab.classList.add('active');
-                displayMenu(firstTab.dataset.menuKey);
-            }
+            // Constrói a chave de tradução, ex: "menu_name_temporada1"
+            const translationKey = `menu_name_${key}`;
+            
+            // Atribui a "etiqueta de tradução" para que a função translatePage() a encontre
+            option.setAttribute('data-translate-key', translationKey);
+            option.textContent = key; // Define um texto temporário antes da tradução
+
+            menuSelector.appendChild(option);
+        });
+
+        // Adiciona o 'escutador' de evento 'change' (sem alterações)
+        menuSelector.addEventListener('change', (event) => {
+            displayMenu(event.target.value);
+        });
+
+        // Mostra o primeiro menu por padrão (sem alterações)
+        if (menuKeys.length > 0) {
+            displayMenu(menuKeys[0]);
         }
     }
 
@@ -170,12 +158,72 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function initGalleryPage() {
+        const gallerySelector = document.getElementById('gallery-selector'); // Alterado de filtersContainer
+        const gridContainer = document.getElementById('gallery-grid');
+        const lightboxContainer = document.getElementById('lightbox-container');
 
-    
+        if (!gallerySelector || !gridContainer || typeof galleryImages === 'undefined') {
+            return;
+        }
 
+        // 1. Gera as imagens e lightboxes (sem alterações)
+        galleryImages.forEach(img => {
+            const gridItem = document.createElement('a');
+            gridItem.href = `#${img.id}`;
+            gridItem.className = 'gallery-item';
+            gridItem.dataset.category = img.category;
+            gridItem.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy">`;
+            gridContainer.appendChild(gridItem);
+
+            const lightboxItem = document.createElement('a');
+            lightboxItem.href = '#_';
+            lightboxItem.className = 'lightbox';
+            lightboxItem.id = img.id;
+            lightboxItem.innerHTML = `<span style="background-image: url('${img.src}')"></span>`;
+            lightboxContainer.appendChild(lightboxItem);
+        });
+
+        // 2. Cria as OPÇÕES para o menu suspenso
+        const categories = ['all', ...new Set(galleryImages.map(img => img.category))];
+        categories.forEach(category => {
+            const option = document.createElement('option'); // Alterado de button para option
+            option.value = category; // O valor é a categoria, ex: 'gothic'
+            
+            const translationKey = `gallery_filter_${category}`;
+            option.setAttribute('data-translate-key', translationKey);
+            option.textContent = category; // Texto temporário
+            
+            gallerySelector.appendChild(option);
+        });
+
+        // 3. Função que filtra as imagens (sem alterações)
+        function filterGallery(category) {
+            const items = gridContainer.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // 4. Adiciona o 'escutador' de evento 'change' ao menu suspenso
+        gallerySelector.addEventListener('change', (event) => {
+            filterGallery(event.target.value);
+        });
+
+        // Filtra pela primeira opção por padrão
+        filterGallery('all');
+        
+        // Traduz a página, incluindo as novas opções
+        translatePage(); 
+    }
     // --- Executa todas as inicializações ---
     initMenuPage();
     initFocusMode();
     initTeamModal();
     translatePage();
+    initGalleryPage()
 });
