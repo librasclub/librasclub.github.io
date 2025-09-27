@@ -106,7 +106,7 @@ const translations = {
 
         // -- Team Member: Galleta --
         galleta_name: "Galleta",
-        galleta_role: "Companion",
+        galleta_role: "Waiter/Companion",
         galleta_bio: "DESCRIPTION WILL GO HERE",
         galleta_drink_name: "Galleta's Sweet Escape",
 
@@ -198,7 +198,7 @@ const translations = {
         chepescm_name: "ChepesCM",
         chepescm_role: "Companion",
         chepescm_bio: "Pianist, guitarist, drummer, autistic, and everything ending in 'ist.' Certified clown and waiter in training. If he doesn't serve drinks, at least he'll accompany you with a piano in the background.",
-        chepescm_drink_name: "ChepesCM's Energetic Surge",
+        chepescm_drink_name: "Clown Kiss",
 
         // -- Team Member: RazielSempai787 --
         razielsempai_name: "RazielSempai787",
@@ -411,7 +411,7 @@ const translations = {
         
         // -- Miembro del Equipo: Galleta --
         galleta_name: "Galleta",
-        galleta_role: "Acompañante",
+        galleta_role: "Mesero/Acompañante",
         galleta_bio: "AQUÍ VA LA DESCRIPCIÓN",
         galleta_drink_name: "Dulce Escape de Galleta",
         
@@ -478,7 +478,7 @@ const translations = {
         // -- Miembro del Equipo: Y0UK4II --
         youkai_name: "Y0UK4II",
         youkai_role: "Abogada",
-        youkai_bio: "Si pudiera ya les hubiera pegado un tiro pero me sacaron el arma",
+        youkai_bio: "Si pudiera ya les hubiera pegado un tiro pero me sacaron el arma", 
         youkai_drink_name: "Limonada Legal de Youkai",
         
         // -- Miembro del Equipo: Naruhishi --
@@ -503,7 +503,7 @@ const translations = {
         chepescm_name: "ChepesCM",
         chepescm_role: "Acompañante",
         chepescm_bio: "pianista, guitarrista, baterista, autista y todo lo que termine en “ista”. Payaso certificado y mesero en práctica. Si no sirve la bebida, mínimo te acompaña con piano de fondo",
-        chepescm_drink_name: "Oleada Energética de ChepesCM",
+        chepescm_drink_name: "Beso del Payaso",
         
         // -- Miembro del Equipo: RazielSempai787 --
         razielsempai_name: "RazielSempai787",
