@@ -302,6 +302,16 @@ const translations = {
         form_label_experience: "4. Do you have experience with moderation or role-playing?",
         form_label_improvement: "5. What would you improve about the club? (Optional)",
         form_button_submit: "Send Application",
+
+        // -------------------------------------------------------------
+        // 10.0  THANK YOU PAGE (thankyou.html)
+        // -------------------------------------------------------------
+        thank_you_title: "Application Sent!",
+        thank_you_heading: "Application Sent!",
+        thank_you_message: "Thank you for your interest. We will be in touch soon.",
+        thank_you_gohome: "Back to Home",
+
+
     },
 
     // =================================================================
@@ -607,5 +617,14 @@ const translations = {
         form_label_experience: "4. ¿Tienes experiencia con moderación o rol?",
         form_label_improvement: "5. ¿Qué mejorarías del bar? (Opcional)",
         form_button_submit: "Enviar Candidatura",
+
+        // -------------------------------------------------------------
+        // 10.0  THANK YOU PAGE (thankyou.html)
+        // -------------------------------------------------------------
+        thank_you_title: "¡Candidatura Enviada!",
+        thank_you_heading: "¡Candidatura Enviada!",
+        thank_you_message: "Gracias por tu interés. Nos pondremos en contacto pronto.",
+        thank_you_gohome: "Volver al Inicio",
+
     }
 };
