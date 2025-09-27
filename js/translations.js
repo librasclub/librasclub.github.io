@@ -173,7 +173,7 @@ const translations = {
         // -- Team Member: Y0UK4II --
         youkai_name: "Y0UK4II",
         youkai_role: "Lawyer",
-        youkai_bio: "DESCRIPTION WILL GO HERE",
+        youkai_bio: "If I could have shot them, I would have shot them, but they took my gun away.",
         youkai_drink_name: "Youkai's Legal Lemonade",
         
         // -- Team Member: Naruhishi --
@@ -191,7 +191,7 @@ const translations = {
         // -- Team Member: McAndres --
         mcandres_name: "McAndres",
         mcandres_role: "Companion",
-        mcandres_bio: "DESCRIPTION WILL GO HERE",
+        mcandres_bio: "Marked by bad luck, he has been on the brink of death countless times. Yet, he faces every challenge with humor, courage, and optimism. Clumsy, curious, and outgoing, he always seeks to meet new people and make friends.",
         mcandres_drink_name: "McAndres' Charming Concoction",
 
         // -- Team Member: ChepesCM --
@@ -203,7 +203,7 @@ const translations = {
         // -- Team Member: RazielSempai787 --
         razielsempai_name: "RazielSempai787",
         razielsempai_role: "Companion",
-        razielsempai_bio: "DESCRIPTION WILL GO HERE",
+        razielsempai_bio: "RazielSempai78 is a bright green, restless, and cuddly frog who jumps around demanding hot chocolate while doling out wise advice and unexpected encouragement with emotional support, like a mischievous little Zen master dressed up as a prankster. (Kidnapping and flirting with the frog is prohibited.)",
         razielsempai_drink_name: "RazielSempai's Angelic Aura",
         
         // -- Team Member: Beiker --
@@ -478,7 +478,7 @@ const translations = {
         // -- Miembro del Equipo: Y0UK4II --
         youkai_name: "Y0UK4II",
         youkai_role: "Abogada",
-        youkai_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        youkai_bio: "Si pudiera ya les hubiera pegado un tiro pero me sacaron el arma",
         youkai_drink_name: "Limonada Legal de Youkai",
         
         // -- Miembro del Equipo: Naruhishi --
@@ -496,7 +496,7 @@ const translations = {
         // -- Miembro del Equipo: McAndres --
         mcandres_name: "McAndres",
         mcandres_role: "Acompañante",
-        mcandres_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        mcandres_bio: "Marcado por la mala suerte, ha estado al borde de la muerte incontables veces. Aun así, enfrenta cada desafío con humor, coraje y optimismo. Torpe, curioso y extrovertido, siempre busca conocer gente nueva y hacer amigos.",
         mcandres_drink_name: "Breve Encantador de McAndres",
         
         // -- Miembro del Equipo: ChepesCM --
@@ -508,7 +508,7 @@ const translations = {
         // -- Miembro del Equipo: RazielSempai787 --
         razielsempai_name: "RazielSempai787",
         razielsempai_role: "Acompañante",
-        razielsempai_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        razielsempai_bio: "RazielSempai78 es una ranita verde brillante, inquieto y tierno, que salta pidiendo “cocholate mientras reparte consejos sabios y ánimos inesperados con apoyo emocional, como un pequeño maestro zen disfrazado de travesuras. (Prohibido secuestrar ni coquillar a la ranita).",
         razielsempai_drink_name: "Aura Angélica de RazielSempai",
         
         // -- Miembro del Equipo: Beiker --
