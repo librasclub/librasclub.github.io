@@ -66,7 +66,7 @@ const translations = {
         laira_name: "Laira",
         laira_role: "Owner · Hostess · Coordinator",
         laira_bio: "The warm heart that welcomes everyone. Laira organizes, listens, guides, and transforms every night into a unique experience. Always ensuring that every member—and every visitor—feels special. A true hostess at heart.",
-        laira_drink_name: "Laira's Cosmic Nectar",
+        laira_drink_name: "Maid's milk",
         
         // -- Team Member: Héctor --
         hector_name: "Héctor",
@@ -102,7 +102,7 @@ const translations = {
         dragon_name: "Dragon",
         dragon_role: "Waiter/Companion",
         dragon_bio: "DESCRIPTION WILL GO HERE",
-        dragon_drink_name: "Dragon's Mystical Mist",
+        dragon_drink_name: "Tangamandapio",
 
         // -- Team Member: Galleta --
         galleta_name: "Galleta",
@@ -114,7 +114,7 @@ const translations = {
         koto_name: "Koto",
         koto_role: "Multi Role - Avatar Creator",
         koto_bio: "Relaxed, silly, humbled and I try to make people laugh, mostly I just go at my own pace and I'm patient with people, I like to make people laugh with my jokes and I like sweets, hanging around like a monkey in the bar is not role-playing, it's a lifestyle.",
-        koto_drink_name: "Koto's Flexible Fizz",
+        koto_drink_name: "cherry blossom",
 
         // -- Team Member: Dezzu --
         dezzu_name: "Dezzu",
@@ -132,13 +132,13 @@ const translations = {
         lulu_name: "Lulu",
         lulu_role: "Photographer",
         lulu_bio: "A four-eared cat girl with her trusty glasses is the photographer who is hopping and running around the bar with her camera ready to capture the special moment of the night at Libra's Club. If you find her, you'll get good vibes, good wishes and lots of luck.",
-        lulu_drink_name: "Lulu's Focus Shot",
+        lulu_drink_name: "The Michibumps",
 
         // -- Team Member: Nebula --
         nebula_name: "Nebula",
         nebula_role: "Dancer/Companion",
         nebula_bio: "Enigmatic, seductive, and elegant, he moves calmly among the shadows of the bar, as if every gesture were marked by a profound destiny. His creation, Abyssal Blue, reflects his essence: strong, mysterious, and capable of enveloping anyone in its spell. He can capture you with a glance and, if the occasion allows, seduce you with a dance that turns the night into an unforgettable memory.",
-        nebula_drink_name: "Nebula's Starry Swirl",
+        nebula_drink_name: "Abyssal Blue",
 
         // -- Team Member: Papu --
         papu_name: "Papu",
@@ -150,7 +150,7 @@ const translations = {
         rosy_name: "Rosy",
         rosy_role: "Companion",
         rosy_bio: "DESCRIPTION WILL GO HERE",
-        rosy_drink_name: "Rosy's Sparkling Rose",
+        rosy_drink_name: "Silent Rose",
 
         // -- Team Member: Ruto --
         ruto_name: "Ruto",
@@ -371,7 +371,7 @@ const translations = {
         laira_name: "Laira",
         laira_role: "Owner · Anfitriona · Coordinadora",
         laira_bio: "El corazón cálido que da la bienvenida a todos. Laira organiza, escucha, guía y transforma cada noche en una experiencia única. Siempre pendiente de que cada miembro —y cada visitante— se sienta especial. Una anfitriona de alma.",
-        laira_drink_name: "Néctar Cósmico de Laira",
+        laira_drink_name: "Leche de Maid",
         
         // -- Miembro del Equipo: Héctor --
         hector_name: "Héctor",
@@ -407,7 +407,7 @@ const translations = {
         dragon_name: "Dragon",
         dragon_role: "Mesero/Acompañante",
         dragon_bio: "AQUÍ VA LA DESCRIPCIÓN",
-        dragon_drink_name: "Niebla Mística de Dragon",
+        dragon_drink_name: "Tangamandapio",
         
         // -- Miembro del Equipo: Galleta --
         galleta_name: "Galleta",
@@ -419,7 +419,7 @@ const translations = {
         koto_name: "Koto",
         koto_role: "Multi Rol - Creador de avatares",
         koto_bio: "Relajado, tonto, Humillado e intento sacarle risas a la gente, más que nada solo voy a mi ritmo y soy paciente con las personas, me gusta hacer reir con ocurrencias mías y me gustan los dulces, andar como chango en el bar no es roleo es estilo de vida",
-        koto_drink_name: "Efervescencia Flexible de Koto",
+        koto_drink_name: "Flor de cerezo",
         
         // -- Miembro del Equipo: Dezzu --
         dezzu_name: "Dezzu",
@@ -437,13 +437,13 @@ const translations = {
         lulu_name: "Lulu",
         lulu_role: "Fotógrafa",
         lulu_bio: "Una chica gato con cuatro orejas y con su fieles lentes, es la fotógrafa que anda saltando y corriendo por todo el bar junto a su cámara lista para capturar el momento especial de la noche en Libra's Club. Si la encuentras, tendrás buenas vibras, buenos deseos y mucha suerte.",
-        lulu_drink_name: "Chupito de Enfoque de Lulu",
+        lulu_drink_name: "Las Michibumps",
         
         // -- Miembro del Equipo: Nebula --
         nebula_name: "Nebula",
         nebula_role: "Bailarín/Acompañante",
         nebula_bio: "Enigmático, seductor y elegante, se mueve con calma entre las sombras del bar, como si cada gesto estuviera marcado por un destino profundo. Su creación, el Abyssal Blue, refleja su esencia: fuerte, misteriosa y capaz de envolver a cualquiera en su hechizo. Puede atraparte con una mirada y, si la ocasión lo permite, seducirte con un baile que convierte la noche en un recuerdo imborrable.",
-        nebula_drink_name: "Remolino Estelar de Nebula",
+        nebula_drink_name: "Azul abisal",
         
         // -- Miembro del Equipo: Papu --
         papu_name: "Papu",
@@ -455,7 +455,7 @@ const translations = {
         rosy_name: "Rosy",
         rosy_role: "Acompañante",
         rosy_bio: "AQUÍ VA LA DESCRIPCIÓN",
-        rosy_drink_name: "Rosa Chispeante de Rosy",
+        rosy_drink_name: "rosa silenciosa",
         
         // -- Miembro del Equipo: Ruto --
         ruto_name: "Ruto",
