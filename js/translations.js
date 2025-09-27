@@ -134,6 +134,9 @@ const translations = {
         moony_name: "Moony",
         moony_role: "Companion",
         moony_bio: "DESCRIPTION WILL GO HERE",
+        crybaby_name: "CryBaby",
+        crybaby_role: "Companion",
+        crybaby_bio: "Cry is a girl who, by her appearance, seems depressed, but when you talk to her, you can hear her seductive voice and you know she'll make you have a great time. Cry is sweet, fun, kind, helpful, and overly flirtatious, which will make your night very special :3",
 
         // --- Página de Parceiros (partners.html) ---
         partners_title: "Friends of the Club",
@@ -330,6 +333,10 @@ const translations = {
         moony_name: "Moony",
         moony_role: "Acompañante",
         moony_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        crybaby_name: "CryBaby",
+        crybaby_role: "Acompañante",
+        crybaby_bio: "Cry es una chica que por su apariencia parece estar deprimida pero cuando hablas con ella puedes notar su seductora voz y sabes que te hará pasar un muy buen rato. Cry es tierna, divertida, amable, servicial y demasiado coqueta que hará tu noche muy especial :3",
+        
 
         // --- Página de Socios (partners.html) ---
         partners_title: "Amigos del Club",
