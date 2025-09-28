@@ -1,0 +1,148 @@
+/*
+=====================================================
+    EVENTS-STYLE.CSS - Standardized "Neon Noir" Theme
+=====================================================
+    This stylesheet styles the events page to match
+    the professional theme of the homepage and menu.
+*/
+
+/* === Variáveis de Cor para a Página de Eventos === */
+body.events-page {
+    --primary-color-override: #FF073A;   /* Vermelho Néon Intenso */
+    --secondary-color-override: #00BFFF; /* Azul Elétrico */
+    --neon-yellow: #FFFF00;              /* Amarelo Néon */
+}
+
+/* === Header e Footer Padronizados === */
+body.events-page .nav-link::after {
+    background-color: var(--primary-color-override);
+}
+body.events-page .nav-link:hover,
+body.events-page .nav-link.active {
+    text-shadow: 0 0 8px var(--secondary-color-override);
+}
+body.events-page footer {
+    border-top: 1px solid rgba(0, 191, 255, 0.2);
+}
+body.events-page footer .social-links a:hover {
+    color: var(--secondary-color-override);
+    text-shadow: 0 0 15px var(--secondary-color-override);
+}
+
+/* =====================================================
+    ESTILOS PRINCIPAIS DO CONTEÚDO DE EVENTOS
+=====================================================
+*/
+
+/* Título Principal da Página */
+body.events-page .page-title {
+    color: #fff;
+    text-shadow: 0 0 10px var(--secondary-color-override), 0 0 20px var(--secondary-color-override);
+}
+
+/* Espaçamento entre as secções "Upcoming" e "Past" */
+.events-section + .events-section {
+    margin-top: 80px;
+}
+
+/* Grelha de Eventos */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* MELHORIA: Cartões de evento com efeito "Glassmorphism" */
+.event-card {
+    display: flex;
+    background: rgba(18, 18, 28, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    overflow: hidden; /* Garante que os cantos arredondados funcionem */
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 191, 255, 0.5);
+}
+
+/* Caixa da Data Redesenhada com Efeito de Vidro */
+.event-date {
+    /* ALTERAÇÃO: Cor sólida trocada por RGBA semitransparente */
+    background-color: rgba(255, 7, 58, 0.3); /* Vermelho translúcido */
+    padding: 20px;
+    text-align: center;
+    /* ALTERAÇÃO: Cor do texto mudada para branco para ser legível */
+    color: #fff;
+    font-family: var(--font-title);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    /* Adiciona uma linha separadora subtil */
+    border-right: 1px solid rgba(255, 7, 58, 0.5);
+}
+.event-date .month {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+.event-date .day {
+    display: block;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: bold;
+}
+
+/* Detalhes do Evento (sem alterações) */
+.event-details {
+    padding: 25px 30px;
+    text-align: left;
+    flex-grow: 1; /* Garante que esta área ocupe o espaço restante */
+}
+.event-title {
+    font-size: 1.8em;
+    color: var(--neon-yellow);
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px var(--neon-yellow);
+}
+.event-time {
+    color: var(--label-color);
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+.event-description {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* MELHORIA: Eventos passados com efeito desaturado e interativo */
+.event-card-past {
+    filter: grayscale(80%);
+    opacity: 0.6;
+}
+.event-card-past:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    border-color: var(--primary-color-override);
+}
+
+.event-card-past .event-date {
+    /* ALTERAÇÃO: Cor sólida cinza trocada por RGBA semitransparente */
+    background-color: rgba(85, 85, 85, 0.3); /* Cinza translúcido */
+    border-right-color: rgba(100, 100, 100, 0.5);
+    /* ALTERAÇÃO: Cor do texto mudada para um cinza claro */
+    color: #aaa;
+}
+.event-card-past:hover .event-date {
+    /* O hover agora só precisa de mudar a cor de fundo translúcida */
+    background-color: rgba(255, 7, 58, 0.3);
+    border-right-color: rgba(255, 7, 58, 0.5);
+    color: #fff;
+}

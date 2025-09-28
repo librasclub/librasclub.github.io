@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function initGalleryPage() {
-        const gallerySelector = document.getElementById('gallery-selector'); // Alterado de filtersContainer
+        const gallerySelector = document.getElementById('gallery-selector');
         const gridContainer = document.getElementById('gallery-grid');
         const lightboxContainer = document.getElementById('lightbox-container');
 
@@ -185,23 +185,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // 2. Cria as OPÇÕES para o menu suspenso
-        const categories = ['all', ...new Set(galleryImages.map(img => img.category))];
+        // MUDANÇA 1: Removido o 'all' do início da lista de categorias
+        const categories = [...new Set(galleryImages.map(img => img.category))];
+        
         categories.forEach(category => {
-            const option = document.createElement('option'); // Alterado de button para option
-            option.value = category; // O valor é a categoria, ex: 'gothic'
+            const option = document.createElement('option');
+            option.value = category;
             
             const translationKey = `gallery_filter_${category}`;
             option.setAttribute('data-translate-key', translationKey);
-            option.textContent = category; // Texto temporário
+            option.textContent = category;
             
             gallerySelector.appendChild(option);
         });
 
-        // 3. Função que filtra as imagens (sem alterações)
+        // 3. Função que filtra as imagens (removido o caso 'all')
         function filterGallery(category) {
             const items = gridContainer.querySelectorAll('.gallery-item');
             items.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
+                if (item.dataset.category === category) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
@@ -209,15 +211,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 4. Adiciona o 'escutador' de evento 'change' ao menu suspenso
+        // 4. Adiciona o 'escutador' de evento 'change' (sem alterações)
         gallerySelector.addEventListener('change', (event) => {
             filterGallery(event.target.value);
         });
 
-        // Filtra pela primeira opção por padrão
-        filterGallery('all');
+        // MUDANÇA 2: Filtra pela primeira categoria da lista por padrão
+        if (categories.length > 0) {
+            filterGallery(categories[0]);
+        }
         
-        // Traduz a página, incluindo as novas opções
         translatePage(); 
     }
     // --- Executa todas as inicializações ---
