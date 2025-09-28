@@ -87,6 +87,7 @@ body.rules-page .page-title {
     text-shadow: 0 0 10px var(--neon-yellow); 
     margin-bottom: 15px;
 }
+
 .rule-card p {
     color: var(--label-color);
     line-height: 1.8;
