@@ -92,7 +92,7 @@ const translations = {
         icoraz_name: "Icoraz",
         icoraz_role: "Head of Bar",
         icoraz_bio: "Chivalrous to the core, Icoraz mixes drinks with the same elegance he uses to steal a smile. A furry at heart and soul, he is the perfect balance of tenderness and professionalism. If you need something, he's already preparing it.",
-        icoraz_drink_name: "Icoraz's Fiery Spirit",
+        icoraz_drink_name: "Neon Strike",
         
         // -- Team Member: Amneulix --
         amneulix_name: "Amneulix",
@@ -421,7 +421,7 @@ const translations = {
         icoraz_name: "Icoraz",
         icoraz_role: "Jefe de Barra",
         icoraz_bio: "Caballeroso hasta la médula, Icoraz mezcla tragos con la misma elegancia con la que te roba una sonrisa. Furro de alma y corazón, es el equilibrio perfecto entre ternura y profesionalismo. Si algo necesitás, él ya lo está preparando.",
-        icoraz_drink_name: "Espíritu Ardiente de Icoraz",
+        icoraz_drink_name: "Golpe de Neon",
 
         // -- Miembro del Equipo: Amneulix --
         amneulix_name: "Amneulix",
