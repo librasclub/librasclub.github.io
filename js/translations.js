@@ -255,7 +255,7 @@ const translations = {
         // -------------------------------------------------------------
         // 7.0  PARTNERS PAGE (partners.html)
         // -------------------------------------------------------------
-        partners_title: "Friends of the Club",
+        partners_title: "Club Alliances",
         // You can add partner names/descriptions here if needed
 
         // -------------------------------------------------------------
@@ -358,7 +358,7 @@ const translations = {
         menu_name_temporada2: "Temporada 2",
         menu_name_temporada3: "Temporada 3",
         menu_name_gothic: "Menú Gótico",
-        
+
         // -------------------------------------------------------------
         // 4.0  PÁGINA DE EVENTOS (events.html)
         // -------------------------------------------------------------
@@ -579,7 +579,7 @@ const translations = {
         // -------------------------------------------------------------
         // 7.0  PÁGINA DE SOCIOS (partners.html)
         // -------------------------------------------------------------
-        partners_title: "Amigos del Club",
+        partners_title: "Allianzas del Club",
         // Puedes añadir nombres/descripciones de socios aquí si es necesario
 
         // -------------------------------------------------------------
