@@ -187,10 +187,14 @@ body.menu-page .menu-container::after { bottom: 15px; right: 15px; border-width:
 
 /* Títulos das Categorias (Ex: Tragos Fuertes) */
 body.menu-page .category-title {
-    color: var(--primary-color-override);
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 20px;
     text-shadow: 0 0 10px var(--primary-color-override);
     border-bottom: none; /* Remove a linha antiga */
 }
+
+
 body.menu-page .category-title::after {
     /* Substitui a linha antiga por uma com gradiente */
     background: linear-gradient(to right, 
@@ -212,12 +216,7 @@ body.menu-page .drink-item {
 }
 
 body.menu-page .drink-item:hover {
-    background-color: rgba(0, 191, 255, 0.1); /* Brilho azul de fundo */
-    border-left: 3px solid var(--secondary-color-override); /* Borda azul aparece */
+    border-left: 3px solid var(--primary-color-override); /* Borda azul aparece */
     transform: translateX(10px);
 }
 
-body.menu-page .drink-name {
-    color: #fff;
-    text-shadow: none;
-}

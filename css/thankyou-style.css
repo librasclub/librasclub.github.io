@@ -1,0 +1,76 @@
+/*
+=====================================================
+    THANKYOU-STYLE.CSS - Standardized "Neon Noir" Theme
+=====================================================
+    This stylesheet styles the thank you page for a
+    professional and cohesive final user experience.
+*/
+
+/* === Variáveis de Cor para a Página de Agradecimento === */
+body.thankyou-page {
+    --primary-color-override: #FF073A;   /* Vermelho Néon Intenso */
+    --secondary-color-override: #00BFFF; /* Azul Elétrico */
+}
+
+/* === Header e Layout === */
+body.thankyou-page .main-header {
+    background-color: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+body.thankyou-page .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+/* =====================================================
+    ESTILOS PRINCIPAIS DO CONTEÚDO DE AGRADECIMENTO
+=====================================================
+*/
+
+/* Título Principal da Página */
+body.thankyou-page .page-title {
+    color: #fff;
+    text-shadow: 0 0 10px var(--secondary-color-override), 0 0 20px var(--secondary-color-override);
+    margin-bottom: 20px;
+}
+
+/* ALTERAÇÃO: Regra agora é mais específica e só afeta o parágrafo do conteúdo principal */
+body.thankyou-page .content-container p {
+    color: var(--label-color);
+    font-size: 1.2em;
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+/* Botão de Ação (CTA) Padronizado */
+body.thankyou-page .cta-button {
+    color: #fff;
+    background: transparent;
+    border: 2px solid var(--primary-color-override);
+    border-radius: 5px;
+    text-shadow: 0 0 8px var(--primary-color-override);
+    box-shadow: 0 0 10px var(--primary-color-override), inset 0 0 10px var(--primary-color-override);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 15px 35px;
+    margin-top: 40px;
+    font-size: 1.3em;
+    font-family: var(--font-title);
+}
+body.thankyou-page .cta-button:hover {
+    color: #fff;
+    background-color: var(--primary-color-override);
+    box-shadow: 0 0 25px var(--primary-color-override);
+    text-shadow: 0 0 5px #fff;
+    transform: scale(1.05);
+}
+
+/* Centraliza o rodapé corretamente (agora vai funcionar) */
+body.thankyou-page footer {
+    text-align: center;
+}

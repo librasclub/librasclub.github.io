@@ -53,6 +53,10 @@ const translations = {
         event_heroes_title: "Heroes vs Villains",
         event_heroes_time: "Saturday, 11:00 PM Chicago",
         event_heroes_desc: "A unique celebration where universes collide and the lines between good and evil blur. It's time to choose sides: will you be a brave defender of justice or a master of chaos and destruction?",
+        // -- Halloween Event --
+        event_halloween_title: "Halloween Event",
+        event_halloween_time: "Thursdays, 11:00 PM Chicago",
+        event_halloween_desc: "The darkness awakens, and the club fills with shadows, pumpkins, and magic. Between haunted drinks, music from beyond the grave, and enchanted costumes... The night will be yours if you dare to dance with the ghosts!",
 
         // -------------------------------------------------------------
         // 5.0  GALLERY PAGE (gallery.html)
@@ -86,7 +90,7 @@ const translations = {
 
         // -- Team Member: Icoraz --
         icoraz_name: "Icoraz",
-        icoraz_role: "Bartender · Head of Bar",
+        icoraz_role: "Head of Bar",
         icoraz_bio: "Chivalrous to the core, Icoraz mixes drinks with the same elegance he uses to steal a smile. A furry at heart and soul, he is the perfect balance of tenderness and professionalism. If you need something, he's already preparing it.",
         icoraz_drink_name: "Icoraz's Fiery Spirit",
         
@@ -94,7 +98,7 @@ const translations = {
         amneulix_name: "Amneulix",
         amneulix_role: "Multi-role · Official Streamer",
         amneulix_bio: "Overflowing charisma, contagious laughter, and an energy that never fades. Amneulix is everywhere at once: behind the counter, on stage, or streaming an unforgettable night. Always friendly, always approachable.",
-        amneulix_drink_name: "Amneulix's Electric Current",
+        amneulix_drink_name: "Head of Operations & Dance Leader",
 
         // -- Team Member: Alairen --
         alairen_name: "Alairen",
@@ -378,6 +382,10 @@ const translations = {
         event_heroes_title: "Héroes vs Villanos",
         event_heroes_time: "Sábado, 11:00 PM Chicago",
         event_heroes_desc: "Una celebración única donde los universos chocan y las líneas entre el bien y el mal se difuminan. Es hora de elegir bando: ¿serás un valiente defensor de la justicia o un maestro del caos y la destrucción?",
+        // -- Evento de Halloween --
+        event_halloween_title: "Evento de Halloween",
+        event_halloween_time: "Jueves, 11:00 PM Chicago",
+        event_halloween_desc: "La oscuridad despierta y el club se llena de sombras, calabazas y magia. Entre copas embrujadas, música de ultratumba y disfraces encantados... ¡La noche será tuya si te atreves a bailar con los fantasmas!",
 
         // -------------------------------------------------------------
         // 5.0  PÁGINA DE GALERÍA (gallery.html)
@@ -400,7 +408,7 @@ const translations = {
         // -- Miembro del Equipo: Laira --
         laira_name: "Laira",
         laira_role: "Owner · Anfitriona · Coordinadora",
-        laira_bio: "El corazón cálido que da la bienvenida a todos. Laira organiza, escucha, guía y transforma cada noche en una experiencia única. Siempre pendiente de que cada miembro —y cada visitante— se sienta especial. Una anfitriona de alma.",
+        laira_bio: "El corazón cálido que da la bienvenida a todos. Laira organiza, escucha, guía y transforma cada noche en una experiencia única. Siempre pendiente de que cada miembro y cada visitante se sienta especial. Una anfitriona de alma.",
         laira_drink_name: "Leche de Maid",
         
         // -- Miembro del Equipo: Héctor --
@@ -411,7 +419,7 @@ const translations = {
         
         // -- Miembro del Equipo: Icoraz --
         icoraz_name: "Icoraz",
-        icoraz_role: "Bartender · Jefe de Barra",
+        icoraz_role: "Jefe de Barra",
         icoraz_bio: "Caballeroso hasta la médula, Icoraz mezcla tragos con la misma elegancia con la que te roba una sonrisa. Furro de alma y corazón, es el equilibrio perfecto entre ternura y profesionalismo. Si algo necesitás, él ya lo está preparando.",
         icoraz_drink_name: "Espíritu Ardiente de Icoraz",
 
@@ -419,7 +427,7 @@ const translations = {
         amneulix_name: "Amneulix",
         amneulix_role: "Multi rol · Streamer Oficial",
         amneulix_bio: "Carisma desbordante, risas contagiosas y una energía que no se apaga nunca. Amneulix está en todos lados a la vez: tras el mostrador, en escena o streameando una noche inolvidable. Siempre simpática, siempre cercana.",
-        amneulix_drink_name: "Corriente Eléctrica de Amneulix",
+        amneulix_drink_name: "Jefa de Operaciones y Líder de Dancers",
         
         // -- Miembro del Equipo: Alairen --
         alairen_name: "Alairen",
