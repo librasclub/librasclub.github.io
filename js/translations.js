@@ -158,7 +158,7 @@ const translations = {
         papu_name: "Papu",
         papu_role: "Bartender",
         papu_bio: "Papu is your most loyal and lethal Papu. I'll show you my love through blows, even though sometimes I go too far. I'll always listen, because I can't talk to silence you.",
-        papu_drink_name: "Papu's Potent Punch",
+        papu_drink_name: "The hater",
         
         // -- Team Member: Rosy --
         rosy_name: "Rosy",
@@ -487,7 +487,7 @@ const translations = {
         papu_name: "Papu",
         papu_role: "Bartender",
         papu_bio: "Papu es tu papu mas leal y letal. Te mostraré mi cariño a través de los golpes, aunque a veces me paso. Te escucharé siempre, ya que no puedo hablar para callarte.",
-        papu_drink_name: "Ponche Potente de Papu",
+        papu_drink_name: "El hater",
         
         // -- Miembro del Equipo: Rosy --
         rosy_name: "Rosy",
