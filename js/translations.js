@@ -181,7 +181,7 @@ const translations = {
         // -- Team Member: Veiga --
         veiga_name: "Veiga",
         veiga_role: "DJ",
-        veiga_bio: "DESCRIPTION WILL GO HERE",
+        veiga_bio: "The Libra DJ, always ready to put his favorite songs on the map",
         veiga_drink_name: "Veiga's Rhythmic Rhapsody",
         
         // -- Team Member: Y0UK4II --
@@ -510,7 +510,7 @@ const translations = {
         // -- Miembro del Equipo: Veiga --
         veiga_name: "Veiga",
         veiga_role: "DJ",
-        veiga_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        veiga_bio: "El DJ de Libras, siempre dispuesto a poner sus canciones favoritas en el mapa.",
         veiga_drink_name: "Rapsodia Rítmica de Veiga",
         
         // -- Miembro del Equipo: Y0UK4II --
