@@ -140,7 +140,7 @@ const translations = {
         loxy_name: "Loxy & Lucy",
         loxy_role: "Waiter/Companion",
         loxy_bio: "The Crazy brothers are willing to give everyone lots of affection and pleasure if they behave well, but if you're naughty, they'll put you on a leash. Loxy can give you food; it can be something sweet like a cake, or something savory like a pizza.",
-        loxy_drink_name: "Loxy's Enchanting Elixir",
+        loxy_drink_name: "Loxy's Passion",
         
         // -- Team Member: Lulu --
         lulu_name: "Lulu",
@@ -157,7 +157,7 @@ const translations = {
         // -- Team Member: Papu --
         papu_name: "Papu",
         papu_role: "Bartender",
-        papu_bio: "DESCRIPTION WILL GO HERE",
+        papu_bio: "Papu is your most loyal and lethal Papu. I'll show you my love through blows, even though sometimes I go too far. I'll always listen, because I can't talk to silence you.",
         papu_drink_name: "Papu's Potent Punch",
         
         // -- Team Member: Rosy --
@@ -469,7 +469,7 @@ const translations = {
         loxy_name: "Loxy & Lucy",
         loxy_role: "Mesero/Acompañante",
         loxy_bio: "Los hermanos Crazy estamos dispuestos a darle mucho cariño y placer a todos si se comportaron bien, pero si fuiste malo te pondrán una correa. Loxy puede darte comida puede ser algo dulce como un pastel, o algo salado como una pizza",
-        loxy_drink_name: "Elixir Encantador de Loxy",
+        loxy_drink_name: "Pasion de Loxy",
         
         // -- Miembro del Equipo: Lulu --
         lulu_name: "Lulu",
@@ -486,7 +486,7 @@ const translations = {
         // -- Miembro del Equipo: Papu --
         papu_name: "Papu",
         papu_role: "Bartender",
-        papu_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        papu_bio: "Papu es tu papu mas leal y letal. Te mostraré mi cariño a través de los golpes, aunque a veces me paso. Te escucharé siempre, ya que no puedo hablar para callarte.",
         papu_drink_name: "Ponche Potente de Papu",
         
         // -- Miembro del Equipo: Rosy --
