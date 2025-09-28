@@ -96,9 +96,9 @@ const translations = {
         
         // -- Team Member: Amneulix --
         amneulix_name: "Amneulix",
-        amneulix_role: "Multi-role · Official Streamer",
+        amneulix_role: "Head of Operations · Dance Leader",
         amneulix_bio: "Overflowing charisma, contagious laughter, and an energy that never fades. Amneulix is everywhere at once: behind the counter, on stage, or streaming an unforgettable night. Always friendly, always approachable.",
-        amneulix_drink_name: "Head of Operations & Dance Leader",
+        amneulix_drink_name: "Amneulix's Electric Current",
 
         // -- Team Member: Alairen --
         alairen_name: "Alairen",
@@ -408,7 +408,7 @@ const translations = {
         // -- Miembro del Equipo: Laira --
         laira_name: "Laira",
         laira_role: "Owner · Anfitriona · Coordinadora",
-        laira_bio: "El corazón cálido que da la bienvenida a todos. Laira organiza, escucha, guía y transforma cada noche en una experiencia única. Siempre pendiente de que cada miembro y cada visitante se sienta especial. Una anfitriona de alma.",
+        laira_bio: "El corazón cálido que da la bienvenida a todos. Laira organiza, escucha, guía y transforma cada noche en una experiencia única. Siempre pendiente de que cada miembro cada visitante se sienta especial. Una anfitriona de alma.",
         laira_drink_name: "Leche de Maid",
         
         // -- Miembro del Equipo: Héctor --
@@ -425,9 +425,9 @@ const translations = {
 
         // -- Miembro del Equipo: Amneulix --
         amneulix_name: "Amneulix",
-        amneulix_role: "Multi rol · Streamer Oficial",
+        amneulix_role: "Jefa de Operaciones · Líder de Dancers",
         amneulix_bio: "Carisma desbordante, risas contagiosas y una energía que no se apaga nunca. Amneulix está en todos lados a la vez: tras el mostrador, en escena o streameando una noche inolvidable. Siempre simpática, siempre cercana.",
-        amneulix_drink_name: "Jefa de Operaciones y Líder de Dancers",
+        amneulix_drink_name: "Corriente Eléctrica de Amneulix",
         
         // -- Miembro del Equipo: Alairen --
         alairen_name: "Alairen",
