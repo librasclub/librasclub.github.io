@@ -199,7 +199,7 @@ const translations = {
         // -- Team Member: SíniZ --
         siniz_name: "SíniZ",
         siniz_role: "Bartender",
-        siniz_bio: "DESCRIPTION WILL GO HERE",
+        siniz_bio: 'One of the club\'s first customers, SiniZ combines his talent for drinks with his passion for gossip. Always funny, always mischievous, and always with something to say. Never say "gossip" three times because it\'s sure to show up behind your back.',
         siniz_drink_name: "SiniZ's Dark Delight",
 
         // -- Team Member: McAndres --
@@ -235,8 +235,8 @@ const translations = {
         // -- Team Member: Eli --
         eli_name: "Eli",
         eli_role: "Companion",
-        eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar.Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa", // Needs English translation
-        eli_drink_name: "Eli's Elixir of Joy",
+        eli_bio: "Cheerful, a little seductive and talkative, she goes among the people at the bar trying to bring a smile to their faces in case they are having a bad day while she gives them affection so they feel that the bar can be like their second home. Good luck if you find her since she is everywhere and will wait for the moment you see her to give you a smile.",
+        eli_drink_name: "Bubbles of temptation",
 
         // -- Team Member: Moony --
         moony_name: "Moony",
@@ -528,7 +528,7 @@ const translations = {
         // -- Miembro del Equipo: SíniZ --
         siniz_name: "SíniZ",
         siniz_role: "Bartender",
-        siniz_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        siniz_bio: 'Uno de los primeros clientes del club, SiniZ combina su talento para las bebidas con su pasión por el chisme. Siempre divertido, siempre travieso, y siempre con algo que contar. Nunca digas tres veces "chisme" porque de seguro se te aparecerá en la espalda.',        
         siniz_drink_name: "Delicia Oscura de SiniZ",
         
         // -- Miembro del Equipo: McAndres --
@@ -565,7 +565,7 @@ const translations = {
         eli_name: "Eli",
         eli_role: "Acompañante",
         eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar. Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa.",
-        eli_drink_name: "Elixir de Alegría de Eli",
+        eli_drink_name: "Burbujas de tentación",
         
         // -- Miembro del Equipo: Moony --
         moony_name: "Moony",
