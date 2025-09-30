@@ -126,7 +126,7 @@ const translations = {
 
         // -- Team Member: Koto --
         koto_name: "Koto",
-        koto_role: "Multi Role - Avatar Creator",
+        koto_role: "Multi Role - Avi's Editor",
         koto_bio: "Relaxed, silly, humbled and I try to make people laugh, mostly I just go at my own pace and I'm patient with people, I like to make people laugh with my jokes and I like sweets, hanging around like a monkey in the bar is not role-playing, it's a lifestyle.",
         koto_drink_name: "cherry blossom",
 
@@ -455,7 +455,7 @@ const translations = {
         
         // -- Miembro del Equipo: Koto --
         koto_name: "Koto",
-        koto_role: "Multi Rol - Creador de avatares",
+        koto_role: "Multi Rol - Editor de Avis",
         koto_bio: "Relajado, tonto, Humillado e intento sacarle risas a la gente, más que nada solo voy a mi ritmo y soy paciente con las personas, me gusta hacer reir con ocurrencias mías y me gustan los dulces, andar como chango en el bar no es roleo es estilo de vida",
         koto_drink_name: "Flor de cerezo",
         
