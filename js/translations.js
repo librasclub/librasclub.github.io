@@ -121,7 +121,7 @@ const translations = {
         // -- Team Member: Galleta --
         galleta_name: "Galleta",
         galleta_role: "Waiter/Companion",
-        galleta_bio: "DESCRIPTION WILL GO HERE",
+        galleta_bio: "I'm just a magic cookie who wants to bring joy to the hearts of others, bringing the blessing of the Zambalamba into their lives, so that the stars guide their path. Zambalamba",
         galleta_drink_name: "Galleta's Sweet Escape",
 
         // -- Team Member: Koto --
@@ -237,12 +237,6 @@ const translations = {
         eli_role: "Companion",
         eli_bio: "Cheerful, a little seductive and talkative, she goes among the people at the bar trying to bring a smile to their faces in case they are having a bad day while she gives them affection so they feel that the bar can be like their second home. Good luck if you find her since she is everywhere and will wait for the moment you see her to give you a smile.",
         eli_drink_name: "Bubbles of temptation",
-
-        // -- Team Member: Moony --
-        moony_name: "Moony",
-        moony_role: "Companion",
-        moony_bio: "DESCRIPTION WILL GO HERE",
-        moony_drink_name: "Moony's Midnight Martini",
 
         // -- Team Member: CryBaby --
         crybaby_name: "CryBaby",
@@ -450,7 +444,7 @@ const translations = {
         // -- Miembro del Equipo: Galleta --
         galleta_name: "Galleta",
         galleta_role: "Mesero/Acompañante",
-        galleta_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        galleta_bio: "Solo soy una galletamagica que quiere llevar alegria a los corazones de los demás, llevando la bendición del zambalamba a sus vidas, para que las estrellas guíen su camino. Zambalamba",
         galleta_drink_name: "Dulce Escape de Galleta",
         
         // -- Miembro del Equipo: Koto --
@@ -566,12 +560,6 @@ const translations = {
         eli_role: "Acompañante",
         eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar. Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa.",
         eli_drink_name: "Burbujas de tentación",
-        
-        // -- Miembro del Equipo: Moony --
-        moony_name: "Moony",
-        moony_role: "Acompañante",
-        moony_bio: "AQUÍ VA LA DESCRIPCIÓN",
-        moony_drink_name: "Martini Medianoche de Moony",
         
         // -- Miembro del Equipo: CryBaby --
         crybaby_name: "CryBaby",
