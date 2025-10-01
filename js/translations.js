@@ -171,12 +171,6 @@ const translations = {
         ruto_role: "Singer/Joker",
         ruto_bio: "NieR Automata is my religion. My special drink, \"Moon Tear.\" Long live geeks and big-breasted dudes. If you can't talk about the important stuff, you won't understand the weird stuff.",
         ruto_drink_name: "Ruto's Harmonic Blend",
-        
-        // -- Team Member: Vamp --
-        vamp_name: "Vamp",
-        vamp_role: "Dancer/Companion",
-        vamp_bio: "DESCRIPTION WILL GO HERE",
-        vamp_drink_name: "Vamp's Crimson Kiss",
 
         // -- Team Member: Veiga --
         veiga_name: "Veiga",
@@ -494,12 +488,6 @@ const translations = {
         ruto_role: "Cantante/Comodín",
         ruto_bio: "NieR Automata mi religión. Mi bebida especial \"Lágrima Lunar\". Vivan los geis y los vatos tetones. Si no puedes hablar de lo importante, no entenderás lo raro.",
         ruto_drink_name: "Mezcla Armónica de Ruto",
-        
-        // -- Miembro del Equipo: Vamp --
-        vamp_name: "Vamp",
-        vamp_role: "Bailarín/Acompañante",
-        vamp_bio: "AQUÍ VA LA DESCRIPCIÓN",
-        vamp_drink_name: "Beso Carmesí de Vamp",
         
         // -- Miembro del Equipo: Veiga --
         veiga_name: "Veiga",
