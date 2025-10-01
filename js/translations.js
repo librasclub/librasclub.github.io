@@ -121,7 +121,7 @@ const translations = {
         // -- Team Member: Galleta --
         galleta_name: "Galleta",
         galleta_role: "Waiter/Companion",
-        galleta_bio: "DESCRIPTION WILL GO HERE",
+        galleta_bio: "I'm just a magic cookie who wants to bring joy to the hearts of others, bringing the blessing of the Zambalamba into their lives, so that the stars guide their path. Zambalamba",
         galleta_drink_name: "Galleta's Sweet Escape",
 
         // -- Team Member: Koto --
@@ -450,7 +450,7 @@ const translations = {
         // -- Miembro del Equipo: Galleta --
         galleta_name: "Galleta",
         galleta_role: "Mesero/Acompañante",
-        galleta_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        galleta_bio: "Solo soy una galletamagica que quiere llevar alegria a los corazones de los demás, llevando la bendición del zambalamba a sus vidas, para que las estrellas guíen su camino. Zambalamba",
         galleta_drink_name: "Dulce Escape de Galleta",
         
         // -- Miembro del Equipo: Koto --
