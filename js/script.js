@@ -117,6 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const modalSpotifyLink = document.getElementById('modal-spotify-link');
             const closeModalButton = document.getElementById('modal-close-button');
 
+            // Função para fechar o modal (agora está aqui para ser reutilizada)
+            const closeModal = () => modal.classList.remove('open');
+
             teamCards.forEach(card => {
                 card.addEventListener('click', () => {
                     const lang = localStorage.getItem('language') || 'en';
@@ -150,10 +153,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
 
-            const closeModal = () => modal.classList.remove('open');
+            // Configura os eventos para fechar o modal
             closeModalButton.addEventListener('click', closeModal);
             modal.addEventListener('click', (event) => {
                 if (event.target === modal) closeModal();
+            });
+
+            // NOVO: Adiciona a funcionalidade de fechar com a tecla ESC
+            window.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('open')) {
+                    closeModal();
+                }
             });
         }
     }
