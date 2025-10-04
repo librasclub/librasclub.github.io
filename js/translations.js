@@ -214,12 +214,7 @@ const translations = {
         razielsempai_bio: "RazielSempai78 is a bright green, restless, and cuddly frog who jumps around demanding hot chocolate while doling out wise advice and unexpected encouragement with emotional support, like a mischievous little Zen master dressed up as a prankster. (Kidnapping and flirting with the frog is prohibited.)",
         razielsempai_drink_name: "RazielSempai's Angelic Aura",
         
-        // -- Team Member: Beiker --
-        beiker_name: "Beiker",
-        beiker_role: "Dancer",
-        beiker_bio: "DESCRIPTION WILL GO HERE",
-        beiker_drink_name: "Beiker's Dance Fuel",
-        
+   
         // -- Team Member: Riku Kawamura --
         riku_name: "Riku Kawamura",
         riku_role: "Dancer",
@@ -232,11 +227,7 @@ const translations = {
         eli_bio: "Cheerful, a little seductive and talkative, she goes among the people at the bar trying to bring a smile to their faces in case they are having a bad day while she gives them affection so they feel that the bar can be like their second home. Good luck if you find her since she is everywhere and will wait for the moment you see her to give you a smile.",
         eli_drink_name: "Bubbles of temptation",
 
-        // -- Team Member: CryBaby --
-        crybaby_name: "CryBaby",
-        crybaby_role: "Companion",
-        crybaby_bio: "Cry is a girl who, by her appearance, seems depressed, but when you talk to her, you can hear her seductive voice and you know she'll make you have a great time. Cry is sweet, fun, kind, helpful, and overly flirtatious, which will make your night very special :3",
-        crybaby_drink_name: "CryBaby's Sweet Tears Cocktail",
+
 
         // -- Team Page Components --
         member_special_drink_label: "Special Drink:",
@@ -531,12 +522,7 @@ const translations = {
         razielsempai_bio: "RazielSempai78 es una ranita verde brillante, inquieto y tierno, que salta pidiendo “cocholate mientras reparte consejos sabios y ánimos inesperados con apoyo emocional, como un pequeño maestro zen disfrazado de travesuras. (Prohibido secuestrar ni coquillar a la ranita).",
         razielsempai_drink_name: "Aura Angélica de RazielSempai",
         
-        // -- Miembro del Equipo: Beiker --
-        beiker_name: "Beiker",
-        beiker_role: "Bailarín",
-        beiker_bio: "AQUÍ VA LA DESCRIPCIÓN",
-        beiker_drink_name: "Combustible de Baile de Beiker",
-        
+
         // -- Miembro del Equipo: Riku Kawamura --
         riku_name: "Riku Kawamura",
         riku_role: "Bailarín",
@@ -549,11 +535,6 @@ const translations = {
         eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar. Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa.",
         eli_drink_name: "Burbujas de tentación",
         
-        // -- Miembro del Equipo: CryBaby --
-        crybaby_name: "CryBaby",
-        crybaby_role: "Acompañante",
-        crybaby_bio: "Cry es una chica que por su apariencia parece estar deprimida pero cuando hablas con ella puedes notar su seductora voz y sabes que te hará pasar un muy buen rato. Cry es tierna, divertida, amable, servicial y demasiado coqueta que hará tu noche muy especial :3",
-        crybaby_drink_name: "Cóctel de Lágrimas Dulces de CryBaby",
 
         // -- Componentes de la Página de Equipo --
         member_special_drink_label: "Bebida Especial:",
