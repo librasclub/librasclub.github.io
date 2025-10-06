@@ -103,19 +103,19 @@ const translations = {
         // -- Team Member: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Designer",
-        alairen_bio: "DESCRIPTION WILL GO HERE",
+        alairen_bio: "",
         alairen_drink_name: "Alairen's Creative Spark",
 
         // -- Team Member: Dekiru --
         dekiru_name: "Dekiru",
         dekiru_role: "Security",
-        dekiru_bio: "DESCRIPTION WILL GO HERE",
+        dekiru_bio: "",
         dekiru_drink_name: "Dekiru's Guardian Brew",
 
         // -- Team Member: Dragon --
         dragon_name: "Dragon",
         dragon_role: "Waiter/Companion",
-        dragon_bio: "DESCRIPTION WILL GO HERE",
+        dragon_bio: "",
         dragon_drink_name: "Tangamandapio",
 
         // -- Team Member: Galleta --
@@ -133,7 +133,7 @@ const translations = {
         // -- Team Member: Dezzu --
         dezzu_name: "Dezzu",
         dezzu_role: "Companion/Nurse",
-        dezzu_bio: "DESCRIPTION WILL GO HERE",
+        dezzu_bio: "",
         dezzu_drink_name: "Dezzu's Healing Potion",
 
         // -- Team Member: Loxy & Lucy --
@@ -163,7 +163,7 @@ const translations = {
         // -- Team Member: Rosy --
         rosy_name: "Rosy",
         rosy_role: "Companion",
-        rosy_bio: "DESCRIPTION WILL GO HERE",
+        rosy_bio: "",
         rosy_drink_name: "Silent Rose",
 
         // -- Team Member: Ruto --
@@ -187,7 +187,7 @@ const translations = {
         // -- Team Member: Naruhishi --
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Avatar Editor",
-        naruhishi_bio: "DESCRIPTION WILL GO HERE",
+        naruhishi_bio: "",
         naruhishi_drink_name: "Naruhishi's Avatar Ale",
 
         // -- Team Member: SíniZ --
@@ -411,19 +411,19 @@ const translations = {
         // -- Miembro del Equipo: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Diseñadora",
-        alairen_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        alairen_bio: "",
         alairen_drink_name: "Chispa Creativa de Alairen",
 
         // -- Miembro del Equipo: Dekiru --
         dekiru_name: "Dekiru",
         dekiru_role: "Seguridad",
-        dekiru_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        dekiru_bio: "",
         dekiru_drink_name: "Pócima Guardián de Dekiru",
         
         // -- Miembro del Equipo: Dragon --
         dragon_name: "Dragon",
         dragon_role: "Mesero/Acompañante",
-        dragon_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        dragon_bio: "",
         dragon_drink_name: "Tangamandapio",
         
         // -- Miembro del Equipo: Galleta --
@@ -441,7 +441,7 @@ const translations = {
         // -- Miembro del Equipo: Dezzu --
         dezzu_name: "Dezzu",
         dezzu_role: "Acompañante/Enfermera",
-        dezzu_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        dezzu_bio: "",
         dezzu_drink_name: "Poción Sanadora de Dezzu",
         
         // -- Miembro del Equipo: Loxy & Lucy --
@@ -471,7 +471,7 @@ const translations = {
         // -- Miembro del Equipo: Rosy --
         rosy_name: "Rosy",
         rosy_role: "Acompañante",
-        rosy_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        rosy_bio: "",
         rosy_drink_name: "rosa silenciosa",
         
         // -- Miembro del Equipo: Ruto --
@@ -495,7 +495,7 @@ const translations = {
         // -- Miembro del Equipo: Naruhishi --
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Editor de avatares",
-        naruhishi_bio: "AQUÍ VA LA DESCRIPCIÓN",
+        naruhishi_bio: "",
         naruhishi_drink_name: "Cerveza Avatar de Naruhishi",
         
         // -- Miembro del Equipo: SíniZ --
