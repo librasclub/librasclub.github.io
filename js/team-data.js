@@ -1,5 +1,3 @@
-// js/team-data.js
-// Banco de dados central para todos os membros da equipa.
 
 const teamMembers = [
     // ===================================
