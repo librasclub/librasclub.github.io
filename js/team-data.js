@@ -18,7 +18,7 @@ const teamMembers = [
         roleKey: 'hector_role',
         bioKey: 'hector_bio',
         drinkKey: 'hector_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/HectorPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/hector-photo.jpg'
     },
     {
@@ -27,7 +27,7 @@ const teamMembers = [
         roleKey: 'icoraz_role',
         bioKey: 'icoraz_bio',
         drinkKey: 'icoraz_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/IcorazPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/icoraz-photo.jpg'
     },
     {
@@ -36,7 +36,7 @@ const teamMembers = [
         roleKey: 'amneulix_role',
         bioKey: 'amneulix_bio',
         drinkKey: 'amneulix_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/AmneulixPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/amneulix-photo.jpg'
     },
 
@@ -49,7 +49,7 @@ const teamMembers = [
         roleKey: 'alairen_role',
         bioKey: 'alairen_bio',
         drinkKey: 'alairen_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/AlairenPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/alairen-photo.jpg'
     },
     {
@@ -58,7 +58,7 @@ const teamMembers = [
         roleKey: 'dekiru_role',
         bioKey: 'dekiru_bio',
         drinkKey: 'dekiru_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/DekiruPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/dekiru-photo.jpg'
     },
     {
@@ -67,7 +67,7 @@ const teamMembers = [
         roleKey: 'dragon_role',
         bioKey: 'dragon_bio',
         drinkKey: 'dragon_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/DragonPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/dragon-photo.jpg'
     },
     {
@@ -76,7 +76,7 @@ const teamMembers = [
         roleKey: 'galleta_role',
         bioKey: 'galleta_bio',
         drinkKey: 'galleta_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/GalletaPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/galleta-photo.jpg'
     },
     {
@@ -85,7 +85,7 @@ const teamMembers = [
         roleKey: 'koto_role',
         bioKey: 'koto_bio',
         drinkKey: 'koto_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/KotoPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/koto-photo.jpg'
     },
     {
@@ -94,7 +94,7 @@ const teamMembers = [
         roleKey: 'dezzu_role',
         bioKey: 'dezzu_bio',
         drinkKey: 'dezzu_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/DezzuPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/dezzu-photo.jpg'
     },
     {
@@ -121,7 +121,7 @@ const teamMembers = [
         roleKey: 'nebula_role',
         bioKey: 'nebula_bio',
         drinkKey: 'nebula_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/NebulaPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/nebula-photo.jpg'
     },
     {
@@ -130,7 +130,7 @@ const teamMembers = [
         roleKey: 'papu_role',
         bioKey: 'papu_bio',
         drinkKey: 'papu_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/PapuPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/papu-photo.jpg'
     },
     {
@@ -157,7 +157,7 @@ const teamMembers = [
         roleKey: 'razielsempai_role',
         bioKey: 'razielsempai_bio',
         drinkKey: 'razielsempai_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/RazielSempaiPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/raziel-photo.jpg'
     },
     {
@@ -166,7 +166,7 @@ const teamMembers = [
         roleKey: 'ruto_role',
         bioKey: 'ruto_bio',
         drinkKey: 'ruto_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/RutoPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/ruto-photo.jpg'
     },
     {
@@ -175,7 +175,7 @@ const teamMembers = [
         roleKey: 'rosy_role',
         bioKey: 'rosy_bio',
         drinkKey: 'rosy_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/RosyPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/rosy-photo.jpg'
     },
     {
@@ -184,7 +184,7 @@ const teamMembers = [
         roleKey: 'siniz_role',
         bioKey: 'siniz_bio',
         drinkKey: 'siniz_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/SiniZPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/siniz-photo.jpg'
     },
     {
@@ -193,7 +193,7 @@ const teamMembers = [
         roleKey: 'veiga_role',
         bioKey: 'veiga_bio',
         drinkKey: 'veiga_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/VeigaPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/veiga-photo.jpg'
     },
     {
@@ -202,7 +202,7 @@ const teamMembers = [
         roleKey: 'youkai_role',
         bioKey: 'youkai_bio',
         drinkKey: 'youkai_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/YoukaiPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/youkai-photo.jpg'
     },
     {
@@ -211,7 +211,7 @@ const teamMembers = [
         roleKey: 'naruhishi_role',
         bioKey: 'naruhishi_bio',
         drinkKey: 'naruhishi_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/NaruhishiPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/naruhishi-photo.jpg'
     },
     {
@@ -220,7 +220,7 @@ const teamMembers = [
         roleKey: 'riku_role',
         bioKey: 'riku_bio',
         drinkKey: 'riku_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/RikuPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/riku-photo.jpg'
     },
     {
@@ -229,7 +229,7 @@ const teamMembers = [
         roleKey: 'eli_role',
         bioKey: 'eli_bio',
         drinkKey: 'eli_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/EliPlaylistID',
+        spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/eli-photo.jpg'
     },
 ];

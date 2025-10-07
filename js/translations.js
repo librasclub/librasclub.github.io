@@ -71,10 +71,10 @@ const translations = {
         // -------------------------------------------------------------
         // 6.0  TEAM PAGE (team.html)
         // -------------------------------------------------------------
-        team_title: "Meet the Crew",
+        team_title: "Meet the Team",
         team_owners_subtitle: "Owners",
         team_managers_subtitle: "Staff Managers",
-        team_crew_subtitle: "Crew",
+        team_crew_subtitle: "Team",
         
         // -- Team Member: Laira --
         laira_name: "Laira",
@@ -86,7 +86,7 @@ const translations = {
         hector_name: "Héctor",
         hector_role: "Head of Security",
         hector_bio: "Calm, observant, and a man of few words. Héctor doesn't need to say much to be noticed: his gaze says it all. He ensures the club is a safe, harmonious place full of good vibes. A protector like few others.",
-        hector_drink_name: "Hector's Silent Strength",
+        hector_drink_name: "",
 
         // -- Team Member: Icoraz --
         icoraz_name: "Icoraz",
@@ -98,19 +98,19 @@ const translations = {
         amneulix_name: "Amneulix",
         amneulix_role: "Head of Operations · Dance Leader",
         amneulix_bio: "Overflowing charisma, contagious laughter, and an energy that never fades. Amneulix is everywhere at once: behind the counter, on stage, or streaming an unforgettable night. Always friendly, always approachable.",
-        amneulix_drink_name: "Amneulix's Electric Current",
+        amneulix_drink_name: "",
 
         // -- Team Member: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Designer",
         alairen_bio: "",
-        alairen_drink_name: "Alairen's Creative Spark",
+        alairen_drink_name: "",
 
         // -- Team Member: Dekiru --
         dekiru_name: "Dekiru",
         dekiru_role: "Security",
         dekiru_bio: "",
-        dekiru_drink_name: "Dekiru's Guardian Brew",
+        dekiru_drink_name: "",
 
         // -- Team Member: Dragon --
         dragon_name: "Dragon",
@@ -122,19 +122,19 @@ const translations = {
         galleta_name: "Galleta",
         galleta_role: "Waiter/Companion",
         galleta_bio: "I'm just a magic cookie who wants to bring joy to the hearts of others, bringing the blessing of the Zambalamba into their lives, so that the stars guide their path. Zambalamba",
-        galleta_drink_name: "Galleta's Sweet Escape",
+        galleta_drink_name: "",
 
         // -- Team Member: Koto --
         koto_name: "Koto",
         koto_role: "Multi Role - Avi's Editor",
         koto_bio: "Relaxed, silly, humbled and I try to make people laugh, mostly I just go at my own pace and I'm patient with people, I like to make people laugh with my jokes and I like sweets, hanging around like a monkey in the bar is not role-playing, it's a lifestyle.",
-        koto_drink_name: "cherry blossom",
+        koto_drink_name: "Cherry Blossom",
 
         // -- Team Member: Dezzu --
         dezzu_name: "Dezzu",
         dezzu_role: "Companion/Nurse",
         dezzu_bio: "",
-        dezzu_drink_name: "Dezzu's Healing Potion",
+        dezzu_drink_name: "",
 
         // -- Team Member: Loxy & Lucy --
         loxy_name: "Loxy & Lucy",
@@ -170,37 +170,37 @@ const translations = {
         ruto_name: "Ruto",
         ruto_role: "Singer/Joker",
         ruto_bio: "NieR Automata is my religion. My special drink, \"Moon Tear.\" Long live geeks and big-breasted dudes. If you can't talk about the important stuff, you won't understand the weird stuff.",
-        ruto_drink_name: "Ruto's Harmonic Blend",
+        ruto_drink_name: "",
 
         // -- Team Member: Veiga --
         veiga_name: "Veiga",
         veiga_role: "DJ",
         veiga_bio: "The Libra DJ, always ready to put his favorite songs on the map",
-        veiga_drink_name: "Veiga's Rhythmic Rhapsody",
+        veiga_drink_name: "",
         
         // -- Team Member: Y0UK4II --
         youkai_name: "Y0UK4II",
         youkai_role: "Lawyer",
         youkai_bio: "If I could have shot them, I would have shot them, but they took my gun away.",
-        youkai_drink_name: "Youkai's Legal Lemonade",
+        youkai_drink_name: "",
         
         // -- Team Member: Naruhishi --
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Avatar Editor",
         naruhishi_bio: "",
-        naruhishi_drink_name: "Naruhishi's Avatar Ale",
+        naruhishi_drink_name: "",
 
         // -- Team Member: SíniZ --
         siniz_name: "SíniZ",
         siniz_role: "Bartender",
         siniz_bio: 'One of the club\'s first customers, SiniZ combines his talent for drinks with his passion for gossip. Always funny, always mischievous, and always with something to say. Never say "gossip" three times because it\'s sure to show up behind your back.',
-        siniz_drink_name: "SiniZ's Dark Delight",
+        siniz_drink_name: "",
 
         // -- Team Member: McAndres --
         mcandres_name: "McAndres",
         mcandres_role: "Companion",
         mcandres_bio: "Marked by bad luck, he has been on the brink of death countless times. Yet, he faces every challenge with humor, courage, and optimism. Clumsy, curious, and outgoing, he always seeks to meet new people and make friends.",
-        mcandres_drink_name: "McAndres' Charming Concoction",
+        mcandres_drink_name: "",
 
         // -- Team Member: ChepesCM --
         chepescm_name: "ChepesCM",
@@ -212,14 +212,14 @@ const translations = {
         razielsempai_name: "RazielSempai787",
         razielsempai_role: "Companion",
         razielsempai_bio: "RazielSempai78 is a bright green, restless, and cuddly frog who jumps around demanding hot chocolate while doling out wise advice and unexpected encouragement with emotional support, like a mischievous little Zen master dressed up as a prankster. (Kidnapping and flirting with the frog is prohibited.)",
-        razielsempai_drink_name: "RazielSempai's Angelic Aura",
+        razielsempai_drink_name: "",
         
    
         // -- Team Member: Riku Kawamura --
         riku_name: "Riku Kawamura",
         riku_role: "Dancer",
         riku_bio: "Messy, helpful, and friendly. You may not see me often because I'm a man with many jobs and many secrets, so if you do see me, take advantage because who knows when the next time will be.",
-        riku_drink_name: "Riku's Zen Zest",
+        riku_drink_name: "",
 
         // -- Team Member: Eli --
         eli_name: "Eli",
@@ -394,7 +394,7 @@ const translations = {
         hector_name: "Héctor",
         hector_role: "Jefe de Seguridad",
         hector_bio: "Sereno, observador y de palabra justa. Héctor no necesita hablar mucho para hacerse notar: su mirada lo dice todo. Se asegura de que el club sea un lugar seguro, armónico y lleno de buenas vibras. Protector como pocos.",
-        hector_drink_name: "Fuerza Silenciosa de Héctor",
+        hector_drink_name: "",
         
         // -- Miembro del Equipo: Icoraz --
         icoraz_name: "Icoraz",
@@ -406,19 +406,19 @@ const translations = {
         amneulix_name: "Amneulix",
         amneulix_role: "Jefa de Operaciones · Líder de Dancers",
         amneulix_bio: "Carisma desbordante, risas contagiosas y una energía que no se apaga nunca. Amneulix está en todos lados a la vez: tras el mostrador, en escena o streameando una noche inolvidable. Siempre simpática, siempre cercana.",
-        amneulix_drink_name: "Corriente Eléctrica de Amneulix",
+        amneulix_drink_name: "",
         
         // -- Miembro del Equipo: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Diseñadora",
         alairen_bio: "",
-        alairen_drink_name: "Chispa Creativa de Alairen",
+        alairen_drink_name: "",
 
         // -- Miembro del Equipo: Dekiru --
         dekiru_name: "Dekiru",
         dekiru_role: "Seguridad",
         dekiru_bio: "",
-        dekiru_drink_name: "Pócima Guardián de Dekiru",
+        dekiru_drink_name: "",
         
         // -- Miembro del Equipo: Dragon --
         dragon_name: "Dragon",
@@ -430,19 +430,19 @@ const translations = {
         galleta_name: "Galleta",
         galleta_role: "Mesero/Acompañante",
         galleta_bio: "Solo soy una galletamagica que quiere llevar alegria a los corazones de los demás, llevando la bendición del zambalamba a sus vidas, para que las estrellas guíen su camino. Zambalamba",
-        galleta_drink_name: "Dulce Escape de Galleta",
+        galleta_drink_name: "",
         
         // -- Miembro del Equipo: Koto --
         koto_name: "Koto",
         koto_role: "Multi Rol - Editor de Avis",
         koto_bio: "Relajado, tonto, Humillado e intento sacarle risas a la gente, más que nada solo voy a mi ritmo y soy paciente con las personas, me gusta hacer reir con ocurrencias mías y me gustan los dulces, andar como chango en el bar no es roleo es estilo de vida",
-        koto_drink_name: "Flor de cerezo",
+        koto_drink_name: "Flor de Cerezo",
         
         // -- Miembro del Equipo: Dezzu --
         dezzu_name: "Dezzu",
         dezzu_role: "Acompañante/Enfermera",
         dezzu_bio: "",
-        dezzu_drink_name: "Poción Sanadora de Dezzu",
+        dezzu_drink_name: "",
         
         // -- Miembro del Equipo: Loxy & Lucy --
         loxy_name: "Loxy & Lucy",
@@ -472,43 +472,43 @@ const translations = {
         rosy_name: "Rosy",
         rosy_role: "Acompañante",
         rosy_bio: "",
-        rosy_drink_name: "rosa silenciosa",
+        rosy_drink_name: "Rosa Silenciosa",
         
         // -- Miembro del Equipo: Ruto --
         ruto_name: "Ruto",
         ruto_role: "Cantante/Comodín",
         ruto_bio: "NieR Automata mi religión. Mi bebida especial \"Lágrima Lunar\". Vivan los geis y los vatos tetones. Si no puedes hablar de lo importante, no entenderás lo raro.",
-        ruto_drink_name: "Mezcla Armónica de Ruto",
+        ruto_drink_name: "",
         
         // -- Miembro del Equipo: Veiga --
         veiga_name: "Veiga",
         veiga_role: "DJ",
         veiga_bio: "El DJ de Libras, siempre dispuesto a poner sus canciones favoritas en el mapa.",
-        veiga_drink_name: "Rapsodia Rítmica de Veiga",
+        veiga_drink_name: "",
         
         // -- Miembro del Equipo: Y0UK4II --
         youkai_name: "Y0UK4II",
         youkai_role: "Abogada",
         youkai_bio: "Si pudiera ya les hubiera pegado un tiro pero me sacaron el arma", 
-        youkai_drink_name: "Limonada Legal de Youkai",
+        youkai_drink_name: "",
         
         // -- Miembro del Equipo: Naruhishi --
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Editor de avatares",
         naruhishi_bio: "",
-        naruhishi_drink_name: "Cerveza Avatar de Naruhishi",
+        naruhishi_drink_name: "",
         
         // -- Miembro del Equipo: SíniZ --
         siniz_name: "SíniZ",
         siniz_role: "Bartender",
         siniz_bio: 'Uno de los primeros clientes del club, SiniZ combina su talento para las bebidas con su pasión por el chisme. Siempre divertido, siempre travieso, y siempre con algo que contar. Nunca digas tres veces "chisme" porque de seguro se te aparecerá en la espalda.',        
-        siniz_drink_name: "Delicia Oscura de SiniZ",
+        siniz_drink_name: "",
         
         // -- Miembro del Equipo: McAndres --
         mcandres_name: "McAndres",
         mcandres_role: "Acompañante",
         mcandres_bio: "Marcado por la mala suerte, ha estado al borde de la muerte incontables veces. Aun así, enfrenta cada desafío con humor, coraje y optimismo. Torpe, curioso y extrovertido, siempre busca conocer gente nueva y hacer amigos.",
-        mcandres_drink_name: "Breve Encantador de McAndres",
+        mcandres_drink_name: "",
         
         // -- Miembro del Equipo: ChepesCM --
         chepescm_name: "ChepesCM",
@@ -520,20 +520,20 @@ const translations = {
         razielsempai_name: "RazielSempai787",
         razielsempai_role: "Acompañante",
         razielsempai_bio: "RazielSempai78 es una ranita verde brillante, inquieto y tierno, que salta pidiendo “cocholate mientras reparte consejos sabios y ánimos inesperados con apoyo emocional, como un pequeño maestro zen disfrazado de travesuras. (Prohibido secuestrar ni coquillar a la ranita).",
-        razielsempai_drink_name: "Aura Angélica de RazielSempai",
+        razielsempai_drink_name: "",
         
 
         // -- Miembro del Equipo: Riku Kawamura --
         riku_name: "Riku Kawamura",
         riku_role: "Bailarín",
         riku_bio: "Desmadroso, colaborador y amigable. Puede que no me vean de seguido por que soy un hombre de muchos trabajos y también con muchos secretos, así que si me vez aprovecha por que quien sabe cuándo sea la próxima.",
-        riku_drink_name: "Zumo Zen de Riku",
+        riku_drink_name: "",
         
         // -- Miembro del Equipo: Eli --
         eli_name: "Eli",
         eli_role: "Acompañante",
         eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar. Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa.",
-        eli_drink_name: "Burbujas de tentación",
+        eli_drink_name: "Burbujas de Tentación",
         
 
         // -- Componentes de la Página de Equipo --
