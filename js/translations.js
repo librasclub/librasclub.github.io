@@ -55,7 +55,7 @@ const translations = {
         event_heroes_desc: "A unique celebration where universes collide and the lines between good and evil blur. It's time to choose sides: will you be a brave defender of justice or a master of chaos and destruction?",
         // -- Halloween Event --
         event_halloween_title: "Halloween Event",
-        event_halloween_time: "Thursdays, 11:00 PM Chicago",
+        event_halloween_time: "Tuesday, Thursday, Saturday, 11:00 PM Chicago",
         event_halloween_desc: "The darkness awakens, and the club fills with shadows, pumpkins, and magic. Between haunted drinks, music from beyond the grave, and enchanted costumes... The night will be yours if you dare to dance with the ghosts!",
 
         // -------------------------------------------------------------
@@ -363,7 +363,7 @@ const translations = {
         event_heroes_desc: "Una celebración única donde los universos chocan y las líneas entre el bien y el mal se difuminan. Es hora de elegir bando: ¿serás un valiente defensor de la justicia o un maestro del caos y la destrucción?",
         // -- Evento de Halloween --
         event_halloween_title: "Evento de Halloween",
-        event_halloween_time: "Jueves, 11:00 PM Chicago",
+        event_halloween_time: "Martes, Jueves, Sábado, 11:00 PM Chicago",
         event_halloween_desc: "La oscuridad despierta y el club se llena de sombras, calabazas y magia. Entre copas embrujadas, música de ultratumba y disfraces encantados... ¡La noche será tuya si te atreves a bailar con los fantasmas!",
 
         // -------------------------------------------------------------
