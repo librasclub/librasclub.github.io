@@ -134,11 +134,11 @@ const teamMembers = [
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/papu-photo.jpg'
     },
     {
-        id: 'mcandres',
-        nameKey: 'mcandres_name',
-        roleKey: 'mcandres_role',
-        bioKey: 'mcandres_bio',
-        drinkKey: 'mcandres_drink_name',
+        id: 'mcandrea',
+        nameKey: 'mcandrea_name',
+        roleKey: 'mcandrea_role',
+        bioKey: 'mcandra_bio',
+        drinkKey: 'mcandrea_drink_name',
         spotifyURL: 'https://open.spotify.com/playlist/0DknIcd5PtzFheq2F1ogYf?si=Q7w3DAF9Q1edPE1pHniflg&pi=T3-Wc03cQHebu&nd=1&dlsi=1f60394b4b194776',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/andrea-photo.jpg'
     },

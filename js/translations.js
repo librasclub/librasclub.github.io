@@ -197,10 +197,10 @@ const translations = {
         siniz_drink_name: "",
 
         // -- Team Member: McAndres --
-        mcandres_name: "McAndres",
-        mcandres_role: "Companion",
-        mcandres_bio: "Marked by bad luck, he has been on the brink of death countless times. Yet, he faces every challenge with humor, courage, and optimism. Clumsy, curious, and outgoing, he always seeks to meet new people and make friends.",
-        mcandres_drink_name: "",
+        mcandrea_name: "McAndrea",
+        mcandrea_role: "Companion",
+        mcandrea_bio: "Marked by bad luck, he has been on the brink of death countless times. Yet, he faces every challenge with humor, courage, and optimism. Clumsy, curious, and outgoing, he always seeks to meet new people and make friends.",
+        mcandrea_drink_name: "",
 
         // -- Team Member: ChepesCM --
         chepescm_name: "ChepesCM",
@@ -504,11 +504,11 @@ const translations = {
         siniz_bio: 'Uno de los primeros clientes del club, SiniZ combina su talento para las bebidas con su pasión por el chisme. Siempre divertido, siempre travieso, y siempre con algo que contar. Nunca digas tres veces "chisme" porque de seguro se te aparecerá en la espalda.',        
         siniz_drink_name: "",
         
-        // -- Miembro del Equipo: McAndres --
-        mcandres_name: "McAndres",
-        mcandres_role: "Acompañante",
-        mcandres_bio: "Marcado por la mala suerte, ha estado al borde de la muerte incontables veces. Aun así, enfrenta cada desafío con humor, coraje y optimismo. Torpe, curioso y extrovertido, siempre busca conocer gente nueva y hacer amigos.",
-        mcandres_drink_name: "",
+        // -- Miembro del Equipo: McAndrea --
+        mcandrea_name: "McAndrea",
+        mcandrea_role: "Acompañante",
+        mcandrea_bio: "Marcado por la mala suerte, ha estado al borde de la muerte incontables veces. Aun así, enfrenta cada desafío con humor, coraje y optimismo. Torpe, curioso y extrovertido, siempre busca conocer gente nueva y hacer amigos.",
+        mcandrea_drink_name: "",
         
         // -- Miembro del Equipo: ChepesCM --
         chepescm_name: "ChepesCM",
