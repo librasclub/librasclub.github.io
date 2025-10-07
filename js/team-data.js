@@ -166,7 +166,7 @@ const teamMembers = [
         roleKey: 'ruto_role',
         bioKey: 'ruto_bio',
         drinkKey: 'ruto_drink_name',
-        spotifyURL: '',
+        spotifyURL: 'https://open.spotify.com/playlist/79agz74z8ST9t5H15NRJye?si=fb4f26b5216349ee',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/ruto-photo.jpg'
     },
     {
