@@ -9,7 +9,7 @@ const teamMembers = [
         roleKey: 'laira_role',
         bioKey: 'laira_bio',
         drinkKey: 'laira_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/LairaPlaylistID',
+        spotifyURL: 'https://open.spotify.com/playlist/0pPldkNLKwWf5VQUkYAqPa?si=mu4lymu7QDWy56iTSoOxzw',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/laira-photo.jpg'
     },
     {
