@@ -59,9 +59,7 @@ const translations = {
         event_halloween_desc: "The darkness awakens, and the club fills with shadows, pumpkins, and magic. Between haunted drinks, music from beyond the grave, and enchanted costumes... The night will be yours if you dare to dance with the ghosts!",
 
         // -------------------------------------------------------------
-        // 5.0  GALLERY PAGE (gallery.html)
-        // -------------------------------------------------------------
-        gallery_title: "Moments in the Club",
+        // 5.0  GALLERY PAGE (galle=the Club",
         gallery_select_label: "Choose a gallery:",
         gallery_filter_all: "All",
         gallery_filter_generic: "General",
@@ -169,8 +167,8 @@ const translations = {
         // -- Team Member: Ruto --
         ruto_name: "Ruto",
         ruto_role: "Singer/Joker",
-        ruto_bio: "NieR Automata is my religion. My special drink, \"Moon Tear.\" Long live geeks and big-breasted dudes. If you can't talk about the important stuff, you won't understand the weird stuff.",
-        ruto_drink_name: "",
+        ruto_bio: "NieR Automata is my religion. Long live geeks and big-breasted dudes. If you can't talk about the important stuff, you won't understand the weird stuff.",
+        ruto_drink_name: "Moon Tear",
 
         // -- Team Member: Veiga --
         veiga_name: "Veiga",
@@ -477,8 +475,8 @@ const translations = {
         // -- Miembro del Equipo: Ruto --
         ruto_name: "Ruto",
         ruto_role: "Cantante/Comodín",
-        ruto_bio: "NieR Automata mi religión. Mi bebida especial \"Lágrima Lunar\". Vivan los geis y los vatos tetones. Si no puedes hablar de lo importante, no entenderás lo raro.",
-        ruto_drink_name: "",
+        ruto_bio: "NieR Automata mi religión. Vivan los geis y los vatos tetones. Si no puedes hablar de lo importante, no entenderás lo raro.",
+        ruto_drink_name: "Lágrima Lunar",
         
         // -- Miembro del Equipo: Veiga --
         veiga_name: "Veiga",
