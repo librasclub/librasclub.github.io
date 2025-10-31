@@ -35,6 +35,7 @@ const translations = {
         menu_name_temporada3: "Season 3",
         menu_name_gothic: "Gothic Menu",
         menu_name_heroes: "Heroes vs Villains Menu",
+        menu_name_halloween: "Halloween Special Menu",
 
         // -------------------------------------------------------------
         // 4.0  EVENTS PAGE (events.html)
@@ -335,6 +336,7 @@ const translations = {
         menu_name_temporada3: "Temporada 3",
         menu_name_gothic: "Menú Gótico",
         menu_name_heroes: "Menú Héroes vs Villanos",
+        menu_name_halloween: "Menú Especial de Halloween",
 
         // -------------------------------------------------------------
         // 4.0  PÁGINA DE EVENTOS (events.html)
