@@ -143,15 +143,6 @@ const teamMembers = [
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/andrea-photo.jpg'
     },
     {
-        id: 'chepescm',
-        nameKey: 'chepescm_name',
-        roleKey: 'chepescm_role',
-        bioKey: 'chepescm_bio',
-        drinkKey: 'chepescm_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/6mRv4Tp5kQAb0vtUC94egO?si=Jhg3mv_aR1GVDqdQmxy3VA&pi=ewUUmIYVRMKaN',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/chepes-photo.jpg'
-    },
-    {
         id: 'razielsempai',
         nameKey: 'razielsempai_name',
         roleKey: 'razielsempai_role',
