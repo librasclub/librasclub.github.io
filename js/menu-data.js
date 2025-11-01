@@ -110,5 +110,31 @@ const libraMenus = {
                 { name: "Krang" }
             ]
         }
+    },
+    
+    halloween: {
+        name: "Halloween Special",
+        categories: {
+            "Tragos Fuertes": [
+                { name: "Go To Sleep" },
+                { name: "Blair's Witch" },
+                { name: "Calabaza a la medianoche" }
+            ],
+            "Tragos Medios": [
+                { name: "Atardecer Fantasmal" },
+                { name: "Slasher Movie" },
+                { name: "Midsommar" }
+            ],
+            "Tragos Suaves": [
+                { name: "Troll Blood" },
+                { name: "Cadaver de la novia" },
+                { name: "Backrooms" }
+            ],
+            "Sin Alcohol": [
+                { name: "FNAF" },
+                { name: "Sierra de Jigsaw" },
+                { name: "Junji Ito" }
+            ]
+        }
     }
 };

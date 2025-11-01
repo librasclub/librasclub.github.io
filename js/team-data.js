@@ -161,15 +161,6 @@ const teamMembers = [
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/ruto-photo.jpg'
     },
     {
-        id: 'rosy',
-        nameKey: 'rosy_name',
-        roleKey: 'rosy_role',
-        bioKey: 'rosy_bio',
-        drinkKey: 'rosy_drink_name',
-        spotifyURL: '',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/rosy-photo.jpg'
-    },
-    {
         id: 'siniz',
         nameKey: 'siniz_name',
         roleKey: 'siniz_role',

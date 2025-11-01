@@ -35,6 +35,7 @@ const translations = {
         menu_name_temporada3: "Season 3",
         menu_name_gothic: "Gothic Menu",
         menu_name_heroes: "Heroes vs Villains Menu",
+        menu_name_halloween: "Halloween Special Menu",
 
         // -------------------------------------------------------------
         // 4.0  EVENTS PAGE (events.html)
@@ -59,9 +60,7 @@ const translations = {
         event_halloween_desc: "The darkness awakens, and the club fills with shadows, pumpkins, and magic. Between haunted drinks, music from beyond the grave, and enchanted costumes... The night will be yours if you dare to dance with the ghosts!",
 
         // -------------------------------------------------------------
-        // 5.0  GALLERY PAGE (gallery.html)
-        // -------------------------------------------------------------
-        gallery_title: "Moments in the Club",
+        // 5.0  GALLERY PAGE (galle=the Club",
         gallery_select_label: "Choose a gallery:",
         gallery_filter_all: "All",
         gallery_filter_generic: "General",
@@ -160,17 +159,11 @@ const translations = {
         papu_bio: "Papu is your most loyal and lethal Papu. I'll show you my love through blows, even though sometimes I go too far. I'll always listen, because I can't talk to silence you.",
         papu_drink_name: "The hater",
         
-        // -- Team Member: Rosy --
-        rosy_name: "Rosy",
-        rosy_role: "Companion",
-        rosy_bio: "",
-        rosy_drink_name: "Silent Rose",
-
         // -- Team Member: Ruto --
         ruto_name: "Ruto",
         ruto_role: "Singer/Joker",
-        ruto_bio: "NieR Automata is my religion. My special drink, \"Moon Tear.\" Long live geeks and big-breasted dudes. If you can't talk about the important stuff, you won't understand the weird stuff.",
-        ruto_drink_name: "",
+        ruto_bio: "NieR Automata is my religion. Long live geeks and big-breasted dudes. If you can't talk about the important stuff, you won't understand the weird stuff.",
+        ruto_drink_name: "Moon Tear",
 
         // -- Team Member: Veiga --
         veiga_name: "Veiga",
@@ -343,6 +336,7 @@ const translations = {
         menu_name_temporada3: "Temporada 3",
         menu_name_gothic: "Menú Gótico",
         menu_name_heroes: "Menú Héroes vs Villanos",
+        menu_name_halloween: "Menú Especial de Halloween",
 
         // -------------------------------------------------------------
         // 4.0  PÁGINA DE EVENTOS (events.html)
@@ -468,17 +462,11 @@ const translations = {
         papu_bio: "Papu es tu papu mas leal y letal. Te mostraré mi cariño a través de los golpes, aunque a veces me paso. Te escucharé siempre, ya que no puedo hablar para callarte.",
         papu_drink_name: "El hater",
         
-        // -- Miembro del Equipo: Rosy --
-        rosy_name: "Rosy",
-        rosy_role: "Acompañante",
-        rosy_bio: "",
-        rosy_drink_name: "Rosa Silenciosa",
-        
         // -- Miembro del Equipo: Ruto --
         ruto_name: "Ruto",
         ruto_role: "Cantante/Comodín",
-        ruto_bio: "NieR Automata mi religión. Mi bebida especial \"Lágrima Lunar\". Vivan los geis y los vatos tetones. Si no puedes hablar de lo importante, no entenderás lo raro.",
-        ruto_drink_name: "",
+        ruto_bio: "NieR Automata mi religión. Vivan los geis y los vatos tetones. Si no puedes hablar de lo importante, no entenderás lo raro.",
+        ruto_drink_name: "Lágrima Lunar",
         
         // -- Miembro del Equipo: Veiga --
         veiga_name: "Veiga",
