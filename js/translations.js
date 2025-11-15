@@ -194,7 +194,7 @@ const translations = {
         siniz_drink_name: "",
 
         // -- Team Member: McAndres --
-        mcandrea_name: "McAndrea",
+        mcandrea_name: "McAndrea16",
         mcandrea_role: "Companion",
         mcandrea_bio: "Marked by bad luck, he has been on the brink of death countless times. Yet, he faces every challenge with humor, courage, and optimism. Clumsy, curious, and outgoing, he always seeks to meet new people and make friends.",
         mcandrea_drink_name: "",
@@ -501,7 +501,7 @@ const translations = {
         siniz_drink_name: "",
         
         // -- Miembro del Equipo: McAndrea --
-        mcandrea_name: "McAndrea",
+        mcandrea_name: "McAndrea16",
         mcandrea_role: "Acompañante",
         mcandrea_bio: "Marcado por la mala suerte, ha estado al borde de la muerte incontables veces. Aun así, enfrenta cada desafío con humor, coraje y optimismo. Torpe, curioso y extrovertido, siempre busca conocer gente nueva y hacer amigos.",
         mcandrea_drink_name: "",
