@@ -139,7 +139,7 @@ const teamMembers = [
         roleKey: 'mcandrea_role',
         bioKey: 'mcandrea_bio',
         drinkKey: 'mcandrea_drink_name',
-        spotifyURL: 'https://open.spotify.com/playlist/0DknIcd5PtzFheq2F1ogYf?si=Q7w3DAF9Q1edPE1pHniflg&pi=T3-Wc03cQHebu&nd=1&dlsi=1f60394b4b194776',
+        spotifyURL: 'https://open.spotify.com/playlist/0TL0BqffrCK5CD65ef4gKF?si=EEw_ZUnpRdizNy0wr32glw',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/andrea-photo.jpg'
     },
     {
