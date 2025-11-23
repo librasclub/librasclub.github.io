@@ -123,7 +123,7 @@ const translations = {
 
         // -- Team Member: Galleta --
         galleta_name: "Galleta",
-        galleta_role: "Waiter/Companion",
+        galleta_role: "Map creator",
         galleta_bio: "I'm just a magic cookie who wants to bring joy to the hearts of others, bringing the blessing of the Zambalamba into their lives, so that the stars guide their path. Zambalamba",
         galleta_drink_name: "",
 
@@ -177,7 +177,7 @@ const translations = {
         
         // -- Team Member: Y0UK4II --
         youkai_name: "Y0UK4II",
-        youkai_role: "Lawyer",
+        youkai_role: "Security/guide",
         youkai_bio: "If I could have shot them, I would have shot them, but they took my gun away.",
         youkai_drink_name: "",
         
@@ -300,6 +300,13 @@ const translations = {
         thank_you_heading: "Application Sent!",
         thank_you_message: "Thank you for your interest. We will be in touch soon.",
         thank_you_gohome: "Back to Home",
+
+        // -------------------------------------------------------------
+        // 11.0  vhm page (vhm.html)
+        // -------------------------------------------------------------
+        nav_vmh: "VMH",
+        vmh_title: "Departamento VMH",
+        vmh_subtitle: "Equipo de Salud Mental Virtual",
 
 
     },
@@ -478,7 +485,7 @@ const translations = {
         
         // -- Miembro del Equipo: Y0UK4II --
         youkai_name: "Y0UK4II",
-        youkai_role: "Abogada",
+        youkai_role: "seguridad/guía",
         youkai_bio: "Si pudiera ya les hubiera pegado un tiro pero me sacaron el arma", 
         youkai_drink_name: "",
         
@@ -600,6 +607,15 @@ const translations = {
         thank_you_heading: "¡Candidatura Enviada!",
         thank_you_message: "Gracias por tu interés. Nos pondremos en contacto pronto.",
         thank_you_gohome: "Volver al Inicio",
+
+
+        // -------------------------------------------------------------
+        // 11.0  pagina vhm (vhm.html)
+        // -------------------------------------------------------------
+        nav_vmh: "VMH",
+        vmh_title: "Departamento VMH",
+        vmh_subtitle: "Equipo de Salud Mental Virtual",
+
 
     }
 };

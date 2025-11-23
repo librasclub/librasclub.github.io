@@ -301,48 +301,38 @@ function initFocusMode() {
 function initVMHPage() {
     const container = document.getElementById('vmh-sections-container');
 
-    // Se não encontrar o container VMH, sai da função
-    if (!container || typeof teamMembers === 'undefined') return;
-
-    // Defina aqui quem faz parte do VMH
-    const sections = {
-        vmh_team: { 
-            titleKey: 'vmh_subtitle', // Título da secção
-            members: ['vmh_member1', 'vmh_member2'] // <-- COLOQUE OS IDs REAIS AQUI
-        }
-    };
+    // Se não encontrar o container ou a lista nova, sai
+    if (!container || typeof vmhMembers === 'undefined') return;
 
     container.innerHTML = '';
 
-    for (const sectionKey in sections) {
-        const section = sections[sectionKey];
-        // Cria o título (opcional, se quiser remover apague estas 4 linhas)
-        const subtitle = document.createElement('h2');
-        subtitle.className = 'team-subtitle';
-        subtitle.setAttribute('data-translate-key', section.titleKey);
-        container.appendChild(subtitle);
+    // Cria o título
+    const subtitle = document.createElement('h2');
+    subtitle.className = 'team-subtitle';
+    subtitle.textContent = "VMH Team"; // Ou use data-translate-key se preferir
+    container.appendChild(subtitle);
+    
+    // Cria a grelha
+    const grid = document.createElement('div');
+    grid.className = 'team-grid';
+    
+    // Gera os cartões simplificados
+    vmhMembers.forEach(member => {
+        const card = document.createElement('div');
+        // Usamos 'team-card' para manter o estilo visual (borda, fundo), 
+        // mas removemos a lógica de clique no script global.
+        card.className = 'team-card vmh-card-simple'; 
         
-        const grid = document.createElement('div');
-        grid.className = 'team-grid';
+        // Apenas Imagem e Nome
+        card.innerHTML = `
+            <img src="${member.imageSrc}" alt="${member.name}" class="team-avatar" style="margin-bottom: 15px;">
+            <h3 class="team-name" style="margin-bottom: 0;">${member.name}</h3>
+        `;
         
-        section.members.forEach(memberId => {
-            const member = teamMembers.find(m => m.id === memberId);
-            if (member) {
-                const card = document.createElement('div');
-                card.className = 'team-card';
-                card.innerHTML = `
-                    <img src="${member.imageSrc}" alt="Avatar of ${member.id}" class="team-avatar">
-                    <h3 class="team-name" data-translate-key="${member.nameKey}">${member.id}</h3>
-                    <p class="team-role" data-translate-key="${member.roleKey}"></p>
-                    <p class="team-bio" data-translate-key="${member.bioKey}"></p>
-                    <span class="hidden" data-special-drink-key="${member.drinkKey}"></span>
-                    <span class="hidden" data-spotify-playlist="${member.spotifyURL}"></span>
-                `;
-                grid.appendChild(card);
-            }
-        });
-        container.appendChild(grid);
-    }
+        grid.appendChild(card);
+    });
+    
+    container.appendChild(grid);
 }
 
 

@@ -205,4 +205,26 @@ const teamMembers = [
         spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/eli-photo.jpg'
     },
+
+    
+];
+
+// === NOVA LISTA EXCLUSIVA PARA VMH ===
+const vmhMembers = [
+    {
+        name: 'Riku Kawamura',
+        imageSrc: 'assets/images/vhm/riku-vhm.jpg' // Caminho corrigido
+    },
+    {
+        name: 'nebula_wave',
+        imageSrc: 'assets/images/vhm/nebula-vhm.jpg' // Caminho corrigido
+    },
+    {
+        name: 'loxythecrazy',
+        imageSrc: 'assets/images/vhm/loxy-vhm.jpg' // Caminho corrigido
+    },
+    {
+        name: 'Amneulix',
+        imageSrc: 'assets/images/vhm/amneulix-vhm.jpg' // Caminho corrigido
+    }
 ];
