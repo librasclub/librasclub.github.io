@@ -58,6 +58,10 @@ const translations = {
         event_halloween_title: "Halloween Event",
         event_halloween_time: "Tuesday, Thursday, Saturday, 11:00 PM Chicago",
         event_halloween_desc: "The darkness awakens, and the club fills with shadows, pumpkins, and magic. Between haunted drinks, music from beyond the grave, and enchanted costumes... The night will be yours if you dare to dance with the ghosts!",
+        // -- Xmas Event --
+        event_xmas_title: "Xmas Special",
+        event_xmas_time: "Tuesday, Thursday, Saturday, 11:00 PM Chicago",
+        event_xmas_desc: "Join us for a special night filled with music, laughter, and holiday spirit. Get ready to celebrate Christmas — the Libra’s way!",
 
         // -------------------------------------------------------------
         // 5.0  GALLERY PAGE (galle=the Club",
@@ -190,7 +194,7 @@ const translations = {
         siniz_drink_name: "",
 
         // -- Team Member: McAndres --
-        mcandrea_name: "McAndrea",
+        mcandrea_name: "McAndrea16",
         mcandrea_role: "Companion",
         mcandrea_bio: "Marked by bad luck, he has been on the brink of death countless times. Yet, he faces every challenge with humor, courage, and optimism. Clumsy, curious, and outgoing, he always seeks to meet new people and make friends.",
         mcandrea_drink_name: "",
@@ -359,6 +363,10 @@ const translations = {
         event_halloween_title: "Evento de Halloween",
         event_halloween_time: "Martes, Jueves, Sábado, 11:00 PM Chicago",
         event_halloween_desc: "La oscuridad despierta y el club se llena de sombras, calabazas y magia. Entre copas embrujadas, música de ultratumba y disfraces encantados... ¡La noche será tuya si te atreves a bailar con los fantasmas!",
+        // -- Especial de Navidad --
+        event_xmas_title: "Especial de Navidad",
+        event_xmas_time: "Martes, Jueves, Sábado, 11:00 PM Chicago",
+        event_xmas_desc: "Ven a celebrar con nosotros una noche especial llena de música, risas y espíritu festivo. ¡Prepárate para vivir la Navidad al estilo Libra’s!",
 
         // -------------------------------------------------------------
         // 5.0  PÁGINA DE GALERÍA (gallery.html)
@@ -487,7 +495,7 @@ const translations = {
         siniz_drink_name: "",
         
         // -- Miembro del Equipo: McAndrea --
-        mcandrea_name: "McAndrea",
+        mcandrea_name: "McAndrea16",
         mcandrea_role: "Acompañante",
         mcandrea_bio: "Marcado por la mala suerte, ha estado al borde de la muerte incontables veces. Aun así, enfrenta cada desafío con humor, coraje y optimismo. Torpe, curioso y extrovertido, siempre busca conocer gente nueva y hacer amigos.",
         mcandrea_drink_name: "",
