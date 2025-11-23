@@ -28,7 +28,7 @@ const teamMembers = [
         bioKey: 'icoraz_bio',
         drinkKey: 'icoraz_drink_name',
         spotifyURL: '',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/icoraz-photo.jpg'
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/librasclub.github.io/refs/heads/main/assets/images/team/icoraz-photo.jpg'
     },
     {
         id: 'amneulix',
@@ -50,7 +50,7 @@ const teamMembers = [
         bioKey: 'alairen_bio',
         drinkKey: 'alairen_drink_name',
         spotifyURL: '',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/alairen-photo.jpg'
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/librasclub.github.io/refs/heads/main/assets/images/team/alairen-photo.jpg'
     },
     {
         id: 'dekiru',
@@ -104,7 +104,7 @@ const teamMembers = [
         bioKey: 'lulu_bio',
         drinkKey: 'lulu_drink_name',
         spotifyURL: 'https://open.spotify.com/playlist/3ed3aqtVNBhNgTxFWOkBZ8?si=907UlHP1QmmsDVeMhaGt3w',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/lulu-photo.jpg'
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/librasclub.github.io/refs/heads/main/assets/images/team/lulu-photo.jpg'
     },
     {
         id: 'nebula',
@@ -122,7 +122,7 @@ const teamMembers = [
         bioKey: 'papu_bio',
         drinkKey: 'papu_drink_name',
         spotifyURL: '',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/papu-photo.jpg'
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/librasclub.github.io/refs/heads/main/assets/images/team/papu-photo.jpg'
     },
     {
         id: 'mcandrea',
@@ -149,7 +149,7 @@ const teamMembers = [
         bioKey: 'ruto_bio',
         drinkKey: 'ruto_drink_name',
         spotifyURL: 'https://open.spotify.com/playlist/79agz74z8ST9t5H15NRJye?si=fb4f26b5216349ee',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/ruto-photo.jpg'
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/librasclub.github.io/refs/heads/main/assets/images/team/ruto-photo.jpg'
     },
     {
         id: 'siniz',
