@@ -422,7 +422,7 @@ const translations = {
         
         // -- Miembro del Equipo: Galleta --
         galleta_name: "Galleta",
-        galleta_role: "Mesero/Acompañante",
+        galleta_role: "Creador Del Mapa",
         galleta_bio: "Solo soy una galletamagica que quiere llevar alegria a los corazones de los demás, llevando la bendición del zambalamba a sus vidas, para que las estrellas guíen su camino. Zambalamba",
         galleta_drink_name: "",
         
@@ -431,12 +431,6 @@ const translations = {
         koto_role: "Multi Rol - Editor de Avis",
         koto_bio: "Relajado, tonto, Humillado e intento sacarle risas a la gente, más que nada solo voy a mi ritmo y soy paciente con las personas, me gusta hacer reir con ocurrencias mías y me gustan los dulces, andar como chango en el bar no es roleo es estilo de vida",
         koto_drink_name: "Flor de Cerezo",
-        
-        // -- Miembro del Equipo: Dezzu --
-        dezzu_name: "Dezzu",
-        dezzu_role: "Acompañante/Enfermera",
-        dezzu_bio: "",
-        dezzu_drink_name: "",
         
         // -- Miembro del Equipo: Loxy & Lucy --
         loxy_name: "Loxy & Lucy",

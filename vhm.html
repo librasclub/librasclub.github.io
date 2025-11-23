@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMH - Libra's Club</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/team-style.css"> <script src="https://kit.fontawesome.com/b5da193dec.js" crossorigin="anonymous"></script>
+</head>
+<body class="page-body team-page"> <header class="main-header">
+        <a href="index.html"><img src="logo.png" alt="Libra's Club Logo" class="header-logo"></a>
+        <nav>
+            <a href="index.html" class="nav-link" data-translate-key="nav_home">Home</a>
+            <a href="menu.html" class="nav-link" data-translate-key="nav_menu">Menu</a>
+            <a href="html/events.html" class="nav-link" data-translate-key="nav_events">Events</a>
+            <a href="gallery.html" class="nav-link" data-translate-key="nav_gallery">Gallery</a>
+            <a href="team.html" class="nav-link" data-translate-key="nav_team">Team</a>
+            <a href="vmh.html" class="nav-link active" data-translate-key="nav_vmh">VMH</a>
+            
+            <a href="partners.html" class="nav-link" data-translate-key="nav_partners">Partners</a>
+            <a href="rules.html" class="nav-link" data-translate-key="nav_rules">Rules</a>
+        </nav>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('es')">ES</button>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <h1 class="page-title" data-translate-key="vmh_title">VMH Department</h1>
+        
+        <div id="vmh-sections-container"></div>
+    </main>
+    
+    <footer>
+        <div class="social-links">
+             <a href="https://discord.com/invite/EJymrAHWR8"><i class="fab fa-discord"></i></a>
+             </div>
+        <p>© 2025 Libra's Club. All rights reserved.</p>
+    </footer>
+
+    <div id="team-member-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-button" class="modal-close">×</button>
+            <img src="" alt="Avatar" id="modal-avatar" class="profile-avatar">
+            <h1 id="modal-name" class="profile-name"></h1>
+            <p id="modal-role" class="profile-role"></p>
+            <div id="modal-bio" class="profile-bio"></div>
+            <div class="member-special-drink-section">
+                <h3 data-translate-key="member_special_drink_label">Bebida Especial:</h3>
+                <p id="modal-special-drink"></p>
+            </div>
+            <div class="member-spotify-section">
+                <a href="#" id="modal-spotify-link" target="_blank" class="spotify-link">
+                    <i class="fab fa-spotify"></i> <span data-translate-key="member_spotify_label">Ver Playlist no Spotify</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/team-data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -298,6 +298,54 @@ function initFocusMode() {
 }
 
 
+function initVMHPage() {
+    const container = document.getElementById('vmh-sections-container');
+
+    // Se não encontrar o container VMH, sai da função
+    if (!container || typeof teamMembers === 'undefined') return;
+
+    // Defina aqui quem faz parte do VMH
+    const sections = {
+        vmh_team: { 
+            titleKey: 'vmh_subtitle', // Título da secção
+            members: ['vmh_member1', 'vmh_member2'] // <-- COLOQUE OS IDs REAIS AQUI
+        }
+    };
+
+    container.innerHTML = '';
+
+    for (const sectionKey in sections) {
+        const section = sections[sectionKey];
+        // Cria o título (opcional, se quiser remover apague estas 4 linhas)
+        const subtitle = document.createElement('h2');
+        subtitle.className = 'team-subtitle';
+        subtitle.setAttribute('data-translate-key', section.titleKey);
+        container.appendChild(subtitle);
+        
+        const grid = document.createElement('div');
+        grid.className = 'team-grid';
+        
+        section.members.forEach(memberId => {
+            const member = teamMembers.find(m => m.id === memberId);
+            if (member) {
+                const card = document.createElement('div');
+                card.className = 'team-card';
+                card.innerHTML = `
+                    <img src="${member.imageSrc}" alt="Avatar of ${member.id}" class="team-avatar">
+                    <h3 class="team-name" data-translate-key="${member.nameKey}">${member.id}</h3>
+                    <p class="team-role" data-translate-key="${member.roleKey}"></p>
+                    <p class="team-bio" data-translate-key="${member.bioKey}"></p>
+                    <span class="hidden" data-special-drink-key="${member.drinkKey}"></span>
+                    <span class="hidden" data-spotify-playlist="${member.spotifyURL}"></span>
+                `;
+                grid.appendChild(card);
+            }
+        });
+        container.appendChild(grid);
+    }
+}
+
+
 // =================================================================
 // 3.0 PRIMARY EVENT LISTENER
 // =================================================================
@@ -313,6 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMenuPage();
     initGalleryPage();
     initTeamPage();
+    initVMHPage();
     
     // 2. Initialize components that depend on the content created above
     initTeamModal();
