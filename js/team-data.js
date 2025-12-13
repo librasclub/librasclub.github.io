@@ -71,15 +71,6 @@ const teamMembers = [
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/dragon-photo.jpg'
     },
     {
-        id: 'galleta',
-        nameKey: 'galleta_name',
-        roleKey: 'galleta_role',
-        bioKey: 'galleta_bio',
-        drinkKey: 'galleta_drink_name',
-        spotifyURL: '',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/galleta-photo.jpg'
-    },
-    {
         id: 'koto',
         nameKey: 'koto_name',
         roleKey: 'koto_role',
@@ -150,15 +141,6 @@ const teamMembers = [
         drinkKey: 'ruto_drink_name',
         spotifyURL: 'https://open.spotify.com/playlist/79agz74z8ST9t5H15NRJye?si=fb4f26b5216349ee',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/librasclub.github.io/refs/heads/main/assets/images/team/ruto-photo.jpg'
-    },
-    {
-        id: 'siniz',
-        nameKey: 'siniz_name',
-        roleKey: 'siniz_role',
-        bioKey: 'siniz_bio',
-        drinkKey: 'siniz_drink_name',
-        spotifyURL: '',
-        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/siniz-photo.jpg'
     },
     {
         id: 'veiga',
