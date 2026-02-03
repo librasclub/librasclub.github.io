@@ -224,7 +224,23 @@ const translations = {
         eli_bio: "Cheerful, a little seductive and talkative, she goes among the people at the bar trying to bring a smile to their faces in case they are having a bad day while she gives them affection so they feel that the bar can be like their second home. Good luck if you find her since she is everywhere and will wait for the moment you see her to give you a smile.",
         eli_drink_name: "Bubbles of temptation",
 
+        // -- Team Member: Draxus --
+        draxus_name: "Draxus",
+        draxus_role: "Acompañante",
+        draxus_bio: "",
+        draxus_drink_name: "",
 
+        // -- Team Member: May --
+        may_name: "May",
+        may_role: "Companion",
+        may_bio: "",
+        may_drink_name: "",
+
+        // -- Team Member: Soulwar --
+        soul_name: "Soulwar",
+        soul_role: "Bartender",
+        soul_bio: "",
+        soul_drink_name: "",
 
         // -- Team Page Components --
         member_special_drink_label: "Special Drink:",
@@ -531,7 +547,24 @@ const translations = {
         eli_role: "Acompañante",
         eli_bio: "Risueña, un poco seductora y conversadora, va entre las personas del bar para intentar causar alguna sonrisa por si tienen algún mal día mientras les da cariños para que sientan el que en el bar pueda ser como su segundo hogar. Suerte si la encuentras ya que está por todos lados y esperará el momento en que la veas para darle una sonrisa.",
         eli_drink_name: "Burbujas de Tentación",
-        
+
+        // -- Miembro del Equipo: Draxus --
+        draxus_name: "Draxus",
+        draxus_role: "Acompañante",
+        draxus_bio: "",
+        draxus_drink_name: "",
+
+        // -- Miembro del Equipo: May --
+        may_name: "May",
+        may_role: "Acompañante",
+        may_bio: "",
+        may_drink_name: "",
+
+        // -- Miembro del Equipo: Soulwar --
+        soul_name: "Soulwar",
+        soul_role: "Bartender",
+        soul_bio: "",
+        soul_drink_name: "",
 
         // -- Componentes de la Página de Equipo --
         member_special_drink_label: "Bebida Especial:",

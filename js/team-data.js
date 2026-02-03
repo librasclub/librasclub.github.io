@@ -178,6 +178,33 @@ const teamMembers = [
         spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/eli-photo.jpg'
     },
+    {
+        id: 'draxus',
+        nameKey: 'draxus_name',
+        roleKey: 'draxus_role',
+        bioKey: 'draxus_bio',
+        drinkKey: 'draxus_drink_name',
+        spotifyURL: '',
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/draxus-photo.jpg'
+    },
+    {
+        id: 'may',
+        nameKey: 'may_name',
+        roleKey: 'may_role',
+        bioKey: 'may_bio',
+        drinkKey: 'may_drink_name',
+        spotifyURL: '',
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/may-photo.jpg'
+    },
+    {
+        id: 'soul',
+        nameKey: 'soul_name',
+        roleKey: 'soul_role',
+        bioKey: 'soul_bio',
+        drinkKey: 'soul_drink_name',
+        spotifyURL: '',
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/soulwar-photo.jpg'
+    },
 
     
 ];
