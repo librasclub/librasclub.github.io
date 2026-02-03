@@ -175,7 +175,7 @@ const translations = {
         // -- Team Member: Y0UK4II --
         youkai_name: "Y0UK4II",
         youkai_role: "Security/guide",
-        youkai_bio: "If I could have shot them, I would have shot them, but they took my gun away.",
+        youkai_bio: "The important thing is always to cause trouble.",
         youkai_drink_name: "",
         
         // -- Team Member: Naruhishi --
@@ -183,12 +183,6 @@ const translations = {
         naruhishi_role: "Avatar Editor",
         naruhishi_bio: "",
         naruhishi_drink_name: "",
-
-        // -- Team Member: SíniZ --
-        siniz_name: "SíniZ",
-        siniz_role: "Bartender",
-        siniz_bio: 'One of the club\'s first customers, SiniZ combines his talent for drinks with his passion for gossip. Always funny, always mischievous, and always with something to say. Never say "gossip" three times because it\'s sure to show up behind your back.',
-        siniz_drink_name: "",
 
         // -- Team Member: McAndres --
         mcandrea_name: "McAndrea16",
@@ -495,8 +489,8 @@ const translations = {
         
         // -- Miembro del Equipo: Y0UK4II --
         youkai_name: "Y0UK4II",
-        youkai_role: "seguridad/guía",
-        youkai_bio: "Si pudiera ya les hubiera pegado un tiro pero me sacaron el arma", 
+        youkai_role: "Seguridad/Guía",
+        youkai_bio: "Lo importante siempre es molestar.", 
         youkai_drink_name: "",
         
         // -- Miembro del Equipo: Naruhishi --
