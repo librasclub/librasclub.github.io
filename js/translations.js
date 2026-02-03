@@ -181,8 +181,8 @@ const translations = {
         // -- Team Member: Naruhishi --
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Avatar Editor",
-        naruhishi_bio: "",
-        naruhishi_drink_name: "A demon created in a technological facility that aims to combine magic with artificial intelligence, implanted in a 20-year-old who turned out to be an ordinary geek and avatar editor.",
+        naruhishi_bio: "A demon created in a technological facility that aims to combine magic with artificial intelligence, implanted in a 20-year-old who turned out to be an ordinary geek and avatar editor.",
+        naruhishi_drink_name: "",
 
         // -- Team Member: McAndres --
         mcandrea_name: "McAndrea16",
