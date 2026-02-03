@@ -226,7 +226,7 @@ const translations = {
 
         // -- Team Member: Draxus --
         draxus_name: "Draxus",
-        draxus_role: "Acompañante",
+        draxus_role: "Companion",
         draxus_bio: "",
         draxus_drink_name: "",
 
