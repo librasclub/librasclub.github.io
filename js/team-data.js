@@ -216,11 +216,11 @@ const vmhMembers = [
         imageSrc: 'assets/images/vhm/riku-vhm.jpg' // Caminho corrigido
     },
     {
-        name: 'nebula_wave',
+        name: 'Nebula Wave',
         imageSrc: 'assets/images/vhm/nebula-vhm.jpg' // Caminho corrigido
     },
     {
-        name: 'loxythecrazy',
+        name: 'Loxy The Crazy',
         imageSrc: 'assets/images/vhm/loxy-vhm.jpg' // Caminho corrigido
     },
     {
