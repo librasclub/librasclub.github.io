@@ -182,7 +182,7 @@ const translations = {
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Avatar Editor",
         naruhishi_bio: "",
-        naruhishi_drink_name: "",
+        naruhishi_drink_name: "A demon created in a technological facility that aims to combine magic with artificial intelligence, implanted in a 20-year-old who turned out to be an ordinary geek and avatar editor.",
 
         // -- Team Member: McAndres --
         mcandrea_name: "McAndrea16",
@@ -496,7 +496,7 @@ const translations = {
         // -- Miembro del Equipo: Naruhishi --
         naruhishi_name: "Naruhishi",
         naruhishi_role: "Editor de avatares",
-        naruhishi_bio: "",
+        naruhishi_bio: "Un demonio creado en una instalación tecnológica que pretende juntar la magia con inteligencia artificial con implantación de un joven de 20 años que resultó ser un friki común y un editor de avatares.",
         naruhishi_drink_name: "",
         
         // -- Miembro del Equipo: SíniZ --
