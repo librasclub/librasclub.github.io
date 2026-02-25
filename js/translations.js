@@ -103,7 +103,7 @@ const translations = {
         // -- Team Member: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Designer",
-        alairen_bio: "I like bread and boobs (regardless of your gender).",
+        alairen_bio: "Dedicated to capturing the essence of the bar in colors, words, and designs that will captivate you. If it helps, I sometimes offer services. If you don't see me offering one, I'm most likely getting lost between someone's breasts (?).",
         alairen_drink_name: "",
 
         // -- Team Member: Dekiru --
@@ -424,7 +424,7 @@ const translations = {
         // -- Miembro del Equipo: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Diseñadora",
-        alairen_bio: "Me gusta el pan y las chichis (sin importar tu género).",
+        alairen_bio: "Dedicada a capturar la esencia del bar en colores, palabras y diseño que te cautivaran. Si te sirve a veces doy servicios si no me vez dando uno lo más seguro es que me estoy perdiendo entre las tetas de alguien(?)",
         alairen_drink_name: "",
 
         // -- Miembro del Equipo: Dekiru --
