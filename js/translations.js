@@ -564,7 +564,7 @@ const translations = {
         // -------------------------------------------------------------
         // 7.0  PÁGINA DE SOCIOS (partners.html)
         // -------------------------------------------------------------
-        partners_title: "Allianzas del Club",
+        partners_title: "Alianzas del Club",
         // Puedes añadir nombres/descripciones de socios aquí si es necesario
 
         // -------------------------------------------------------------
