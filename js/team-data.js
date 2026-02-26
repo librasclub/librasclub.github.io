@@ -49,7 +49,7 @@ const teamMembers = [
         roleKey: 'alairen_role',
         bioKey: 'alairen_bio',
         drinkKey: 'alairen_drink_name',
-        spotifyURL: '',
+        spotifyURL: 'https://open.spotify.com/playlist/1XgGMbd8KkoU2UuJlB8LVQ',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/librasclub.github.io/refs/heads/main/assets/images/team/alairen-photo.jpg'
     },
     {
@@ -184,7 +184,7 @@ const teamMembers = [
         roleKey: 'may_role',
         bioKey: 'may_bio',
         drinkKey: 'may_drink_name',
-        spotifyURL: '',
+        spotifyURL: 'https://open.spotify.com/playlist/79agz74z8ST9t5H15NRJye',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/may-photo.jpg'
     },
     {

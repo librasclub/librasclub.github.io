@@ -224,8 +224,8 @@ const translations = {
         // -- Team Member: May --
         may_name: "May",
         may_role: "Companion",
-        may_bio: "",
-        may_drink_name: "",
+        may_bio: "Mischievous by nature, charming by choice. With a look that always invites a game that never ends; sweet but with a dangerous edge. If she smiles... it's already too late.",
+        may_drink_name: "Pink Poison",
 
         // -- Team Member: Soulwar --
         soul_name: "Soulwar",
@@ -545,8 +545,8 @@ const translations = {
         // -- Miembro del Equipo: May --
         may_name: "May",
         may_role: "Acompañante",
-        may_bio: "",
-        may_drink_name: "",
+        may_bio: "Traviesa por naturaleza, encantadora por elección. Con una mirada que siempre invita a un juego que nunca termina; dulce pero con un toque peligroso. Si sonríe… ya es demasiado tarde.",
+        may_drink_name: "Pink Poison",
 
         // -- Miembro del Equipo: Soulwar --
         soul_name: "Soulwar",
