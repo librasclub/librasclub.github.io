@@ -103,7 +103,7 @@ const translations = {
         // -- Team Member: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Designer",
-        alairen_bio: "Dedicated to capturing the essence of the bar in colors, words, and designs that will captivate you. If it helps, I sometimes offer services. If you don't see me offering one, I'm most likely getting lost between someone's breasts (?).",
+        alairen_bio: "By day a designer, by night a chicken. Dedicated to capturing the essence of the bar in colors, words, and designs that will captivate you. If it helps, I sometimes offer services. If you don't see me offering one, I'm most likely getting lost between someone's breasts (?).",
         alairen_drink_name: "Red Velvet",
 
         // -- Team Member: Dekiru --
@@ -424,7 +424,7 @@ const translations = {
         // -- Miembro del Equipo: Alairen --
         alairen_name: "Alairen",
         alairen_role: "Diseñadora",
-        alairen_bio: "Dedicada a capturar la esencia del bar en colores, palabras y diseño que te cautivaran. Si te sirve a veces doy servicios si no me vez dando uno lo más seguro es que me estoy perdiendo entre las tetas de alguien(?)",
+        alairen_bio: "De día diseñadora, de noche polla. Dedicada a capturar la esencia del bar en colores, palabras y diseño que te cautivaran. Si te sirve a veces doy servicios si no me vez dando uno lo más seguro es que me estoy perdiendo entre las tetas de alguien(?)",
         alairen_drink_name: "Red Velvet",
 
         // -- Miembro del Equipo: Dekiru --
