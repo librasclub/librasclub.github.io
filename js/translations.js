@@ -233,6 +233,12 @@ const translations = {
         soul_bio: "",
         soul_drink_name: "",
 
+        // -- Team Member: Foxy --
+        foxy_name: "Foxy",
+        foxy_role: "Bartender & Developer",
+        foxy_bio: "",
+        foxy_drink_name: "",
+
         // -- Team Page Components --
         member_special_drink_label: "Special Drink:",
         member_spotify_label: "View Playlist on Spotify",
@@ -553,6 +559,12 @@ const translations = {
         soul_role: "Bartender",
         soul_bio: "",
         soul_drink_name: "",
+
+        // -- Miembro del Equipo: Foxy --
+        foxy_name: "Foxy",
+        foxy_role: "Bartender & Programador",
+        foxy_bio: "",
+        foxy_drink_name: "",
 
         // -- Componentes de la Página de Equipo --
         member_special_drink_label: "Bebida Especial:",

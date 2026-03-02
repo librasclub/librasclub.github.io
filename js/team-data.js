@@ -196,6 +196,15 @@ const teamMembers = [
         spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/soulwar-photo.jpg'
     },
+    {
+        id: 'foxy',
+        nameKey: 'foxy_name',
+        roleKey: 'foxy_role',
+        bioKey: 'foxy_bio',
+        drinkKey: 'foxy_drink_name',
+        spotifyURL: '',
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/foxy-photo.jpg'
+    },
 
     
 ];
