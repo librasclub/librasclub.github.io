@@ -205,7 +205,15 @@ const teamMembers = [
         spotifyURL: '',
         imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/foxy-photo.jpg'
     },
-
+    {
+        id: 'cami',
+        nameKey: 'cami_name',
+        roleKey: 'cami_role',
+        bioKey: 'cami_bio',
+        drinkKey: 'cami_drink_name',
+        spotifyURL: '',
+        imageSrc: 'https://raw.githubusercontent.com/librasclub/web/refs/heads/main/assets/images/team/cami-photo.jpg'
+    },
     
 ];
 

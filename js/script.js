@@ -184,7 +184,7 @@ function initTeamPage() {
     const sections = {
         owners:   { titleKey: 'team_owners_subtitle', members: ['laira'] },
         managers: { titleKey: 'team_managers_subtitle', members: ['hector', 'icoraz', 'amneulix'] },
-        crew:     { titleKey: 'team_crew_subtitle', members: ['alairen', 'koto', 'loxy', 'lulu', 'nebula', 'papu', 'mcandrea', 'razielsempai', 'veiga', 'youkai', 'naruhishi', 'riku', 'eli', 'draxus', 'may', 'soul', 'foxy'] }
+        crew:     { titleKey: 'team_crew_subtitle', members: ['alairen', 'koto', 'loxy', 'lulu', 'nebula', 'papu', 'cami', 'mcandrea', 'razielsempai', 'veiga', 'youkai', 'naruhishi', 'riku', 'eli', 'draxus', 'may', 'soul', 'foxy'] }
     };
 
     container.innerHTML = '';

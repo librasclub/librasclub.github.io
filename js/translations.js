@@ -239,6 +239,12 @@ const translations = {
         foxy_bio: "",
         foxy_drink_name: "",
 
+        // -- Team Member: Cami --
+        cami_name: "Cami",
+        cami_role: "Dancer",
+        cami_bio: "Fun, cheerful, and full of rhythm. Would you like to dance? Of course, I'd love to. Here we have perreo for the boys and perreo for the girls... Let's get the party started!",
+        cami_drink_name: "",
+
         // -- Team Page Components --
         member_special_drink_label: "Special Drink:",
         member_spotify_label: "View Playlist on Spotify",
@@ -565,6 +571,12 @@ const translations = {
         foxy_role: "Bartender & Programador",
         foxy_bio: "",
         foxy_drink_name: "",
+
+        // -- Miembro del Equipo: Cami --
+        cami_name: "Cami",
+        cami_role: "Dancer",
+        cami_bio: "Divertida, alegre y con mucho ritmo. ¿Gustas un bailecito? Claro, yo encantada. Aquí tenemos perreo pa' los nenes y perreo pa' las nenas... ¡Vamos a prender la fiesta!",
+        cami_drink_name: "",
 
         // -- Componentes de la Página de Equipo --
         member_special_drink_label: "Bebida Especial:",
