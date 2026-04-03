@@ -153,12 +153,6 @@ const translations = {
         nebula_role: "Dancer/Companion",
         nebula_bio: "Enigmatic, seductive, and elegant, he moves calmly among the shadows of the bar, as if every gesture were marked by a profound destiny. His creation, Abyssal Blue, reflects his essence: strong, mysterious, and capable of enveloping anyone in its spell. He can capture you with a glance and, if the occasion allows, seduce you with a dance that turns the night into an unforgettable memory.",
         nebula_drink_name: "Abyssal Blue",
-
-        // -- Team Member: Papu --
-        papu_name: "Papu",
-        papu_role: "Bartender",
-        papu_bio: "Papu is your most loyal and lethal Papu. I'll show you my love through blows, even though sometimes I go too far. I'll always listen, because I can't talk to silence you.",
-        papu_drink_name: "The hater",
         
         // -- Team Member: Ruto --
         ruto_name: "Ruto",
@@ -480,12 +474,6 @@ const translations = {
         nebula_role: "Bailarín/Acompañante",
         nebula_bio: "Enigmático, seductor y elegante, se mueve con calma entre las sombras del bar, como si cada gesto estuviera marcado por un destino profundo. Su creación, el Abyssal Blue, refleja su esencia: fuerte, misteriosa y capaz de envolver a cualquiera en su hechizo. Puede atraparte con una mirada y, si la ocasión lo permite, seducirte con un baile que convierte la noche en un recuerdo imborrable.",
         nebula_drink_name: "Azul abisal",
-        
-        // -- Miembro del Equipo: Papu --
-        papu_name: "Papu",
-        papu_role: "Bartender",
-        papu_bio: "Papu es tu papu mas leal y letal. Te mostraré mi cariño a través de los golpes, aunque a veces me paso. Te escucharé siempre, ya que no puedo hablar para callarte.",
-        papu_drink_name: "El hater",
         
         // -- Miembro del Equipo: Ruto --
         ruto_name: "Ruto",
